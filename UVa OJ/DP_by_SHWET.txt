@@ -1,0 +1,32 @@
+103	Stacking Boxes (nts).                          //ACCEPTED                   //LIS in n length arrays.
+108	Maximum Sum    (nts).                          //ACCEPTED                   //LIS in 2 dimension.
+111	History Grading(slv).                          //ACCEPTED                   //LIS.
+116	Unidirectional TSP(slv).                       //ACCEPTED                   //Well known TSP algorithm.
+147	Dollars(slv).                                  //ACCEPTED                   //Simple coin change problem.
+164	String Computer(slv).                          //                   //Lcs algorithm.
+231	Testing the Catcher(slv).                      //ACCEPTED                   //DP,Patience sorting(better than DP).
+348	Optimal Array Multiplication Sequence(nts).    //ACCEPTED                   //Matrix chain Multiplication.
+357	Let Me Count The Ways(slv).                    //ACCEPTED                   //simple coin change.
+437	The Tower of Babylon(slv).                     //ACCEPTED                   //LIS(a little variation).
+473	Raucous Rockers(nts).                          //                   //
+481	What Goes Up(slv).                             //ACCEPTED                   //Patience sorting(DP soln gives TLE).
+497	Strategic Defense Initiative(nts).             //ACCEPTED                   //Patience sorting.
+507	Jill Rides Again(slv).                         //ACCEPTED                   //Maxm subset sum.
+531	Compromise(nts).                               //                   //
+562	Dividing Coins(slv).                           //ACCEPTED                   //Simple 0-1Knapsack.
+590	Always on the Run(nts).                        //                   //
+607	Scheduling Lectures(nts).                      //                   //
+620	Cellular Structure(nts).                       //                   //
+624	CD(slv).                                       //                   //0-1 knapsack.
+674	Coin Change(slv).                              //ACCEPTED                   //Coin change problem.
+709	Formatting Text(nts).                          //                   //
+711	Dividing up(nts).                              //                   //
+882	The Mailbox Manufacturers Problem(nts).        //                   //
+991	Safe Salutations(nts).                         //                   //
+10003	Cutting Sticks(slv).                           //ACCEPTED           //Matrix chain multiplication(nt exact bt similar).
+10032	Tug of War(nts).                               //                   //
+10036	Divisibility(nts).                             //                   //
+10051	Tower of Cubes(nts).                           //                   //
+10066	The Twin Towers(nts).                          //                   //
+10069	Distinct Subsequences(nts).                    //ACCEPTED           //LCS & Bignum.
+10081	Tight words(slv).                              //                   //Simple DP.
