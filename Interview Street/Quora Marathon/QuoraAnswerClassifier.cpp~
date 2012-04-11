@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cstdio>
+#include <string>
+#include <vector>
+#include <map>
+
+using namespace std;
+template<class T, class U> T cast (U x) { ostringstream os; os<<x; T res; istringstream is(os.str()); is>>res; return res; }
+
+map<string, pair<bool, vector<double> > > fv;
+int main()
+{
+	int N, M;
+	int vote;
+	string key, feat;
+	vector<double> featVec;
+	scanf("%d %d\n",&N, &M);
+	for(int i = 0; i < N; ++i)
+	{
+		getline(cin, key, '\n');
+		scanf("%d", &vote);
+		featVec.empty();
+		for(int j = 0; j < M; ++j)
+		{
+			getline(cin, feat, ' ');
+			cout<<feat.substr(feat.find(':'))<<endls
+			featVec.push_back(cast<double, string> feat.substr(feat.find(':')));
+		}
+		fv.insert(make_pair(key, make_pair(vote, featVec)));
+	}
+}
+

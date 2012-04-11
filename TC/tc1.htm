@@ -1,0 +1,713 @@
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Algorithm Tutorials</title>
+
+
+<script language="JavaScript" type="text/javascript" src="/js/tcscript.js"></script>
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/css/style.css" />
+<link type="text/css" rel="stylesheet" href="/css/coders.css" />
+<link type="text/css" rel="stylesheet" href="/css/tcStyles20080219.css" />
+<link type="text/css" rel="stylesheet" href="/css/jobsRemix.css" />
+
+
+<SCRIPT LANGUAGE="JavaScript" SRC="/js/print.js"></SCRIPT>
+<style type="text/css">
+.code
+{
+   width: 550;
+   padding: 10px;
+   margin: 20px;
+   color: #333;
+   font-size: 11px;
+   font-weight: normal;
+   line-height: 14px;
+   background-color: #EEEEEE;
+   border: 1px solid #999;
+}
+.math
+{
+   font-family: times, times new roman, serif;
+   font-weight: normal;
+   font-style: italic;
+   font-size: 14px;
+}
+</style>
+</head>
+<body>
+<div id="onTop">
+    
+
+
+
+
+
+<script type="text/javascript" src="/js/popup.js"></script>
+
+<div id="shortcutBar">
+    <div class="icon"><a href="http://www.topcoder.com/tc"><img src="/i/interface/scHome.png" alt="" onmouseover="postPopUpText('globalPopupText','Home'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+    <div class="icon"><a href="javascript:arena();"><img src="/i/interface/scAlgo.png" alt="" onmouseover="postPopUpText('globalPopupText','Algorithm Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+    <div class="icon"><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=23"><img src="/i/interface/scConceptualization.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Conceptualization Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+    <div class="icon"><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=6"><img src="/i/interface/scSpecification.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Specification Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+    <div class="icon"><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=7"><img src="/i/interface/scArchitecture.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Architecture Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+    <div class="icon"><a href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112"><img src="/i/interface/scDesign.png" alt="" onmouseover="postPopUpText('globalPopupText','Component Design Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+    <div class="icon"><a href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113"><img src="/i/interface/scDevelopment.png" alt="" onmouseover="postPopUpText('globalPopupText','Component Development Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+
+    <div class="icon"><a href="http://www.topcoder.com/tc?module=ViewAssemblyActiveContests"><img src="/i/interface/scAssembly.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Assembly Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+    <div class="icon"><a href="http://www.topcoder.com/tc?module=ActiveContests&pt=13"><img src="/i/interface/scTesting.png" alt="" onmouseover="postPopUpText('globalPopupText','Testing Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+    <div class="icon"><a href="javascript:arena();"><img src="/i/interface/scTCHS.png" alt="" onmouseover="postPopUpText('globalPopupText','High School Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+    <div class="icon"><a href="http://www.topcoder.com/longcontest/?module=ViewActiveContests"><img src="/i/interface/scMarathon.png" alt="" onmouseover="postPopUpText('globalPopupText','Marathon Matches'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+    <div class="icon"><a href="http://studio.topcoder.com/?module=ViewActiveContests"><img src="/i/interface/scStudio.png" alt="" onmouseover="postPopUpText('globalPopupText','TopCoder Studio Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()" /></a></div>
+</div>
+
+<div id="globalPopup" class="popUp"><div id="globalPopupText"></div></div>
+
+
+<div style="position: absolute; right:0px; top:31px;"><a href="http://www.topcoder.com/reg/"><img src="/i/interface/register_now.gif" alt="Register Now" style="display:block;"/></a></div>
+
+
+<div align="center" style="margin: 0px 290px 0px 280px;">
+   <div id="outerLogo">
+      <div id="innerLogo">
+      <a href="http://www.topcoder.com/"><img src="/i/interface/topcoder.gif" alt="TopCoder" style="display: block;" /></a>
+      </div>
+   </div>
+</div>
+
+<div class="memberCountBox">
+Member Count: 274,725 - 
+
+
+December 10, 2010
+
+&nbsp;<a class="gMetal" href="Javascript:tcTime()">[Get Time]</a>
+</div>
+
+<div class="topBar">
+    <div style="float: right; margin: 5px 0px 0px 0px;">
+        
+                <a class="gMetal" href="http://www.topcoder.com/tc?&amp;module=Login">Login</a>
+            
+        
+    </div>
+</div>
+</div>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <!-- Left Column Begins-->
+        <td width="180" id="onLeft">
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript" src="/js/arena.js"></script>
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function toggleMenu(menuTitle,menuID){
+   var menu = document.getElementById(menuID);
+   if(menu.style.display == 'block') menu.className = 'CLOSED';
+   else if(menu.className == 'OPEN' && menu.style.display != 'none') menu.className = 'CLOSED';
+   else {
+      menu.className = 'OPEN';
+   }
+   if(menuTitle.blur)menuTitle.blur();
+   if(menuTitle.className == 'exp') menuTitle.className = 'exp_ed';
+   else menuTitle.className = 'exp';
+   return;
+}
+function flipMenu(myMenuName){
+   var menuName = document.getElementById(myMenuName);
+   menuName.className = 'exp_ed';
+}
+
+// -->
+</script>
+
+<div style="padding: 0px;"><img src="/i/interface/leftnav_top.gif" alt="" /></div>
+<div id="navbar">
+    
+<ul>
+<li class="exp_ed"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_competitions')">Competitions</a>
+<ul id="m_competitions" class="OPEN">
+<li><a href="http://www.topcoder.com/tc">Home</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_competitor_stats')">The Tops</a>
+<ul id="m_competitor_stats">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_top_rated_competitors')">Top Ranked</a>
+<ul id="m_top_rated_competitors">
+<li><a href="http://www.topcoder.com/tc?module=AlgoRank">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRank">High School</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=CoderRank">Marathon Match</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_conceptors">Conceptualization</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_specificators">Specification</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_architects">Architecture</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_designers">Design</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_developers">Development</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_assemblers">Assembly</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_testers">Test Suites</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_recordbook')">Record Book</a>
+<ul id="m_recordbook">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=statistics&amp;d2=recordbook_home">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=compstats&amp;d2=comp_recordbook_home">Component</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=stats&amp;d2=recordbook_home">Marathon Match</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_com')">Coder of the Month</a>
+<ul id="m_com">
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=5">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=6">Design</a></li>
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=7">Development</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_competitions')">Algorithm</a>
+<ul id="m_algo_competitions">
+<li><a href="/wiki/display/tc/Algorithm+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_support')">Track Information</a>
+<ul id="m_algo_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Algorithm+Competitions">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Algorithm+Competition+FAQs">FAQs</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Algorithm+Competition+Rating+System">Rating System</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Write+Problems+for+TopCoder">Write Problems</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_stats')">Statistics</a>
+<ul id="m_algo_stats">
+<li><a href="http://www.topcoder.com/tc?module=MatchList">Match Archive</a></li>
+<li><a href="http://www.topcoder.com/stat?c=round_overview">Match Overviews</a></li>
+<li><a href="http://www.topcoder.com/tc?module=SrmDivisionWins">Match Winners</a></li>
+<li><a href="http://www.topcoder.com/stat?c=last_match">Match Results</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ProblemArchive">Problem Archive</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=1">Recent Color Changes</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Algorithm+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="javascript:arena();">Launch Arena</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_copilot_opportunities')">Copilot Opportunities</a>
+<ul id="m_copilot_opportunities">
+<li><a href="http://www.topcoder.com/wiki/display/tc/Copilot+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_copilot_support')">Track Information</a>
+<ul id="m_copilot_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">Documentation</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=29">Active Contests</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/TopCoder+UML+Tool">UML Tool</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewCopilotPool">Copilot Pool</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_conceptualization_competitions')">Conceptualization</a>
+<ul id="m_conceptualization_competitions">
+<li><a href="http://www.topcoder.com/wiki/display/tc/TopCoder+Conceptualization+Contests">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_conceptualization_support')">Track Information</a>
+<ul id="m_conceptualization_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Conceptualization+Competitions">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Conceptualization+Documentation">Documentation</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Conceptualization+Submission+Instructions">Tutorial</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Conceptualization+Reliability+Bonus">Reliability Ratings</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&pt=23">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=23">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=134">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=23">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=23">Meet the Review Board</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/TopCoder+UML+Tool">UML Tool</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_specification_competitions')">Specification</a>
+<ul id="m_specification_competitions">
+<li><a href="http://www.topcoder.com/wiki/display/tc/TopCoder+Specification+Contests">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_specification_support')">Track Information</a>
+<ul id="m_specification_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Specification+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=6">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=6">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=117">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=6">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=6">Meet the Review Board</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/TopCoder+UML+Tool">UML Tool</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_competitions')">Architecture</a>
+<ul id="m_architecture_competitions">
+<li><a href="http://www.topcoder.com/wiki/display/tc/Architecture+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_support')">Track Information</a>
+<ul id="m_architecture_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Architecture+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=7">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=7">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=118">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=7">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=7">Meet the Review Board</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/TopCoder+UML+Tool">UML Tool</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_des_competitions')">Component Design</a>
+<ul id="m_des_competitions">
+<li><a href="http://www.topcoder.com/wiki/display/tc/Component+Design+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_des_support')">Track Information</a>
+<ul id="m_des_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Design+Competitions">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Component+Design+Documentation">Documentation</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Component+Design+Ratings">Ratings</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Component+Design+Reliability+Ratings">Reliability Ratings</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=112">Recent Color Changes</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Component+Design+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=1">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=112">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=1">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=1">Meet the Review Board</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/TopCoder+UML+Tool">UML Tool</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_dev_competitions')">Component Development</a>
+<ul id="m_dev_competitions">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Development+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_dev_support')">Track Information</a>
+<ul id="m_dev_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Development+Competitions">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Component+Development+Documentation">Documentation</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Component+Development+Ratings">Ratings</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Component+Development+Reliability+Ratings">Reliability Ratings</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=113">Recent Color Changes</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Component+Development+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=2">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=113">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=2">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=2">Meet the Review Board</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/TopCoder+UML+Tool">UML Tool</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_competitions')">Assembly</a>
+<ul id="m_assembly_competitions">
+<li><a href="http://www.topcoder.com/wiki/display/tc/Assembly">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_support')">Track Information</a>
+<ul id="m_assembly_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Assembly+Competitions">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Assembly+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Assembly+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewAssemblyActiveContests">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=14">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=125">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=14">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=14">Meet the Review Board</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_scenarios_competitions')">Test Scenarios</a>
+<ul id="m_test_scenarios_competitions">
+<li><a href="http://www.topcoder.com/wiki/display/tc/Test+Scenarios+and+Scripts">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_scenarios_support')">Track Information</a>
+<ul id="m_test_scenarios_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Testing+Competitions">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Testing+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Testing+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=26">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=26">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=26">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=26">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=26">Meet the Review Board</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/TopCoder+UML+Tool">UML Tool</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_suites_competitions')">Test Suites</a>
+<ul id="m_test_suites_competitions">
+<li><a href="http://www.topcoder.com/wiki/display/tc/Test+Scenarios+and+Scripts">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_suites_support')">Track Information</a>
+<ul id="m_test_suites_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Testing+Competitions">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Testing+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Testing+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=13">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=13">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=13">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=13">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=13">Meet the Review Board</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/TopCoder+UML+Tool">UML Tool</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ui_prototype_competitions')">UI Prototype</a>
+<ul id="m_ui_prototype_competitions">
+<li><a href="http://www.topcoder.com/wiki/display/tc/UI+Prototype+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ui_prototype_support')">Track Information</a>
+<ul id="m_ui_prototype_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+UI+Prototype+Competitions">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/UI+Prototype+Ratings">Ratings</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/UI+Prototype+Reliability+Ratings">Reliability Ratings</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=19">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=19">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=19">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=19">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=19">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ria_build_competitions')">RIA Build</a>
+<ul id="m_ria_build_competitions">
+<li><a href="http://www.topcoder.com/wiki/display/tc/RIA+Build+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ria_build_support')">Track Information</a>
+<ul id="m_ria_build_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+RIA+Builds">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=24">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=24">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=24">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=24">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=24">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_competitions')">Bug Race</a>
+<ul id="m_bugraces_competitions">
+<li><a href="http://www.topcoder.com/wiki/display/tc/Bug+Race+Competition+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_support')">Track Information</a>
+<ul id="m_bugraces_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Bug+Race+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Active+Bug+Race+Competitions">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/Bug+Races+Reviews">Review Opportunities</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_contests')">Marathon Match</a>
+<ul id="m_long_contests">
+<li><a href="http://www.topcoder.com/wiki/display/tc/Marathon+Match+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_support')">Track Information</a>
+<ul id="m_long_support">
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Marathon+Match+Events">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=ratings">Rating System</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_stats')">Statistics</a>
+<ul id="m_long_stats">
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=MatchList">Match Archive</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=ViewOverview">Match Overview</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=MatchWinners">Match Winners</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=match_editorials&amp;d2=archive">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=dataFeed">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewActiveContests">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewPractice">Practice</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewQueue">Queue Status</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_hs_competitions')">High School</a>
+<ul id="m_hs_competitions">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=home">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_hs_stats')">Statistics</a>
+<ul id="m_hs_stats">
+<li><a href="http://www.topcoder.com/tc?module=HSRoundOverview">Match Overview</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRoundStatsTeam">Match Results (Team)</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRoundStatsInd">Match Results (Indiv.)</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=match_editorials&amp;d3=archive">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=2">Recent Color Changes</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=dataFeed">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&d1=hs&d2=spotlightSessions">Spotlight Sessions</a></li>
+<li><a href="javascript:arena();">Launch Arena</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_tournaments')">Tournaments</a>
+<ul id="m_tournaments">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tournaments&amp;d2=home">TopCoder</a></li>
+<li><a href="http://www.topcoder.com/pl/">Powered by TopCoder</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CRPFStatic&amp;d1=crpf&amp;d2=crpf_overview">Charity</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/dr">The Digital Run</a></li>
+<li class="exp_ed"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_edu_content')">Educational Content</a>
+<ul id="m_edu_content" class="OPEN">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=education&amp;d2=overview">Overview</a></li>
+<li class="highlight"><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=alg_index">Algorithm Tutorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=comp_index">Component Tutorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=mm_index">Marathon Tutorials</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/wiki/display/tc/How+to+Get+Paid+for+Competing">How to Get Paid</a></li>
+</ul></li>
+<li><a href="http://forums.topcoder.com/">Forums</a></li>
+<li><a href="http://www.topcoder.com/wiki/dashboard.action">TopCoder Wiki</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=calendar&amp;d2=thisMonth">Event Calendar</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press Room</a></li>
+<li><a href="http://www.topcoder.com/tc?&amp;module=SurveyList">Surveys</a></li>
+<li><a href="http://www.topcoder.com/tc?module=MyHome">My TopCoder</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_about_tc')">About TopCoder</a>
+<ul id="m_about_tc">
+<li><a href="http://www.topcoder.com/home">Overview</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=whyjoin">Why Join TopCoder?</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=jobs">Working at TopCoder</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=management">Management Team</a></li>
+</ul></li></ul>
+
+    <div style="float: left; padding: 10px 0px 0px 17px;">
+        
+        <a href="http://www.topcoder.com/tc?module=LinkTracking&amp;link=/wiki/display/tc/TopCoder+UML+Tool&amp;refer=leftnav"><img src="/i/leftnav/umlTool.png" alt="UML Tool" /></a>
+       
+        
+        
+        
+        
+    </div>
+    
+
+<div id="navbarSearch">
+<b>Member Search:</b>
+<form action="http://www.topcoder.com/tc" method="get" name="simpleSearchForm" class="noSpace" id="simpleSearchForm">
+   <input class="noSpace" type="hidden" name="module" value="SimpleSearch" />
+   <input class="noSpace" type="text" name="ha" value="Handle:" size="12" maxlength="15" onfocus="javascript: if (document.simpleSearchForm.ha.value=='Handle:') document.simpleSearchForm.ha.value = '';" onblur="javascript:if (document.simpleSearchForm.ha.value == '')document.simpleSearchForm.ha.value = 'Handle:';" />
+   <a class="gMetal" href="javascript:void document.simpleSearchForm.submit();">Go</a><br />
+   <a class="gMetal" href="http://www.topcoder.com/tc?module=ViewAdvanced">Advanced Search</a>
+</form>
+</div>
+</div>
+<div style="float: left; clear:left; padding: 0px 0px 23px 0px;"><img src="/i/interface/leftnav_bottom.gif" alt="" /></div>
+
+
+    <div align="center" style="float: left; clear:left; width: 170px; margin: 0px;">
+        <img src="/i/interface/brackets.png" alt="" style="margin-bottom: 23px;" />
+    </div>
+
+
+
+
+        </td>
+        <!-- Left Column Ends -->
+        <!-- Center Column Begins -->
+        <td width="100%" align="left" class="bodyColumn">
+            
+
+
+
+
+<table cellspacing="0" cellpadding="0" class="pageTitleTable">
+    <tr>
+        <td width="100%" class="pageTitle"><img border="0" src="/i/header_alg_tut.gif" alt="alg_tut"/></td>
+        <td align="right" class="pageSubtitle">&#160;&#160;</td>
+    </tr>
+</table>
+
+
+            <div class="linkBox">
+                <A href="/tc?module=Static&d1=tutorials&d2=alg_index">Archive</A><br />
+                <span id="printableLink"><A href="Javascript:makeInvisible();">Printable view</A><br /></span>
+                <span id="navigableLink" class="invisible"><A href="Javascript:makeNavigable();">Normal view</A><br /></span>
+                <a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=505838">Discuss this article</a><br />
+                <a href="/tc?module=Static&d1=help&d2=writeForTC">Write for TopCoder</a>
+            </div>
+
+<span class="bodyTitle">How To Dissect a TopCoder Problem Statement</span>
+
+<p>
+<img src="/i/m/antimatter_mug.gif" alt="" width="55" height="61" border="0" hspace="6" vspace="1" align="left" class="myStatsPhoto"/><br />
+By&#160;<a href="/tc?module=MemberProfile&amp;cr=275071&amp;tab=alg" class="coderTextRed">antimatter</a><br />
+<span class="smallText"><em>TopCoder Member</em></span><br clear="all" />
+</p>
+
+<p>
+How many times has this happened to you: you register for the SRM, go into your assigned room when the system tells you to, and when the match starts, you open the 250... and find it incomprehensible.
+<br/><br/>
+Maybe it's never happened to you.  You may be lucky, or you may already be extremely skilled.  However, many experienced competitors (yes, reds too) might end up just staring at a problem for a long time.  This is a pretty serious issue.  How can you solve the problem if you have no idea what it's asking you to do?
+<br/><br/>
+Fortunately, TopCoder problem statements are formatted in a very specific way.
+<br/><br/>
+Knowing your way around the various pieces will go a long way towards helping you understand what the problem is saying.
+<br/><br/>
+
+<span class=bodySubtitle>The Parts of a Problem Statement</span><br/>
+Let's look at the composition of a typical TopCoder problem statement. First off is the introduction.  Usually, a problem will be led off with a high-level description of a situation.  This description may tie into real-life ideas and topics or it may just be a completely fictional story, serving only as some sort of context.  For many problems the back-story itself is not particularly important in understanding the actual problem at hand.
+<br/><br/>
+Next comes the definition section. It gives you the skeleton of the solution you need to write: class name, method name, arguments, and return type, followed by the complete method signature.  At minimum, you will need to declare a class with the given name, containing a method which conforms to the given method signature.  The syntax given will always be correct for your chosen language.
+<br/><br/>
+Sometimes notes follow the method definition.  They tend to be important reminders of things that you should pay attention to but might have missed, or they can also be things that are helpful background knowledge that you might not know beforehand.  If the notes section appears, you should make sure to read it - usually the information contained within is extremely important.
+<br/><br/>
+The constraints section is arguably the most important.  It lists specific constraints on the input variables.  This lets you know crucial details such as how much memory to allocate or how efficient your algorithm will have to be.
+<br/><br/>
+Finally, a set of examples is provided.  These give sample inputs against which you can test your program.  The given parameters will be in the correct order, followed by the expected return value and, optionally, an explanation of the test case.
+<br/><br/>
+
+   <ul>
+   <li>
+   <span class=bodySubtitle>Introduction</span><br/>
+   The problem statement usually begins by motivating the problem.  It gives a situation or context for the problem, before diving into the gory details.  This is usually irrelevant to solving the problem, so ignore it if necessary.  In some cases, the motivation can cause serious ambiguities if it is treated as binding - see <A href="/tc?module=ProblemDetail&rd=5849&pm=2911">MatchMaking</A> (SRM 203 Div I Easy / Div II Medium).  Also note that for some simple problems, the initial context may be left out.
+   <br/><br/>
+   The ordering of the rest of this section varies greatly from problem to problem, based on the writing style of the problem author.
+   <br/><br/>
+   There will be a description of what you need to do, in high-level terms.  Take, for example, <A href="/tc?module=ProblemDetail&rd=5849&pm=2913">UserName</A> (SRM 203, Div 2 easy).  What the problem is asking for you to do is to find the first variant of a given username that is not already taken.  Note that the problem has not yet said anything about variable names or types, or input formats.
+   <br/><br/>
+   There will also be a low-level description of the input.  At the bare minimum, the types and variable names of the inputs will be given to you, as well as what they correspond to and what they mean.  Sometimes much more information about input formats will be given; this typically occurs in more complicated problems.
+   <br/><br/>
+   Sometimes, even more detailed background information needs to be provided.  That is also typically given here, or sometimes in the Notes section.
+   <br/><br/>
+   </li>
+   <li>
+   <span class=bodySubtitle>The Definition</span><br/>
+   This is a very barebones description of what TopCoder wants you to submit.  It gives the class name, the method name to create inside that class, the parameters it should take, the return value, and a method signature.  As mentioned before, the basic form of a submitted solution is to create a class containing a method with the required signature.  Make sure that the class is declared public if not using C++, and make sure to declare the method public also.
+   <br/><br/>
+   </li>
+   <li>
+   <span class=bodySubtitle>Notes and Constraints</span><br/>
+   Notes don't always appear.  If they do, READ THEM!  Typically they will highlight issues that may have come up during testing, or they may provide background information that you may not have known beforehand. The constraints section gives a list of constraints on the input variables.  These include constraints on sizes of strings and arrays, or allowed characters, or values of numbers.  These will be checked automatically, so there is no need to worry about writing code to check for these cases.
+   <br/><br/>
+   Be careful of the constraints.  Sometimes they may rule out certain algorithms, or make it possible for simpler but less efficient algorithms to run in time.  There can be a very big difference between an input of 50 numbers and an input of 5, both in terms of solutions that will end up passing, and in terms of ease of coding.
+   <br/><br/>
+   </li>
+   <li>
+   <span class=bodySubtitle>Examples</span><br/>
+   These are a list of sample test cases to test your program against.  It gives the inputs (in the correct order) and then the expected return value, and sometimes an annotation below, to explain the case further if necessary.
+   <br/><br/>
+   It goes without saying that you should test your code against all of the examples, at the very least.  There may be tricky cases, large cases, or corner cases that you have not considered when writing the solution; fixing issues before you submit is infinitely preferable to having your solution challenged or having it fail during system testing.
+   <br/><br/>
+   The examples are not always comprehensive!  Be aware of this.  For some problems, passing the examples is almost the same as passing every test case.
+   <br/><br/>
+   For others, however, they may intentionally (or not) leave out some test case that you should be aware of.  If you are not completely sure that your code is correct, test extensively, and try to come up with your own test cases as well.  You may even be able to use them in the challenge phase.
+   </li>
+   </ul>
+
+<span class=bodySubtitle>Solving a problem</span><br/>
+Now we'll walk through a simple problem and dissect it, bit by bit.
+<br/><br/>
+Have a look at <A href="/tc?module=ProblemDetail&rd=4775&pm=2297">BettingMoney</A>, the SRM 191 Division 2 Easy.  First we identify the parts of this problem.  In the statement itself, we first have the situation behind the problem - gambling.  Then we have a little bit of background information about the betting itself.  Then, we have a description of the input - data types, variable names, and what they represent.  After this we have the task: to determine what the net gain is for the day and return the amount in cents.
+<br/><br/>
+Also note the two explanatory paragraphs at the end; the first provides an example of the input format and types, and the second gives a completely worked example, which should be extremely helpful to your understanding.
+<br/><br/>
+The definition section is uninteresting, but it is there for completeness' sake.
+<br/><br/>
+The notes for this problem are fairly comprehensive.  In terms of background information, you might not know that there are 100 cents in a dollar.  And in terms of clarification, there is explicit confirmation that the return value may in fact be negative, and that the margin of victory (the variable finalResult) is all that matters when deciding which payoff to make.
+<br/><br/>
+The constraints are fairly straightforward.  The input arrays will contain the same number of elements, between 1 and 50, inclusive.  (50 is a long-standing TopCoder tradition for input sizes).  finalResult will be between 0 and that same size minus one (which means, if you give it a little thought, that someone will win their bet).  Each element of each array will be between 0 and 5000, inclusive.  This is most likely to make sure that integer arithmetic will do the job just fine.
+<br/><br/>
+Finally, there's the examples section.  Often, the problem statement section will contain an annotated example case, which will become example case 0.  Then there are a couple of other example cases, some with explanation and some without.  Also note that one of the examples tests for negative return values, to supplement the notes.
+<br/><br/>
+
+<span class=bodySubtitle>A More Complicated Example</span><br/>
+Now have a look at <A href="/tc?module=ProblemDetail&rd=4655&pm=1835">Poetry</A>, the SRM 170 Div 2 Hard.  In this case, you may not be able to actually solve this in the time allotted.  That's ok - the emphasis should first be on understanding what the problem says, even if you can't code it in time.
+<br/><br/>
+The first section tells you immediately what you want to do - you'll be given a poem, and you will have to determine what its rhyme scheme is.  The rest of the section clarifies what this actually means, in bottom-up fashion (from simpler concepts to more complicated ones).  It defines what a legal word is and how to extract words from a poem, and then it defines what it means when two words rhyme - that their ending patterns are equal.  The concept of ending pattern is then defined.  After all this, we find out what it means to have two lines of the poem rhyme: their last words have to rhyme.  Finally, (whew!) we are told how to actually construct the rhyme scheme and in what format to return it.
+<br/><br/>
+This is a problem where a lot of terms need to be defined to get to the heart of things, and so all the definitions deserve at least a couple of read-throughs, especially if you're not sure how they all fit together.
+<br/><br/>
+The next section is the problem definition section, just for reference. Then there is a single note that clarifies a point that may have been overlooked when it was stated in the problem statement itself: that blank lines will be labeled with a corresponding space in the rhyme scheme.
+<br/><br/>
+The constraints are fairly standard for TopCoder problems: there will be between 1 and 50 lines in the poem, and each line will contain between 0 and 50 characters.  The only allowable characters in the poem will be spaces and letters, and there will be only legal words in poem.
+<br/><br/>
+Finally, there are a number of examples.  Usually, problems which are trickier or which have more complex problem statements will have more examples, to clarify at least some of the finer points of the problem statement.  Again, this doesn't mean that passing the example cases given is equivalent to having a completely correct solution, but there is a higher chance that you can catch any bugs or trivial mistakes if there are more examples that you know the answers to.
+<br/><br/>
+
+<span class=bodySubtitle>Try it Yourself</span><br/>
+Listed below are a number of additional problems, grouped roughly by difficulty of comprehension.  Try them for yourself in the TopCoder Arena Practice Rooms.  Even if you can't solve them, at least work on figuring out what the problem wants by breaking it down in this manner.
+<br/><br/>
+<span class=bodySubtitle>Mentioned in this writeup:</span><br/>
+SRM 203 Div 2 Easy - <A href="/tc?module=ProblemDetail&rd=5849&pm=2913">UserName</A><br/>
+SRM 191 Div 2 Easy - <A href="/tc?module=ProblemDetail&rd=4775&pm=2297">BettingMoney</A><br/>
+SRM 203 Div 1 Easy - <A href="/tc?module=ProblemDetail&rd=5849&pm=2911">MatchMaking</A><br/>
+SRM 170 Div 2 Hard - <A href="/tc?module=ProblemDetail&rd=4655&pm=1835">Poetry</A>
+<br/><br/>
+<span class=bodySubtitle>Similar tasks:</span><br/>
+SRM 146 Div 2 Easy - <A href="/tc?module=ProblemDetail&rd=4535&pm=1692">Yahtzee</A><br/>
+SRM 200 Div 2 Easy - <A href="/tc?module=ProblemDetail&rd=5075&pm=2868">NoOrderOfOperations</A><br/>
+SRM 185 Div 2 Easy - <A href="/tc?module=ProblemDetail&rd=4745&pm=1962">PassingGrade</A><br/>
+SRM 155 Div 2 Easy - <A href="/tc?module=ProblemDetail&rd=4580&pm=1686">Quipu</A><br/>
+SRM 147 Div 2 Easy - <A href="/tc?module=ProblemDetail&rd=4540&pm=1667">CCipher</A><br/>
+SRM 208 Div 1 Easy - <A href="/tc?module=ProblemDetail&rd=5854&pm=2923">TallPeople</A><br/>
+SRM 173 Div 1 Easy - <A href="/tc?module=ProblemDetail&rd=4670&pm=2002">WordForm</A><br/>
+SRM 162 Div 1 Easy - <A href="/tc?module=ProblemDetail&rd=4615&pm=1846">PaperFold</A>
+<br/><br/>
+<span class=bodySubtitle>More challenging tasks:</span><br/>
+SRM 197 Div 2 Hard - <A href="/tc?module=ProblemDetail&rd=5072&pm=2829">QuickSums</A><br/>
+SRM 158 Div 1 Hard - <A href="/tc?module=ProblemDetail&rd=4598&pm=1157">Jumper</A><br/>
+SRM 170 Div 1 Easy - <A href="/tc?module=ProblemDetail&rd=4655&pm=1915">RecurrenceRelation</A><br/>
+SRM 177 Div 1 Easy - <A href="/tc?module=ProblemDetail&rd=4690&pm=1609">TickTick</A><br/>
+SRM 169 Div 2 Hard - <A href="/tc?module=ProblemDetail&rd=4650&pm=1876">Twain</A><br/>
+SRM 155 Div 1 Med  - <A href="/tc?module=ProblemDetail&rd=4580&pm=1694">QuipuReader</A>
+         </p>
+
+
+        </td>
+<!-- Center Column Ends -->
+
+<!-- Right Column Begins -->
+         <td width="170" id="onRight">
+            
+
+
+
+<script type="text/javascript" language="javascript">
+
+</script>
+
+
+
+<div class="rightColContent">
+    <br /><br />
+</div>
+
+
+         </td>
+<!-- Right Column Ends -->
+
+<!-- Gutter -->
+         <td width="10"><img src="/i/clear.gif" width="10" height="1" border="0"></td>
+<!-- Gutter Ends -->
+    </tr>
+</table>
+
+<div id="onBottom">
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+    <tr>
+        <td width="100%" class="footer">
+            <a href="http://www.topcoder.com/" class="footerLinks">Home</a>&#160;&#160;|&#160;&#160;
+            <a href="http://www.topcoder.com/home" class="footerLinks">About TopCoder</a>&#160;&#160;|&#160;&#160;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index" class="footerLinks">Press Room</a>&#160;&#160;|&#160;&#160;
+            <a href="http://www.topcoder.com/home/lets-talk-2/" class="footerLinks">Contact Us</a>&#160;&#160;|&#160;&#160;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=jobs" class="footerLinks">Careers</a>&#160;&#160;|&#160;&#160;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy" class="footerLinks">Privacy</a>&#160;&#160;|&#160;&#160;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms" class="footerLinks">Terms</a>
+            <br />
+            <a href="http://www.topcoder.com/tc" class="footerLinks">Competitions</a>&#160;&#160;|&#160;&#160;
+            <a href="http://www.topcoder.com/cockpit" class="footerLinks">Cockpit</a>        </td>
+    </tr>
+    <tr>
+      <td width="100%" class="copyright">Copyright &#169; 2001-2010, TopCoder, Inc. All rights reserved.</td></tr>
+</tbody>
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6340959-1");
+pageTracker._trackPageview();
+</script>
+</div>
+
+</body>
+
+</html>

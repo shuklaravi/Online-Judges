@@ -1,0 +1,27 @@
+conversions...
+Lex_Ana -> LexA
+mStr = str
+defKeyi = keyW.size()
+defKey = keyW
+defOpi = opeR.size()
+defOprStr = opeR
+defOpr = opStr
+defDel = delI
+in func lexical (Find_Lex)
+i = idx
+IsMxIden = chkIdent
+mxIden = validIndet
+mxIdeni = validIdent.size()
+Litfl = literal
+Liti = literal.size()
+Err = error
+IsOpr = isOper
+mxOpr = operatorr
+mxOpri = operatorr.size()
+isOpr = isOper
+mxDel = delimitor
+mxDel = delimitor.size()
+IsDel = isDelimi
+inTok = token
+inToki = token.size()
+

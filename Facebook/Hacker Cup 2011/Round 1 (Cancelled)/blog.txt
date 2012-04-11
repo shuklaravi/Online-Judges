@@ -1,0 +1,4 @@
+As always facebook was sucessful in wasting my precious (:P) time on Facebook. But this time this was because I was facebooking but because I was coding.
+Facebook Hacker Cup 2011 Round 1A was yet another un-sucessful attempt. They tried to emulate the Google Code Jam but were no were close to the quality with which Googler conduct their contest. And I thought Facebook was competing with Google. 
+While Facebook(ers) set to rectify their submission system. I did a small investigation of my own. All you need is a firebug (firefox plugin)
+

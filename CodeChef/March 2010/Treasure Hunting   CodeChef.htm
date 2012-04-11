@@ -1,0 +1,946 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0044)http://www.codechef.com/MARCH10/problems/N1/ -->
+<HTML xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en" dir="ltr" class="js"><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<SCRIPT type="text/javascript">var _sf_startpt=(new Date()).getTime()</SCRIPT>
+
+  	<SCRIPT src="./Treasure Hunting   CodeChef_files/FeatureLoader.js.php" type="text/javascript"></SCRIPT><TITLE>Treasure Hunting | CodeChef</TITLE><META name="keywords" content="programming,language,algorithm,contest,contester,Java,C#,Pascal,C,C++,python,ruby,caml,ocaml,perl,haskell,lisp,prolog,fortran,assembler,asembler,functional,online,judge,problem,problemset,ACM"><SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/XFBML"></SCRIPT><LINK rel="stylesheet" type="text/css" href="./Treasure Hunting   CodeChef_files/connect-css"></HEAD><BODY class="sidebar-right lightbox-processed"><DIV id="FB_HiddenContainer" style="position:absolute; top:-10000px; left:-10000px; width:0px; height:0px;"><DIV><IFRAME name="loginStatus" src="./Treasure Hunting   CodeChef_files/login_status.htm" class="FB_SERVER_IFRAME" scrolling="no" frameborder="0"></IFRAME></DIV><DIV><EMBED width="1" height="1" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/flashplayer" allowscriptaccess="always" name="flashXdComm" id="flashXdComm" bgcolor="#869ca7" quality="high" src="http://static.ak.fbcdn.net/rsrc.php/z9W3G/hash/b0l9i5c3.swf"></DIV></DIV>
+	<SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/fbconnect.js"></SCRIPT> 
+    
+    
+
+<LINK rel="shortcut icon" href="http://www.codechef.com/misc/favicon.ico" type="image/x-icon">
+    <LINK type="text/css" rel="stylesheet" media="all" href="./Treasure Hunting   CodeChef_files/4e9fe79ba273a17a43d88ed905146aa2.css">
+    <SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/jquery.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/drupal.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/nice_menus.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/timer.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/fivestar.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/lightbox.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/jquery.scrollTo-min.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/jquery.localscroll-min.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/tableofcontents.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./Treasure Hunting   CodeChef_files/common.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)sites/default/files", "default_image": "/sites/all/modules/lightbox2/images/brokenimage.jpg", "border_size": "10", "font_color": "000", "box_color": "eeedec", "top_position": "", "overlay_opacity": "0.8", "overlay_color": "000", "disable_close_click": 1, "resize_sequence": "0", "resize_speed": 400, "fade_in_speed": 400, "slide_down_speed": 600, "use_alt_layout": 0, "disable_resize": 0, "disable_zoom": 0, "force_show_nav": 0, "loop_items": 0, "node_link_text": "View Image Details", "node_link_target": 0, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": 0, "custom_trigger_classes": "", "disable_for_gallery_lists": true, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": true, "slideshow_automatic_exit": true, "show_play_pause": true, "pause_on_next_click": false, "pause_on_previous_click": true, "loop_slides": false, "iframe_width": "500", "iframe_height": "70", "iframe_border": 1, "enable_video": 0 } });
+//--><!]]>
+</SCRIPT>
+
+  
+  <CENTER>
+
+    <DIV id="header" class="wrapper">
+      <DIV class="inner-wrapper">
+        <!-- Header -->
+        <DIV id="logo-floater" class="cols-2">
+        <A href="http://www.codechef.com/" title=""><IMG src="./Treasure Hunting   CodeChef_files/logo.png" alt="" id="logo"><SPAN></SPAN></A>        </DIV>
+		<DIV class="cols-2">
+			<DIV id="custom-login">
+				<!--Hello <strong>Admin</strong>, Check your <strong><a href="">Account</a></strong> or <a href="/logout">Log Out</a>-->
+				<DIV id="user-bar"><FORM action="http://www.codechef.com/MARCH10/problems/N1?destination=node%2F289099" accept-charset="UTF-8" method="post" id="user-login-form">
+<DIV><SPAN>LOGIN</SPAN><DIV class="form-item" id="edit-name-34-wrapper">
+ <LABEL for="edit-name-34">Username: <SPAN class="form-required" title="This field is required.">*</SPAN></LABEL>
+ <INPUT type="text" maxlength="60" name="name" id="edit-name-34" size="15" value="" class="form-text required">
+</DIV>
+<DIV class="form-item" id="edit-pass-34-wrapper">
+ <LABEL for="edit-pass-34">Password: <SPAN class="form-required" title="This field is required.">*</SPAN></LABEL>
+ <INPUT type="password" name="pass" id="edit-pass-34" maxlength="60" size="15" class="form-text required">
+</DIV>
+<INPUT type="image" name="submit" id="edit-submit-34" class="form-submit" src="./Treasure Hunting   CodeChef_files/custom-login-submit-bg.gif">
+<DIV class="item-list"><UL><LI class="first"><A href="http://www.codechef.com/user/register" title="Register">Register</A></LI>
+<LI class="last"><A href="http://www.codechef.com/user/password" title="Forgot Password?">Forgot Password?</A></LI>
+</UL></DIV>
+<INPUT type="hidden" name="form_build_id" id="form-76ffeb476b9d57663a8948fb71730b40" value="form-76ffeb476b9d57663a8948fb71730b40">
+<INPUT type="hidden" name="form_id" id="edit-user-login-block-34" value="user_login_block">
+
+</DIV></FORM>
+</DIV>        	</DIV>
+        	
+        	<DIV id="block-nice_menus-1" class="block block-nice_menus block-header">
+  <DIV class="content">
+    <H2><SPAN class="nice-menu-hide-title">Site Navigation</SPAN></H2>    <UL class="nice-menu nice-menu-down" id="nice-menu-1"><LI id="menu-302" class="menuparent menu-path-problems-easy"><A href="http://www.codechef.com/problems/easy" title="">PRACTICE</A><UL><LI id="menu-303" class="menu-path-problems-easy"><A href="http://www.codechef.com/problems/easy" title="">Easy</A></LI>
+<LI id="menu-304" class="menu-path-problems-medium"><A href="http://www.codechef.com/problems/medium" title="">Medium</A></LI>
+<LI id="menu-305" class="menu-path-problems-hard"><A href="http://www.codechef.com/problems/hard" title="">Hard</A></LI>
+</UL>
+</LI>
+<LI id="menu-309" class="menuparent menu-path-contests"><A href="http://www.codechef.com/contests" title="">COMPETE</A><UL><LI id="menu-1370" class="menu-path-www.codechef.com-MARCH10-"><A href="http://www.codechef.com/MARCH10/" title="">March Algorithm Challenge</A></LI>
+<LI id="menu-1368" class="menu-path-www.codechef.com-FEB10-"><A href="http://www.codechef.com/FEB10/" title="">February Algorithm Challenge</A></LI>
+<LI id="menu-1311" class="menu-path-www.codechef.com-JAN10-"><A href="http://www.codechef.com/JAN10/" title="">January Algorithm Challenge</A></LI>
+<LI id="menu-922" class="menu-path-www.codechef.com-DEC09-"><A href="http://www.codechef.com/DEC09/" title="">December Algorithm Challenge</A></LI>
+</UL>
+</LI>
+<LI id="menu-138" class="menuparent menu-path-discuss.codechef.com-"><A href="http://discuss.codechef.com/" title="">DISCUSS</A><UL><LI id="menu-920" class="menu-path-wiki-"><A href="http://www.codechef.com/wiki/" title="">Wiki</A></LI>
+<LI id="menu-139" class="menu-path-discuss.codechef.com-"><A href="http://discuss.codechef.com/" title="">Forums</A></LI>
+<LI id="menu-140" class="menu-path-blog.codechef.com-"><A href="http://blog.codechef.com/" title="">Blog</A></LI>
+<LI id="menu-141" class="menu-path-www.twitter.com-codechef"><A href="http://www.twitter.com/codechef" title="">Twitter</A></LI>
+</UL>
+</LI>
+<LI id="menu-143" class="menuparent menu-path-node-124098"><A href="http://www.codechef.com/community" title="">COMMUNITY</A><UL><LI id="menu-650" class="menu-path-node-124111"><A href="http://www.codechef.com/meetups" title="CodeChef Meetups">CodeChef Meetups</A></LI>
+<LI id="menu-732" class="menu-path-node-157511"><A href="http://www.codechef.com/campus_chapter/about" title="CodeChef Campus Chapter">Campus Chapters</A></LI>
+<LI id="menu-733" class="menu-path-node-157517"><A href="http://www.codechef.com/hostyourcontest" title="Hosting Contest on CodeChef">Host your Contest</A></LI>
+<LI id="menu-146" class="menu-path-node-12"><A href="http://www.codechef.com/usergroups" title="">User Groups</A></LI>
+<LI id="menu-715" class="menu-path-node-157473"><A href="http://www.codechef.com/techtalks" title="CodeChef TechTalks">CodeChef TechTalks</A></LI>
+<LI id="menu-1371" class="menu-path-node-292416"><A href="http://www.codechef.com/educational-initiatives" title="Directi&#39;s Educational Initiatives">All Educational Initiatives</A></LI>
+</UL>
+</LI>
+<LI id="menu-147" class="menuparent menu-path-node-3"><A href="http://www.codechef.com/help" title="">HELP</A><UL><LI id="menu-643" class="menu-path-www.codechef.com-wiki-faq"><A href="http://www.codechef.com/wiki/faq" title="">Frequently Asked Questions</A></LI>
+<LI id="menu-710" class="menu-path-www.codechef.com-wiki-faq-problem-setters"><A href="http://www.codechef.com/wiki/faq-problem-setters" title="">FAQ for problem setters</A></LI>
+<LI id="menu-856" class="menu-path-ranklist-AX"><A href="http://www.codechef.com/ranklist/AX" title="The ranklist (Global)">Ranks</A></LI>
+<LI id="menu-850" class="menu-path-www.codechef.com-wiki-tutorials"><A href="http://www.codechef.com/wiki/tutorials" title="">Tutorials</A></LI>
+</UL>
+</LI>
+<LI id="menu-150" class="menuparent menu-path-node-1"><A href="http://www.codechef.com/aboutus" title="">ABOUT</A><UL><LI id="menu-151" class="menu-path-node-1"><A href="http://www.codechef.com/aboutus" title="">About CodeChef</A></LI>
+<LI id="menu-849" class="menu-path-node-178314"><A href="http://www.codechef.com/team" title="Team CodeChef">Team CodeChef</A></LI>
+<LI id="menu-708" class="menu-path-node-157468"><A href="http://www.codechef.com/press" title="Press Room">Press Room</A></LI>
+<LI id="menu-1312" class="menu-path-www.codechef.com-financials-"><A href="http://www.codechef.com/financials/" title="">CodeChef Financials</A></LI>
+<LI id="menu-1313" class="menu-path-www.codechef.com-sponsorships"><A href="http://www.codechef.com/sponsorships" title="">CodeChef Sponsorships</A></LI>
+<LI id="menu-709" class="menu-path-node-157470"><A href="http://www.codechef.com/ceoscorner" title="CEO&#39;s Corner">CEO's Corner</A></LI>
+<LI id="menu-152" class="menu-path-www.directi.com-"><A href="http://www.directi.com/" title="">About Directi</A></LI>
+<LI id="menu-154" class="menu-path-careers.directi.com-"><A href="http://careers.directi.com/" title="">Careers</A></LI>
+</UL>
+</LI>
+</UL>
+  </DIV>
+</DIV>
+		</DIV>
+
+      </DIV>
+    </DIV>
+    <!-- /HEADER -->
+	<CENTER>
+	<TABLE cellspacing="0" cellpadding="10" id="maintable" class="maintable">
+		<TBODY><TR>
+			<TD class="content" width="99%">
+				<DIV class="wrapper" id="content-regions">
+					<DIV class="inner-wrapper rounded-cr-body">
+						<DIV class="rounded-cr-header">
+							<DIV class="rounded-cr-footer">
+								<DIV id="breadcrumb"><DIV class="breadcrumb"><A href="http://www.codechef.com/">Home</A>&nbsp;»&nbsp;<A href="http://www.codechef.com/contests/">Compete</A>&nbsp;»&nbsp;<A href="http://www.codechef.com/MARCH10/">March 2010 Contest</A>&nbsp;»&nbsp;Treasure Hunting</DIV></DIV>
+								<DIV id="primary-colum-pad">
+									<DIV id="primary-colum-wrapper">
+										<IMG class="content-wrapper-header" src="./Treasure Hunting   CodeChef_files/content-wrapper-top-big.gif">
+										<DIV id="problem-page">
+											<DIV class="prob">
+												<DIV class="primary-col-wrapper">
+																																																		        													<TABLE class="pagetitle-prob" width="100%" cellspacing="0" cellpadding="0" border="0">
+														<TBODY><TR>
+															<TD width="55%">
+																<H1>Treasure Hunting</H1>
+																<P>Problem code: N1</P>
+															</TD>
+															<TD>
+																<UL class="button-list">
+																																																		<LI><A href="http://www.codechef.com/MARCH10/status/N1/">All Submissions</A></LI>
+																</UL>
+															</TD>
+														</TR>
+													</TBODY></TABLE>
+													<DIV class="primary-colum-width-left">
+														<DIV id="node-289099" class="node clear-block">
+
+  <DIV class="meta">
+  
+    </DIV>
+
+  <DIV class="content">
+    <H3> All submissions for this problem are available. </H3><P>Treasure Hunting is a great computer game that has attracted generations of Bytelandian children.
+</P><P>In the game, there is a maze divided into NxN squares. Dave starts in the top-left corner, which is square (1,1), and needs to go to the bottom-right corner, which is square (n,n).
+</P><P>Some of the squares are blocked and some of the squares contain treasures.
+</P><P>Dave needs to capture all the treasures in the maze before going to square (n,n).
+</P><P>In each second, Dave can go to one of its four adjacent squares (if the destination is not blocked). 
+</P><P>Find the earliest time that Dave can reach the destination(n,n) after collecting all the treasures in the maze.
+
+</P><H3>Input</H3>
+<P></P><P>The first line contains t, the number of test cases (about 15). Then t test cases follow. Each test case has the following form.
+</P><P>The first line contains N (1 &lt;= N &lt;= 13), the size of the maze
+</P><P>The N following lines describe the maze. The meaning of the symbols is as follows:
+</P><P>'.' : an empty square
+</P><P>'*' : a treasure
+</P><P>'#' : a blocked square
+</P><P>The number of treasures in the maze does not exceed 13. Squares (1,1) and (n,n) are always empty.
+</P><P>Each test case's input is separated by a blank line.
+
+</P><H3>Output</H3>
+<P></P><P>For each test case, print in a single line the earliest time that Dave can reach the destination after collecting all the treasures. If Dave cannot reach the destination, print -1.
+
+</P><H3>Example</H3>
+
+<PRE><B>Input:</B>
+4
+
+3
+...
+.##
+*#.
+
+3
+..*
+...
+...
+
+3
+..*
+*..
+...
+
+4
+....
+.#.*
+.#*.
+**#.
+
+<B>Output:</B>
+-1
+4
+6
+16
+</PRE><P></P>  </DIV>
+  <HR>
+  <TABLE cellspacing="0" cellpadding="0" align="left">
+	<TBODY><TR>
+		<TD>Date:</TD>
+		<TD>2010-02-05</TD>
+	</TR>
+	<TR>
+		<TD>Time limit:</TD>
+		<TD>2s</TD>
+	</TR>
+	<TR>
+		<TD>Source limit:</TD>
+		<TD>50000</TD>
+	</TR>
+	<TR>
+		<TD>Languages:</TD>
+		<TD>C C99 strict C++ 4.0.0-8 C++ 4.3.2 PAS gpc PAS fpc JAVA NICE JAR C# NEM ST ASM D FORT ADA BASH PERL PYTH RUBY LUA ICON PIKE PHP SCM guile SCM qobi LISP sbcl LISP clisp SCALA HASK ERL CAML CLPS PRLG WSPC BF ICK TEXT JS </TD>
+	</TR>
+  </TBODY></TABLE>
+  <P style="clear:left;"><BR></P>
+  <UL class="button-list button-list-left">
+	<LI style="display:none"><A href="http://www.codechef.com/MARCH10/problems/N1/#">Submit</A></LI>
+  </UL>
+  
+  
+  <HR>
+  <H4 style="text-decoration: none;">Comments</H4>
+  <UL class="links inline"><LI class="comment_forbidden first last"><SPAN><I><A href="javascript: void(0)" onclick="$(&#39;[name=name]&#39;).focus();">Login</A> or <A href="http://www.codechef.com/user/register">Register</A> to post a comment.</I><P></P></SPAN></LI>
+</UL></DIV>
+<DIV id="comments">
+  <A id="comment-6133"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6133" class="active">@triplem
+how do u code too</A></H3>
+
+  <DIV class="submitted">
+    <B>soc</B> - 1st Mar,2010 15:24:18.  </DIV>
+
+  <DIV class="content">
+    <P>@triplem</P>
+<P>how do u code too fast......</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6139"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6139" class="active">I see the time limit is 2s</A></H3>
+
+  <DIV class="submitted">
+    <B>Toxologic</B> - 1st Mar,2010 16:36:18.  </DIV>
+
+  <DIV class="content">
+    <P>I see the time limit is 2s but one successful submission has a time limit of 3.8s</P>
+<P>Is that normal or an error?</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6140"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6140" class="active">FAQ</A></H3>
+
+  <DIV class="submitted">
+    <B>Stephen Merriman</B> - 1st Mar,2010 16:38:56.  </DIV>
+
+  <DIV class="content">
+    <P><A href="http://www.codechef.com/freelinking/FAQ" class="freelinking">FAQ</A></P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6144"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6144" class="active">@Toxologic The time limit</A></H3>
+
+  <DIV class="submitted">
+    <B>Brian Drake</B> - 1st Mar,2010 17:15:43.  </DIV>
+
+  <DIV class="content">
+    <P>@Toxologic The time limit stated in each problem applies to each file for that problem; the time given for each submission is the sum of the times for all the files processed by that submission.</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6166"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6166" class="active">Brian Drake, I've read the</A></H3>
+
+  <DIV class="submitted">
+    <B>Toxologic</B> - 2nd Mar,2010 10:10:08.  </DIV>
+
+  <DIV class="content">
+    <P>Brian Drake, I've read the FAQ. Its clearly written over there that all the test cases are to be considered in one single time limit. I'm assuming that Java is expemted for a few seconds in time limit as stated in FAQ.</P>
+<P>Anyways, Stephen and Brian, thanks for the reply!</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6167"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6167" class="active">It also says that if there</A></H3>
+
+  <DIV class="submitted">
+    <B>Stephen Merriman</B> - 2nd Mar,2010 10:22:32.  </DIV>
+
+  <DIV class="content">
+    <P>It also says that if there are multiple input <B>files</B>, then the reported time is the sum for each file, which can easily exceed two seconds; what Brian said was completely correct :)</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6172"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6172" class="active">The question says, under the</A></H3>
+
+  <DIV class="submitted">
+    <B>Pradeep George Mathias</B> - 2nd Mar,2010 11:42:00.  </DIV>
+
+  <DIV class="content">
+    <P>The question says, under the Output: "If Dave cannot reach the destination, print -1." What if he cannot reach a particular treasure, but he can reach the destination?</P>
+<P>Do we output the -1 or the shortest distance from 1,1 to n,n taking as many treasures as possible?</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6191"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6191" class="active">Everything that I believe,</A></H3>
+
+  <DIV class="submitted">
+    <B>rishabh mishra</B> - 2nd Mar,2010 19:52:11.  </DIV>
+
+  <DIV class="content">
+    <P>
+</P><P class="MsoNormal">Everything that I believe, crawls from underneath the streets. Everything I truly love, comes from somewhere high above. Everything that I believe, is wrong with you is wrong with me. Everything I truly love, I love in you I love me. Take my love, take it down Climbed a mountain and I turned around And if you see my reflection in a snow covered hill Well the landslide bring it down And if you see my reflection in a snow covered hill Well the landslide bring it down Well the landslide bring it down</P>
+<P class="MsoNormal">&nbsp;</P>
+<P class="MsoNormal"><A name="OLE_LINK3"><SPAN><SPAN>Take my love, take it down</SPAN></SPAN></A></P>
+<P class="MsoNormal"><SPAN><SPAN><SPAN>Climbed a mountain and I turned around</SPAN></SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN><SPAN><SPAN>And if you see my reflection in a snow covered hill</SPAN></SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN><SPAN><SPAN>Well the landslide bring it down</SPAN></SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN><SPAN><SPAN>And if you see my reflection in a snow covered hill</SPAN></SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN><SPAN><SPAN>Well the landslide bring it down</SPAN></SPAN></SPAN></P>
+<P class="MsoNormal"><SPAN><SPAN><SPAN>Well the landslide bring it down</SPAN></SPAN></SPAN></P>
+  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6201"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6201" class="active">hi,
+i get a status saying</A></H3>
+
+  <DIV class="submitted">
+    <B>Muthukumaran,A</B> - 3rd Mar,2010 13:52:47.  </DIV>
+
+  <DIV class="content">
+    <P>hi,</P>
+<P>i get a status saying that an internal error occured in the system..</P>
+<P>what does that mean??</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6203"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6203" class="active">They're looking into it. You</A></H3>
+
+  <DIV class="submitted">
+    <B>Stephen Merriman</B> - 3rd Mar,2010 15:29:54.  </DIV>
+
+  <DIV class="content">
+    <P>They're looking into it. You can see the results of your submissions by clicking on the 'My submissions' link on this page.</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6208"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6208" class="active">@Pradeep Print -1.</A></H3>
+
+  <DIV class="submitted">
+    <B>Aniruddha (Codechef) </B> - 3rd Mar,2010 15:34:33.  </DIV>
+
+  <DIV class="content">
+    <P>@Pradeep Print -1.</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6224"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6224" class="active">Suppose we have reached (n,n)</A></H3>
+
+  <DIV class="submitted">
+    <B>H Umesh</B> - 3rd Mar,2010 23:53:21.  </DIV>
+
+  <DIV class="content">
+    <P>Suppose we have reached (n,n) without collecting all treasures, and then, can we move out from (n,n), collect the remaining treasures and come back to (n,n)? For example in :</P>
+<P>...</P>
+<P>##.</P>
+<P>#*.</P>
+<P>Is the answer&nbsp; 6 or -1?</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6236"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6236" class="active">You are allowed to pass</A></H3>
+
+  <DIV class="submitted">
+    <B>Stephen Merriman</B> - 4th Mar,2010 03:37:08.  </DIV>
+
+  <DIV class="content">
+    <P>You are allowed to pass through (n,n) part way through your path.</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6242"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6242" class="active">to h umesh
+the answer will be</A></H3>
+
+  <DIV class="submitted">
+    <B>chellusnehasree</B> - 4th Mar,2010 07:26:44.  </DIV>
+
+  <DIV class="content">
+    <P>to h umesh</P>
+<P>the answer will be 6.observe the example 3</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6250"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6250" class="active">@chellusnehasree None of the</A></H3>
+
+  <DIV class="submitted">
+    <B>Brian Drake</B> - 4th Mar,2010 17:20:19.  </DIV>
+
+  <DIV class="content">
+    <P>@chellusnehasree None of the examples involve Dave passing through (n, n) in the middle of his path.</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6347"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6347" class="active">@admin: my code is runnig</A></H3>
+
+  <DIV class="submitted">
+    <B>piyush</B> - 5th Mar,2010 23:33:29.  </DIV>
+
+  <DIV class="content">
+    <P>@admin: my code is runnig well within 1 sec for 15 inputs for a test case of 13*13</P>
+<P>Then why am i getting timeout ??</P>
+<P>Can you give me and example case, where it timeouts?</P>
+<P>Thanks.</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6348"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6348" class="active">@admin: I mean running within</A></H3>
+
+  <DIV class="submitted">
+    <B>piyush</B> - 5th Mar,2010 23:34:22.  </DIV>
+
+  <DIV class="content">
+    <P>@admin: I mean running within 1 sec on my laptop.</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6349"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6349" class="active">@piyush. admin cant help you</A></H3>
+
+  <DIV class="submitted">
+    <B>Mahesh Chandra Sharma</B> - 5th Mar,2010 23:42:49.  </DIV>
+
+  <DIV class="content">
+    <P>@piyush. admin cant help you till contest is over...</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6363"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6363" class="active">What ti the solution for
+1
+.</A></H3>
+
+  <DIV class="submitted">
+    <B>Maya Max</B> - 6th Mar,2010 11:25:46.  </DIV>
+
+  <DIV class="content">
+    <P>What ti the solution for</P>
+<P>1</P>
+<P>.</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6367"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6367" class="active">@admin what is memory limit</A></H3>
+
+  <DIV class="submitted">
+    <B>piyush</B> - 6th Mar,2010 13:14:23.  </DIV>
+
+  <DIV class="content">
+    <P>@admin what is memory limit permitted ?</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6392"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6392" class="active">@Admin&nbsp; I'm getting TLE with</A></H3>
+
+  <DIV class="submitted">
+    <B>Harish Narware</B> - 7th Mar,2010 00:18:13.  </DIV>
+
+  <DIV class="content">
+    <P>@Admin&nbsp; I'm getting TLE with 0k memory used.how is that possible? some memory usage must be recorded by the judge?</P>
+<P>please clarify (submission ID 200840)</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6429"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6429" class="active">@Admin
+Please confirm</A></H3>
+
+  <DIV class="submitted">
+    <B>Carlos Joa</B> - 7th Mar,2010 21:55:30.  </DIV>
+
+  <DIV class="content">
+    <P>@Admin</P>
+<P>Please confirm Stephen's answer: "You are allowed to pass through (n,n) part way through your path."</P>
+<P>I'm asking because the problem states "Dave needs to capture all the treasures in the maze <B>before</B> going to  square (n,n)"</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6448"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6448" class="active">@ADMIN
+C#2 Solutions not</A></H3>
+
+  <DIV class="submitted">
+    <B>Abhijit K</B> - 8th Mar,2010 05:30:31.  </DIV>
+
+  <DIV class="content">
+    <P>@ADMIN</P>
+<P>C#2 Solutions not being accepted. Please look into the issue ASAP!</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6457"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6457" class="active">@Abhijit This is fixed. Try</A></H3>
+
+  <DIV class="submitted">
+    <B>Aniruddha (Codechef) </B> - 8th Mar,2010 13:18:35.  </DIV>
+
+  <DIV class="content">
+    <P>@Abhijit This is fixed. Try submitting now.</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6654"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6654" class="active">Can somebody explain this</A></H3>
+
+  <DIV class="submitted">
+    <B>Praveen SP</B> - 13th Mar,2010 19:42:11.  </DIV>
+
+  <DIV class="content">
+    <P>Can somebody explain this problem. I solved using DFS , BFS , all pairs shortest path and TSP. All three solutions got TLE. I could see there is a much simpler way to do this. Pls explain</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6695"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6695" class="active">DP. There are only 15</A></H3>
+
+  <DIV class="submitted">
+    <B>Stephen Merriman</B> - 14th Mar,2010 02:10:18.  </DIV>
+
+  <DIV class="content">
+    <P>DP. There are only 15 important squares (treasures + start + end). Given that you have found a certain subset (2^13) of treasures, and you are at a certain square (15), choose the optimal next treasure to get.</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6699"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6699" class="active">I remember Stephen had solved</A></H3>
+
+  <DIV class="submitted">
+    <B>k.v.vivek kumar</B> - 14th Mar,2010 02:34:45.  </DIV>
+
+  <DIV class="content">
+    <P>I remember Stephen had solved this problem in the 1st 10-15 mins of the contest.....</P>
+<P>@Stephen I believe doing so was a cakewalk 4 u, still....Hats off to you...</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+<A id="comment-6700"></A>
+<DIV class="comment clear-block">
+  
+
+  <H3><A href="http://www.codechef.com/MARCH10/problems/N1#comment-6700" class="active">http://www.spoj.pl/problems/C</A></H3>
+
+  <DIV class="submitted">
+    <B>Abhijith Reddy D</B> - 14th Mar,2010 07:26:52.  </DIV>
+
+  <DIV class="content">
+    <P><A href="http://www.spoj.pl/problems/CLEANRBT/" title="http://www.spoj.pl/problems/CLEANRBT/">http://www.spoj.pl/problems/CLEANRBT/</A></P>
+<P>:P</P>  </DIV>
+
+  <!--<ul class="links"><li class="comment_forbidden first last"><span><i><a href="javascript: void(0)" onclick="$('[name=name]').focus();">Login</a> or <a href="/user/register">Register</a> to post a comment.</i><p></p></span></li>
+</ul>-->
+  
+</DIV>
+</DIV>
+													</DIV>
+													<DIV class="primary-colum-width-right">
+														<DIV class="content-spacer-b">
+															<DIV id="block-block-9" class="block block-block">
+  <DIV class="r1 t"></DIV><DIV class="r2"></DIV><DIV class="r3"></DIV><DIV class="r4"></DIV><DIV class="r5"></DIV>
+  <DIV class="content">
+    <H3>SUCCESSFUL SUBMISSIONS FOR THIS PROBLEM:</H3>    <DIV id="rankContentDiv" class="table-results maintable"><DIV class="table-questions" id="rankContentDiv">
+<TABLE class="problems maintable" cellpadding="0" cellspacing="0" width="100%">
+<TBODY>
+<TR class="headerrow">
+	<TH width="20%">User</TH>
+	<TH align="center" width="6%">Mem</TH>
+	<TH align="center" width="6%">Time</TH>
+	<TH class="headerrowright" width="5%" align="center">Lang</TH>
+	<TH class="headerrowright" width="5%" align="center"> </TH>
+</TR><TR class="kol1" bgcolor="#e0e0e0" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/atish112" title="atish112">atish112</A></TD>
+				<TD class="statustext">2.5M</TD>
+				<TD class="statustext">0.05</TD>
+					<TD class="statustext">C</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/206059"> View Solution</A></TD></TR><TR class="kol1" bgcolor="#ffffff" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/Qinz" title="Qinz">Qinz</A></TD>
+				<TD class="statustext">3.2M</TD>
+				<TD class="statustext">0.05</TD>
+					<TD class="statustext">C++ 4.3.2</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/194254"> View Solution</A></TD></TR><TR class="kol1" bgcolor="#e0e0e0" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/ContestCrackers" title="ContestCrackers">ContestCrackers</A></TD>
+				<TD class="statustext">2M</TD>
+				<TD class="statustext">0.07</TD>
+					<TD class="statustext">C</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/199899"> View Solution</A></TD></TR><TR class="kol1" bgcolor="#ffffff" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/lympanda" title="lympanda">lympanda</A></TD>
+				<TD class="statustext">3.3M</TD>
+				<TD class="statustext">0.07</TD>
+					<TD class="statustext">C++ 4.0.0-8</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/200389"> View Solution</A></TD></TR><TR class="kol1" bgcolor="#e0e0e0" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/pmnox" title="pmnox">pmnox</A></TD>
+				<TD class="statustext">2.9M</TD>
+				<TD class="statustext">0.08</TD>
+					<TD class="statustext">C++ 4.0.0-8</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/206434"> View Solution</A></TD></TR><TR class="kol1" bgcolor="#ffffff" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/emotionalBlind" title="emotionalBlind">emotionalBlind</A></TD>
+				<TD class="statustext">3.4M</TD>
+				<TD class="statustext">0.09</TD>
+					<TD class="statustext">C++ 4.3.2</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/196111"> View Solution</A></TD></TR><TR class="kol1" bgcolor="#e0e0e0" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/nileshdalvi" title="nileshdalvi">nileshdalvi</A></TD>
+				<TD class="statustext">3.2M</TD>
+				<TD class="statustext">0.09</TD>
+					<TD class="statustext">C++ 4.3.2</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/194887"> View Solution</A></TD></TR><TR class="kol1" bgcolor="#ffffff" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/zhymaoiing" title="zhymaoiing">zhymaoiing</A></TD>
+				<TD class="statustext">3M</TD>
+				<TD class="statustext">0.09</TD>
+					<TD class="statustext">C++ 4.3.2</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/195959"> View Solution</A></TD></TR><TR class="kol1" bgcolor="#e0e0e0" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/jeneshicc" title="jeneshicc">jeneshicc</A></TD>
+				<TD class="statustext">3.3M</TD>
+				<TD class="statustext">0.09</TD>
+					<TD class="statustext">C++ 4.3.2</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/195196"> View Solution</A></TD></TR><TR class="kol1" bgcolor="#ffffff" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/balajiganapath" title="Balajiganapathi">Balajiganapathi</A></TD>
+				<TD class="statustext">3.4M</TD>
+				<TD class="statustext">0.09</TD>
+					<TD class="statustext">C++ 4.0.0-8</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/194354"> View Solution</A></TD></TR><TR class="kol1" bgcolor="#e0e0e0" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/ll931110" title="ll931110">ll931110</A></TD>
+				<TD class="statustext">1.5M</TD>
+				<TD class="statustext">0.09</TD>
+					<TD class="statustext">PAS fpc</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/194405"> View Solution</A></TD></TR><TR class="kol1" bgcolor="#ffffff" style="height:40px;">
+				<TD><A href="http://www.codechef.com/users/delgoog" title="girish">girish</A></TD>
+				<TD class="statustext">3.1M</TD>
+				<TD class="statustext">0.09</TD>
+					<TD class="statustext">C++ 4.0.0-8</TD>
+					<TD align="center"><A href="http://www.codechef.com/viewsolution/204144"> View Solution</A></TD></TR></TBODY></TABLE>
+<TABLE class="problems" border="0" width="99%">
+<TBODY>
+<TR>
+	<TD align="left" width="27%"><INPUT type="image" src="./Treasure Hunting   CodeChef_files/page-prev-inactive.gif" id="ssubmissionsContestPreviousButtoninactive" class="MARCH10 N1"></TD>
+	<TD>
+		<DIV id="ssubmissionsAjaxProgressDiv" align="center" style="display:none;">
+		<IMG src="./Treasure Hunting   CodeChef_files/ajax_loader_d.gif" style="width: 120px; height:
+15px;">
+		<INPUT type="hidden" name="ssubmissionsStart" value="12" id="ssubmissionsContestStart">
+		<INPUT type="hidden" name="ssubmissionsCount" value="12" id="ssubmissionsContestCount">
+		<INPUT type="hidden" name="userid" id="userid" value="0">
+		</DIV>
+	</TD>
+	<TD align="right" width="25%"><DIV class="p_link"><IMG src="./Treasure Hunting   CodeChef_files/page-next-active.gif" id="ssubmissionsContestNextButtonactive" class="MARCH10 N1"></DIV></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+</DIV></DIV>  </DIV>
+  <DIV class="r5"></DIV><DIV class="r4"></DIV><DIV class="r3"></DIV><DIV class="r2"></DIV><DIV class="r1 b"></DIV>
+</DIV>
+<DIV id="block-block-23" class="block block-block">
+  <DIV class="r1 t"></DIV><DIV class="r2"></DIV><DIV class="r3"></DIV><DIV class="r4"></DIV><DIV class="r5"></DIV>
+  <DIV class="content">
+        <DIV align="right"><A target="_blank" href="http://www.twitter.com/codechef"><IMG alt="" src="./Treasure Hunting   CodeChef_files/icon_twitter.png"></A><A target="_blank" href="http://www.facebook.com/home.php?#/pages/CodeChef/53227312798?ref=ts"><IMG alt="" src="./Treasure Hunting   CodeChef_files/icon_facebook.png"></A><A target="_blank" href="http://www.flickr.com/photos/directi/sets/72157617120023194/"><IMG alt="" src="./Treasure Hunting   CodeChef_files/icon_flickr.png"></A></DIV>  </DIV>
+  <DIV class="r5"></DIV><DIV class="r4"></DIV><DIV class="r3"></DIV><DIV class="r2"></DIV><DIV class="r1 b"></DIV>
+</DIV>
+														</DIV>
+													</DIV>
+												</DIV>
+											</DIV>
+											<IMG class="content-wrapper-header" src="./Treasure Hunting   CodeChef_files/content-wrapper-bootm-big.gif">
+										</DIV>
+									</DIV>
+								</DIV>
+							</DIV>
+						</DIV>
+					</DIV>
+				</DIV>
+			</TD>
+		</TR>
+	</TBODY></TABLE>
+
+        <DIV id="footer" class="wrapper">
+      <!--<div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>-->
+      <DIV class="content clear-block">
+        <!-- Footer Contents -->
+        <DIV id="block-block-13" class="block block-block block-header">
+  <DIV class="content">
+        <SCRIPT language="javascript" type="text/javascript">
+function formatTime(ts) {
+  now = new Date(ts);
+ 
+  localtime = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+  
+  if (min <= 9) {
+	 min = "0" + min;
+  }
+  if (sec <= 9) {
+	 sec = "0" + sec;
+  }
+  if (hour > 12) {
+	 hour = hour - 12;
+	 add = " PM";
+  } else {
+	 hour = hour;
+	 add = " AM";
+  }
+  if (hour == 12) {
+	 add = " PM";
+  }
+  if (hour == 00) {
+	 hour = "12";
+  }
+	
+  $('#server-time').html(((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+  
+  nextSec = (now.getTime() + 1000);
+  
+  setTimeout("formatTime("+nextSec+")", 1000);
+}
+</SCRIPT>
+<DIV class="inner-wrapper">
+<DIV class="cols-2">
+<DIV id="secondary-nav">
+<UL>
+    <LI><A href="http://www.codechef.com/aboutus/">About CodeChef</A></LI>
+    <LI><A target="_blank" href="http://www.directi.com/">About Directi</A></LI>
+    <LI><A href="http://www.codechef.com/ceoscorner/">CEO's Corner</A></LI>
+    <LI><A target="_blank" href="http://careers.directi.com/">Careers</A></LI>
+    <LI><A href="mailto:feedback@codechef.com">feedback@codechef.com</A></LI>
+</UL>
+</DIV>
+<DIV id="copyright" class="cols-2">© 2009 <A style="color: rgb(0, 0, 0);" href="http://www.directi.com/">Directi Group</A>.  All Rights Reserved.  CodeChef uses SPOJ © by <A style="color: rgb(0, 0, 0);" href="http://www.sphere-research.com/">Sphere Research Labs</A></DIV>
+</DIV>
+<DIV align="right" class="cols-2-right">
+<DIV id="sponsor-strip"><A target="_blank" href="http://www.directi.com/"><IMG alt="Sponsors" src="./Treasure Hunting   CodeChef_files/footer-sponsor-strip.gif"></A><BR>
+<SPAN>The time now is: <SPAN id="server-time">03:52:43 AM</SPAN></SPAN>
+				<SCRIPT language="javascript">
+						formatTime('March 21, 2010 03:18:52');
+					</SCRIPT></DIV>
+</DIV>
+</DIV>
+<SCRIPT type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</SCRIPT><SCRIPT src="./Treasure Hunting   CodeChef_files/ga.js" type="text/javascript"></SCRIPT>
+<SCRIPT type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-53602-42");
+pageTracker._trackPageview();
+} catch(err) {}
+</SCRIPT>  </DIV>
+</DIV>
+      </DIV>
+    </DIV>
+          </CENTER>
+  <SCRIPT type="text/javascript"> 
+	function update_user_box() {
+		$("#facebook-button").html("<a href=\"javascript:void(0)\" onclick=\"openInvitationWin()\" title=\"Invite Friends from Facebook\"><img src=\"/themes/abessive/images/facebook-friend.gif\" /></a>");
+		FB.XFBML.Host.parseDomTree(); 
+		//FB.XFBML.Host.refresh();
+	}
+	
+	function openInvitationWin() {
+		window.open("/facebook/invite.php?dest=http%3A%2F%2Fwww.codechef.com%2FMARCH10%2Fproblems%2FN1%2F&prob=Treasure Hunting&user=", "facebook_window", "scrollbars=1,width=800px,height=800px");
+		return false;
+	}
+  </SCRIPT>
+  <SCRIPT type="text/javascript">FB.init("2568d33c49151c6f050973a15974fc00", "http://www.codechef.com/facebook/xd_receiver.php",{"ifUserConnected" : update_user_box}); </SCRIPT>
+<SCRIPT type="text/javascript">
+var _sf_async_config={uid:3609,domain:"codechef.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+       "static.chartbeat.com/js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+</SCRIPT>
+    
+
+</CENTER><DIV id="overlay" style="display: none;"></DIV>      <DIV id="lightbox" style="display: none;">        <DIV id="outerImageContainer" style="background-color: rgb(238, 237, 236); color: rgb(0, 0, 0); "><DIV id="modalContainer" style="display: none; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; "></DIV><DIV id="frameContainer" style="display: none; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; "></DIV><DIV id="imageContainer" style="display: none; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; "><IMG id="lightboxImage"><DIV id="hoverNav"><A id="prevLink" href="http://www.codechef.com/MARCH10/problems/N1/#" style="padding-top: 10px; "></A><A id="nextLink" href="http://www.codechef.com/MARCH10/problems/N1/#" style="padding-top: 10px; "></A></DIV></DIV><DIV id="loading"><A href="http://www.codechef.com/MARCH10/problems/N1/#" id="loadingLink"></A></DIV></DIV>        <DIV id="imageDataContainer" class="clearfix" style="background-color: rgb(238, 237, 236); color: rgb(0, 0, 0); ">          <DIV id="imageData"><DIV id="frameHoverNav"><A id="framePrevLink" href="http://www.codechef.com/MARCH10/problems/N1/#" style="padding-top: 10px; "></A><A id="frameNextLink" href="http://www.codechef.com/MARCH10/problems/N1/#" style="padding-top: 10px; "></A></DIV><DIV id="imageDetails"><SPAN id="caption"></SPAN><SPAN id="numberDisplay"></SPAN></DIV><DIV id="bottomNav"><A id="bottomNavClose" href="http://www.codechef.com/MARCH10/problems/N1/#" style="background-color: rgb(238, 237, 236); color: rgb(0, 0, 0); "></A><A id="bottomNavZoom" href="http://www.codechef.com/MARCH10/problems/N1/#"></A><A id="bottomNavZoomOut" href="http://www.codechef.com/MARCH10/problems/N1/#"></A><A id="lightshowPause" href="http://www.codechef.com/MARCH10/problems/N1/#" style="display: none;"></A><A id="lightshowPlay" href="http://www.codechef.com/MARCH10/problems/N1/#" style="display: none;"></A></DIV></DIV>        </DIV>      </DIV><SCRIPT language="javascript" type="text/javascript" src="./Treasure Hunting   CodeChef_files/chartbeat.js"></SCRIPT></BODY></HTML>

@@ -1,0 +1,77 @@
+PROBLEM STATEMENT
+ActivateGame is played on a rectangular grid with N rows and M columns. The rows are numbered 0 to N-1 from top to bottom, and the columns are numbered 0 to M-1 from left to right. A number is assigned to each cell.
+
+
+The game is played as follows. Initially, only the top-left cell (row 0, column 0) is activated, and your score is zero. Then, on each turn, you choose one activated cell and one non-activated cell which is vertically or horizontally adjacent to that cell. The absolute difference between the numbers assigned to those two cells is added to your score, and the non-activated cell becomes activated. This is repeated until all the cells have been activated.
+
+
+You are given a vector <string> grid. The j-th character of the i-th element of grid represents the number assigned to the cell at row i, column j. Characters are mapped to numbers as follows:
+
+'0' - '9' corresponds to 0 - 9
+'a' - 'z' corresponds to 10 - 35
+'A' - 'Z' corresponds to 36 - 61
+
+Return the maximum possible score you can achieve.
+
+DEFINITION
+Class:ActivateGame
+Method:findMaxScore
+Parameters:vector <string>
+Returns:int
+Method signature:int findMaxScore(vector <string> grid)
+
+
+CONSTRAINTS
+-grid will contain between 1 and 50 elements, inclusive.
+-Each element of grid will contain between 1 and 50 characters, inclusive.
+-Each element of grid will contain the same number of characters.
+-grid will contain at least two characters.
+-Each character in grid will be '0'-'9', 'a'-'z', or 'A'-'Z'.
+
+
+EXAMPLES
+
+0)
+{"05",
+ "aB"}
+
+Returns: 69
+
+Initially only the cell containing '0' is activated. Use the following sequence of moves to maximize your score:
+
+Choose the activated cell containing '0' and the adjacent non-activated cell containing 'a' (which represents the number 10). Their absolute difference, 10, is added to your score, and the cell containing 'a' becomes activated.
+Choose the activated cell containing 'a' and the adjacent non-activated cell containing 'B' (which represents the number 37). Their absolute difference is 27.
+Choose the activated cell containing 'B' and the adjacent non-activated cell containing '5' (which represents the number 5). Their absolute difference is 32.
+
+Your total score is 10 + 27 + 32 = 69.
+
+1)
+{"03",
+ "21"}
+
+Returns: 7
+
+One possible solution is to choose cells in the following order:
+
+0 and 3
+0 and 2
+3 and 1
+
+
+2)
+{"John",
+ "Brus",
+ "Gogo"}
+
+Returns: 118
+
+
+
+3)
+{"AAA",
+ "AAA",
+ "AAA"}
+
+Returns: 0
+
+

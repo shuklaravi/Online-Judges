@@ -1,0 +1,50 @@
+reached
+A : 0 1
+B : 0 0
+ in 400
+400
+reached
+A : 2 6
+B : 0 3
+ in 12
+12
+-1
+reached
+A : 2 2
+B : 1 1
+ in 2
+2
+-1
+-1
+reached
+A : 1 8
+B : 1 0
+ in 8
+8
+reached
+A : 3 11
+B : 0 3
+ in 14
+14
+reached
+A : 0 1
+B : 0 0
+ in 382
+382
+reached
+A : 19 19
+B : 0 0
+ in 20
+20
+-1
+reached
+A : 19 19
+B : 0 0
+ in 210
+210
+reached
+A : 0 19
+B : 19 0
+ in 37
+37
+-1

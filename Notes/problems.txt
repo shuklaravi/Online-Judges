@@ -1,0 +1,25 @@
+Problem_no - Problem_name  
+
+100 The 3n + 1 problem	 
+101 The Blocks Problem 
+136 Ugly Numbers  
+146 ID Codes  
+443 Humble Numbers
+455 Periodic Strings	
+488 Triangle Wave	 
+490 Rotating Sentences
+492 Pig-Latin  
+494 Kindergarten Counting Game
+495 Fibonacci Freeze
+530 Binomial Showdown	 
+541 Error Correction  
+579 ClockHands
+591 Box of Bricks  
+594 One Little, Two Little, Three Little Endians
+10008 What's Cryptanalysis?  
+10018 Reverse and Add  
+10035 Primary Arithmetic
+10038 Jolly Jumpers	 
+10055 Hashmat the Brave Warrior  
+10062 Tell me the frequencies!
+10098 Generating Fast, Sorted Permutation

@@ -1,0 +1,90 @@
+PROBLEM STATEMENT
+Despite being beautiful, funny and intelligent (or at least she thinks so), Elleonora has one great disadvantage – she is really superstitious. Although at first sight this seems to be a small thing, it influences great parts of her life. For example, planning an evening out with her friends is quite a challenge for Elly. While travelling somewhere Elly counts the minutes passed since the time she left home and insists on arriving everywhere at times which are not divisible by 13, since 13 is believed to be one of the most fatal numbers.
+
+If Elly wants to go from point A to point B and has to use T transports she must not arrive at any of the city stations at a time divisible by 13. For example, let the segments of her travel take 7, 10, 9 and 5 minutes, respectively. After taking the third segment she will arrive at a station at time 26, which is divisible by thirteen and this will ruin her day. On the other hand if the segments of her travel were with durations 7, 13, 9 and 5, she would arrive at the stations at times 7, 20, 29 and 34, none of which is fatal and thus it would be a possible path for her.
+
+There are N stations numbered 0 to N-1 (0-based) in the city where Elly lives. There are transports between some stations and they are described in vector <string> city containing exactly N elements. The j-th character in i-th element of city describes the duration of the transport that goes directly from station i to station j. Durations of 1, 2, ..., 26 are encoded with 'A', 'B', ..., 'Z', correspondingly, and durations of 27, 28, ..., 52 are encoded with 'a', 'b', ..., 'z', correspondingly. If there is no transport going directly from station i to station j, the corresponding character will be '#'. All transports are directed, so if there's a transport from station i to station j, there will not necessarily be a transport from station j to station i, and if there's such a transport, it will not necessarily be of the same duration. For each station, there can be a transport from this station to itself.
+
+Elly wants to reach station N-1 starting from station 0 and using one or more transports. More formally, her path is a sequence of stations S[0], S[1], ..., S[k], k ? 1, where S[0] = 0, S[k] = N-1 and for each i, 0 ? i < k, there's a direct transport from S[i] to S[i+1]. The same station can appear several times in her path. If T[i], 0 ? i < k, is the duration of the transport from S[i] to S[i+1] in minutes, then there must not be an index j, 0 ? j < k, such that T[0] + T[1] + ... + T[j] is divisible by 13.
+
+Return the minimum time in which she can reach station N-1 while respecting her superstitious requirements. If this is not possible, return -1.
+
+DEFINITION
+Class:Thirteen
+Method:calcTime
+Parameters:vector <string>
+Returns:int
+Method signature:int calcTime(vector <string> city)
+
+
+CONSTRAINTS
+-city will contain exactly N elements, where N is between 2 and 50, inclusive.
+-Each element in city will contain exactly N characters.
+-Each element in city will contain only characters 'a'-'z', 'A'-'Z' and '#'.
+
+
+EXAMPLES
+
+0)
+{ "#AB##",
+  "###A#",
+  "###C#",
+  "####K",
+  "#####" }
+
+Returns: 16
+
+Here the shortest path has duration 13, which makes it invalid, but the second
+shortest one takes 16 minutes, which is OK. Note that the transports are directed, otherwise the
+answer would be 15.
+
+1)
+{ "#Z",
+  "Z#" }
+
+Returns: -1
+
+In this test the only path is with duration 26, which is forbidden.
+
+2)
+{ "#A#C##",
+  "##FA#K",
+  "###D#D",
+  "A###A#",
+  "##C###",
+  "####A#" }
+
+Returns: 10
+
+
+
+3)
+{ "Good#####",
+  "#Luck####",
+  "##and####",
+  "##Have###",
+  "####Fun##",
+  "#####in##",
+  "#####the#",
+  "CHALLENGE",
+  "##PHASE##" }
+
+Returns: 137
+
+There can be transports from a station to itself and don't forget the lowercase letters!
+
+4)
+{ "###No#####",
+  "####Zaphod",
+  "#####Just#",
+  "######very",
+  "####very##",
+  "improbable",
+  "##########",
+  "##########",
+  "##########",
+  "##########" }
+
+Returns: 103
+
+You can use random messages as challenges.

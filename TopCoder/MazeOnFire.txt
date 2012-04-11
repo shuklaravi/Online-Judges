@@ -1,0 +1,88 @@
+PROBLEM STATEMENT
+NOTE: This problem statement contains images that may not display properly if viewed outside of the applet. 
+
+"Maze on Fire" was a not-so-popular electronic game that consisted of a maze built on a grid.  Each cell in the grid is empty or contains a wall.  Some of the empty cells initially contain fire, and fire propagates after each turn.  A playable character is located somewhere in the maze, and its objective is to survive for as many turns as possible before it ends up in a cell that contains fire (at which point, the machine will play a "BURNED!" sound).
+
+Your task is simple enough.  You must write an artificial intelligence program that can control the character in such a way that it always survives for as many turns as possible.  You are given a vector <string> that represents the maze.  The j-th character of the i-th element of maze represents the cell at row i, column j.  Each cell is one of the following:
+'.' : An empty cell.
+'F' : A cell containing fire.
+'#' : A wall.
+'$' : The character.
+
+
+The game is played as follows. During each turn, the character may stay in its current cell or move to an adjacent empty cell which is not on fire. Two cells are considered adjacent if they share a side.  After the character's turn, the fire will propagate.  Each cell that contains fire in the current turn will set fire to all of its adjacent empty cells. If the cell in which the character is located catches fire, the game will end (and the current turn will count toward the total number of turns survived by the character). Return the maximum possible number of turns the character can survive, or -1 if it is possible for the character to survive indefinitely.
+
+DEFINITION
+Class:MazeOnFire
+Method:maximumTurns
+Parameters:vector <string>
+Returns:int
+Method signature:int maximumTurns(vector <string> maze)
+
+
+CONSTRAINTS
+-maze will contain between 1 and 50 elements, inclusive.
+-Each element of maze will contain between 2 and 50 characters, inclusive.
+-All elements of maze will contain the same number of characters.
+-Each element of maze will contain only '.', '$', '#' or 'F'.
+-maze will contain exactly one '$' character.
+
+
+EXAMPLES
+
+0)
+{"F..",
+ ".$.",
+ "..."}
+
+Returns: 4
+
+The best move in this case is to take the character to the bottom right cell. Fire will reach that cell after the fourth turn. The four turns are detailed in the following picture:
+
+
+
+1)
+{".F#...",
+ "F....#",
+ ".F###.",
+ "F.#.$.",
+ "F.#..."}
+
+Returns: -1
+
+There is a wall barrier between the character and the multiple cells that are on fire. It is possible to survive indefinitely.
+
+2)
+{"....#.",
+ "$##.#.",
+ ".#..#F",
+ ".F#.#.",
+ "..#..."}
+
+Returns: 7
+
+
+
+3)
+{"...$..",
+ "..#...",
+ "..###.",
+ "..#...",
+ "F.#.F."}
+
+Returns: 7
+
+Sometimes it is best not to move the character at all.
+
+4)
+{".F....F.",
+ ".#.##.#.",
+ ".#....#.",
+ "F.$##..F",
+ ".#....#.",
+ ".###.##.",
+ ".F....F."}
+
+Returns: 4
+
+

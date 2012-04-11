@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0177)http://www.facebook.com/extern/login_status.php?api_key=2568d33c49151c6f050973a15974fc00&extern=0&channel=http%3A%2F%2Fwww.codechef.com%2Ffacebook%2Fxd_receiver.php&locale=en_US -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <TITLE>Login Status</TITLE>
+<SCRIPT type="text/javascript" src="./XFBML"></SCRIPT><LINK rel="stylesheet" type="text/css" href="./connect-css"></HEAD><BODY>
+    <SCRIPT type="text/javascript">
+      document.domain = "facebook.com";
+    </SCRIPT><SCRIPT src="./en_US" type="text/javascript"></SCRIPT><DIV id="FB_HiddenContainer" style="position: absolute; top: -10000px; width: 0px; height: 0px; "></DIV>
+    <SCRIPT type="text/javascript">
+        FB.Bootstrap._requireFeatures(["Connect"], function() {
+              FB.XdComm.Server.init("/xd_receiver_v0.4.php");
+              var loginStatus = new FBIntern.LoginStatus();
+              loginStatus.initialize(
+                               /* channel              */ "http:\/\/www.codechef.com\/facebook\/xd_receiver.php",
+                               /* session info         */ null,
+                               /* settings             */ {"inFacebook":true,"locale":"en_US"},
+                               /* connect state        */ 2,
+                               /* base_domain          */ "codechef.com",
+                               /* public_session_data  */ null,
+                               /* parent_window_url    */ "http:\/\/www.codechef.com\/MARCH10\/problems\/N1\/",
+                               /* origin               */ "",
+                               /* perms                */ null);
+              });
+              </SCRIPT></BODY></HTML>

@@ -1,0 +1,29 @@
+DFS
+
+1. grafixMask -- DFS Problem implemented using stack of struct -- objective was to find the consecutive blocks.(400*600)
+2. Marketing -- DFS Problem implemented using Recursion -- objective was to find bi-parite graph.(50*50)
+3. Circuits -- DSF Problem implemnted using stack of struct -- objective was to find the longest path in a graph.(50*50)
+
+
+BFS
+
+<SMALL ERROR> 1. PathFinding -- BFS Problem implemented using QUEUE -- objective was to swap 2 ppl @ diff places (20*20)
+<TOUGH><ERROR> 2. Escape -- BFS Problem implemented using queue -- -- to reach a places with minimum life loss -- contition arises at places (500*500)
+
+DIJKSTRA
+
+<TOUGH> <CAN ALSO BE IMPLEMENTED BY DP> 1. KiloManX -- implemented using priority_queue and operator overloading of '<' -- good use of binary representation 
+						    -- shortest path to a situation always leads to the shortest path to the next level.
+<NOT DONE> <TOUGH> 2. RoboCourier -- to be implemented using priority_queue -- pivot about a point and moves in hexagonal direction.
+3. BombMan -- implemented using priority_queue -- eassy question with a very small trick of the bomb condition
+4. Thirteen -- -do- -- easy question..
+
+
+
+
+
+
+CODEFORCES
+
+Round 27 D-- Bi-Colouring... tutorial in net..http://codeforces.com/blog/entry/653?locale=en
+Round 29 D-- Hamiltonian Path.. 

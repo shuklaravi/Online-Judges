@@ -1,0 +1,106 @@
+<HTML> <HEAD> <TITLE>Problem D: Surveying </TITLE> </HEAD> <BODY
+LANG="EN" BGCOLOR=#FFFFFF>
+ <H1><BR CLEAR=ALL><CENTER><TABLE BGCOLOR=#0060F0><TR><TD><B><FONT SIZE=5 COLOR=#C0FFFF>&nbsp;<A NAME="SECTION0001000000000000000000">Problem D: Surveying</A></FONT>&nbsp;</B></TABLE></CENTER></H1>
+<P>
+
+<H2><FONT COLOR=#0070E8><A
+NAME="Surveying">Problem</A></FONT></H2> <P>
+
+After the radar station in Skrund (Latvia) has been abolished,
+Russian Ministry of Peace decided to build a new radar station in
+other neighbouring country.<P>
+
+Before building and projecting it is necessary to provide a
+surveying of the site where the radar station will be build. To do
+this, first of all one introduces a coordinate grid in the
+rectangular region <I>M&timesN</I>, where <I>0&LTM,N&LT=100</I>.
+Thus every node of the grid (the intersection of a grid lines) has
+coordinates <I>(i,j), 1&lt=i&LT=M, 1&lt=j&LT=N.</I> The result of
+surveying is <I>geodetical  site plan,</I> i.e. the table, which
+contains the relative heights of all the grid nodes measured with
+respect to distinguished node, called <I>base</I>.
+
+All the preliminary works including surveying are carrying out
+in the top-secret mode. In particular, one is not allowed to clear
+the site. This restricts visibility very much. That is why the
+surveying is carrying out in stages. One choose the <I>point of
+surveying</I> and measure the heights with
+respect to this point for all the visible nodes. Then one passes
+to the second point of surveying, and so on. Every time the
+heights with respect to the current point of surveying are
+measured. After the measuring from all the points of surveying has
+been completed, one recalculates the heights with respect to the
+base and write it down to the geodetical site plan. <P>
+
+You are expected to write a program, which will read the
+measurement results and form a geodetical site plan.
+
+
+</U></U><H2><FONT COLOR=#0070E8>Input</FONT></H2> <P>
+In
+the first line of input there will be two integers <I>M</I> and <I>N</I>
+defining the size of the site. The second line will contain two
+integers also separated by a space, <I>i</I> and <I>j</I> - the
+coordinates of the base. This two lines will be followed by
+measurements from different points of surveying. The measurements
+from each surveying point will be placed in one line. It will be a
+series of triples of integers separated by a space. Each triple
+will have the following form: <I> i j h </I>, where <I> i j </I>
+are the coordinates of the node, <I> h </I> - its height in
+millimeters with respect to the current surveying point. There
+will be also a space between the triples.<P>
+
+Note that used geodetical equipment does not allow to measure the
+heights of absolute value greater than 1 meter. (If the point
+locates below the point of surveying, we think that its relative height
+is negative.)<P>
+
+
+
+<H2><FONT COLOR=#0070E8>Output</FONT></H2> <P>
+
+Output should contain the geodetical site plan, if it
+can be built according to the given measurements, or the proper
+error message.<P>
+
+The geodetical site plan should be written in the following way:
+<P><PRE>
+h<sub>11</sub> h<sub>12</sub> h<sub>13</sub> ... h<sub>1N</sub>
+h<sub>21</sub> h<sub>22</sub> h<sub>23</sub> ... h<sub>2N</sub>
+.................
+h<sub>M1</sub> h<sub>M2</sub> h<sub>M3</sub> ... h<sub>MN</sub>
+</PRE>
+
+where <I>h<sub>ij</sub></I> is the relative height of the node <I>(i,j)</I>
+with respect to the base, in millimeters.
+
+<H2><FONT COLOR=#0070E8>Errors</FONT></H2> <P>
+The program should process two errors. <P>
+
+If there is not enough measurements to build a geodetical site
+plan, the output should consist of one string with an
+inscription "<I>the lack of measurements</I>".<P>
+
+If there are conflicting measurements, i.e. the height of some
+node can be determined not uniquely, the output should consist
+of one string "<I>conflicting measurements</I>".<P>
+
+If there are both conflicting measurements and the lack of
+measurement, you should output only "<I>conflicting measurements</I>".<P>
+
+
+<H2><FONT COLOR=#0070E8>Sample Input</FONT></H2> <P> <PRE>
+2 2
+1 2
+1 1 10 1 2 10
+1 2 20 2 2 30 2 1 30
+</PRE> <P>
+<H2><FONT COLOR=#0070E8>Sample
+Output</A></FONT></H2> <P> <PRE>
+0 0
+10 10
+<span
+style='mso-bidi-font-size:13.5pt;color:windowtext'>
+<hr size=2 width="100%" align=center>
+<span style='mso-bidi-font-size:13.5pt;color:windowtext'> </span>
+<H4>Alexander Denisjuk, 2000</H4> </PRE> </BODY> </HTML>

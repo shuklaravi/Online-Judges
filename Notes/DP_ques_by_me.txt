@@ -1,0 +1,19 @@
+DYNAMIC PROGRAMMING QUESTIONS....
+
+ID	QUESTION NAME				DETAILS
+
+
+11517  	Exact Change				similar to coin change .. slight modification... EASY
+
+
+116	Unidirectional TSP			implementation of some algo... travelling salesman algo... EASY
+
+
+10069  	Distinct Subsequences			finding the number of sequences... MEDIUM
+
+
+10003  	Cutting Sticks				finding the recursive relation is tough .... HARD
+
+
+11472	Beautiful Numbers 			tough recursive formula.. consider the no. of digits and last digit 						with an exception on lastdigit=0
+						hints can be found here 												http://online.judge.uva.es/board/viewtopic.php?f=42&t=42223 								............ VERY HARD

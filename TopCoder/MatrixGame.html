@@ -1,0 +1,34 @@
+<html><body bgcolor="#000000" text="#ffffff"><table><tr><td colspan="2"><h3>Problem Statement</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td>Alex likes to play the following strange game. He starts with a rectangular NxM grid where each cell contains a '0' (zero) or '1' (one). Rows of the grid are numbered 0 to N-1, inclusive, and columns are numbered 0 to M-1, inclusive. On each move, he chooses two columns in the grid and entirely swaps their content or he chooses two rows in the grid and entirely swaps their content. He can perform an arbitrary large number of moves and there are no restrictions on the order in which he performs moves.
+<br></br>
+<br></br>
+Each NxM grid can be described as a vector &lt;string&gt; containing N elements. The j-th character in the i-th element of this vector &lt;string&gt; is the same as the character in row i, column j of the grid. Alex's goal is to achieve such a grid that the corresponding vector &lt;string&gt; is lexicographically minimal (see notes for exact definition). Since he is always unsure whether the goal has been achieved, you are to write a program that checks it for him. Given a vector &lt;string&gt; <b>matrix</b> describing the grid that Alex initially has, return the lexicographically smallest vector &lt;string&gt; that he can produce.
+</td></tr><tr><td colspan="2"><h3>Definition</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Class:</td><td>MatrixGame</td></tr><tr><td>Method:</td><td>getMinimal</td></tr><tr><td>Parameters:</td><td>vector &lt;string&gt;</td></tr><tr><td>Returns:</td><td>vector &lt;string&gt;</td></tr><tr><td>Method signature:</td><td>vector &lt;string&gt; getMinimal(vector &lt;string&gt; matrix)</td></tr><tr><td colspan="2">(be sure your method is public)</td></tr></table></td></tr><tr><td>&#160;&#160;&#160;&#160;</td></tr><tr><td></td></tr><tr><td colspan="2"><h3>Notes</h3></td></tr><tr><td align="center" valign="top">-</td><td>A vector &lt;string&gt; <b>A</b> is lexicographically smaller than a vector &lt;string&gt; <b>B</b> of the same length if it contains a lexicographically smaller string at the first position where they differ.</td></tr><tr><td align="center" valign="top">-</td><td>A string <b>A</b> is lexicographically smaller than a string <b>B</b> of the same length if it contains a smaller character at the first position where they differ ('0' is smaller than '1').</td></tr><tr><td colspan="2"><h3>Constraints</h3></td></tr><tr><td align="center" valign="top">-</td><td><b>matrix</b> will contain between 1 and 8 elements, inclusive.</td></tr><tr><td align="center" valign="top">-</td><td>Each element of <b>matrix</b> will contain between 1 and 8 characters, inclusive.</td></tr><tr><td align="center" valign="top">-</td><td>All elements of <b>matrix</b> will have the same length.</td></tr><tr><td align="center" valign="top">-</td><td>Each character in <b>matrix</b> will be either '0' or '1'.</td></tr><tr><td colspan="2"><h3>Examples</h3></td></tr><tr><td align="center" nowrap="true">0)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;000&quot;,
+ &quot;000&quot;,
+ &quot;000&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: {&quot;000&quot;, &quot;000&quot;, &quot;000&quot; }</pre></td></tr><tr><td><table><tr><td colspan="2">Any move has no effect.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">1)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;010&quot;,
+ &quot;000&quot;,
+ &quot;110&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: {&quot;000&quot;, &quot;001&quot;, &quot;011&quot; }</pre></td></tr><tr><td><table><tr><td colspan="2">The following sequence of moves can be used:
+<pre>
+010      000      000      000
+000  ->  010  ->  001  ->  001
+110      110      101      011
+</pre></td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">2)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;111&quot;,
+ &quot;111&quot;,
+ &quot;111&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: {&quot;111&quot;, &quot;111&quot;, &quot;111&quot; }</pre></td></tr><tr><td><table><tr><td colspan="2"></td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">3)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;01010&quot;,
+ &quot;10101&quot;,
+ &quot;01010&quot;,
+ &quot;10101&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: {&quot;00011&quot;, &quot;00011&quot;, &quot;11100&quot;, &quot;11100&quot; }</pre></td></tr><tr><td><table><tr><td colspan="2"></td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">4)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;11010100&quot;,
+ &quot;11110001&quot;,
+ &quot;00011101&quot;,
+ &quot;11111111&quot;,
+ &quot;01110100&quot;,
+ &quot;10000110&quot;,
+ &quot;00001001&quot;,
+ &quot;11010111&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 
+{&quot;00000011&quot;,
+ &quot;00001111&quot;,
+ &quot;00110100&quot;,
+ &quot;01011100&quot;,
+ &quot;01111101&quot;,
+ &quot;11001100&quot;,
+ &quot;11011001&quot;,
+ &quot;11111111&quot; }</pre></td></tr><tr><td><table><tr><td colspan="2"></td></tr></table></td></tr></table></td></tr></table><p>This problem statement is the exclusive and proprietary property of TopCoder, Inc.  Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited.  (c)2003, TopCoder, Inc.  All rights reserved.  </p></body></html>

@@ -1,0 +1,953 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html class="js" dir="ltr" xml:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+  	<script src="Flu%20Shot%20Lineup%20_%20CodeChef_files/FeatureLoader.js" type="text/javascript"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/fbconnect.js"></script><title>Flu Shot Lineup | CodeChef</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="keywords" content="programming, language, algorithm, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM"><style type="text/css" media="all">.mceEditor img { display: inline; }</style><link rel="shortcut icon" href="http://www.codechef.com/misc/favicon.ico" type="image/x-icon"><link type="text/css" rel="stylesheet" media="all" href="Flu%20Shot%20Lineup%20_%20CodeChef_files/css_1a71fab0b52b0ecea92909422c8f5c05.css"><link rel="stylesheet" type="text/css" href="Flu%20Shot%20Lineup%20_%20CodeChef_files/acmkanpurproblem.css"><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/jquery.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/drupal.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/timer.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/fivestar.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/lightbox.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/nice_menus.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/ui_004.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/ui.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/ui_002.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/ui_003.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/fbconnect_002.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/jquery_002.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/jquery_003.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/tableofcontents.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/common.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/tiny_mce.js"></script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","fivestar":{"titleUser":"Your rating: ","titleAverage":"Average: ","feedbackSavingVote":"Saving your vote...","feedbackVoteSaved":"Your vote has been saved.","feedbackDeletingVote":"Deleting your vote...","feedbackVoteDeleted":"Your vote has been deleted."},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)sites\/default\/files","default_image":"\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"eeedec","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":true,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\u003e\u003ckbd\u003ex\u003c\/kbd\u003e\u003c\/a\u003e to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":500,"iframe_height":70,"iframe_border":1,"enable_video":0},"fbconnect":{"api_key":"2568d33c49151c6f050973a15974fc00","xd_path":"fbconnect\/receiver","user_pictures":"allow","language_code":"en_US","featureLoader_url":"http:\/\/static.ak.connect.facebook.com\/js\/api_lib\/v0.4\/FeatureLoader.js.php\/en_US","debug":0,"loginout_mode":"manual","invite_name":"CodeChef","fbuid":"708965449","user":{"uid":"36228","fbuid":"708965449"}}});
+//--><!]]>
+</script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+  function mceToggle(id, linkid) {
+    element = document.getElementById(id);
+    link = document.getElementById(linkid);
+    img_assist = document.getElementById('img_assist-link-'+ id);
+
+    if (tinyMCE.getEditorId(element.id) == null) {
+      tinyMCE.addMCEControl(element, element.id);
+      element.togg = 'on';
+      link.innerHTML = 'disable rich-text';
+      link.href = "javascript:mceToggle('" +id+ "', '" +linkid+ "');";
+      if (img_assist)
+        img_assist.innerHTML = '';
+      link.blur();
+    }
+    else {
+      tinyMCE.removeMCEControl(tinyMCE.getEditorId(element.id));
+      element.togg = 'off';
+      link.innerHTML = 'enable rich-text';
+      link.href = "javascript:mceToggle('" +id+ "', '" +linkid+ "');";
+      if (img_assist)
+        img_assist.innerHTML = img_assist_default_link;
+      link.blur();
+    }
+  }
+
+//--><!]]>
+</script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+  tinyMCE.init({
+    mode : "exact",
+    theme : "advanced",
+    relative_urls : false,
+    document_base_url : "/",
+    language : "en",
+    safari_warning : false,
+    entity_encoding : "raw",
+    verify_html : false,
+    preformatted : false,
+    convert_fonts_to_spans : true,
+    remove_linebreaks : true,
+    apply_source_formatting : true,
+    theme_advanced_resize_horizontal : false,
+    theme_advanced_resizing_use_cookie : false,
+    plugins : "table",
+    theme_advanced_toolbar_location : "top",
+    theme_advanced_toolbar_align : "left",
+    theme_advanced_path_location : "bottom",
+    theme_advanced_resizing : true,
+    theme_advanced_blockformats : "p,address,pre,h1,h2,h3,h4,h5,h6",
+    theme_advanced_buttons1 : "bold,italic,underline,separator,link,unlink,separator,image,separator,code",
+    theme_advanced_buttons2 : "formatselect,separator,sup,sub,hr,tablecontrols",
+    theme_advanced_buttons3 : "",
+    elements : "edit-comment"
+  });
+
+//--><!]]>
+</script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/en_002.js" onload="tinymce.dom.ScriptLoader._onLoad(this,'http://www.codechef.com/sites/all/modules/tinymce/tinymce/jscripts/tiny_mce/langs/en.js',0);"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/editor_template.js" onload="tinymce.dom.ScriptLoader._onLoad(this,'http://www.codechef.com/sites/all/modules/tinymce/tinymce/jscripts/tiny_mce/themes/advanced/editor_template.js',1);"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/en.js"></script><script type="text/javascript" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/editor_plugin.js" onload="tinymce.dom.ScriptLoader._onLoad(this,'http://www.codechef.com/sites/all/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/table/editor_plugin.js',2);"></script><script src="Flu%20Shot%20Lineup%20_%20CodeChef_files/XFBML.js" type="text/javascript"></script><link href="Flu%20Shot%20Lineup%20_%20CodeChef_files/connect-css.css" type="text/css" rel="stylesheet"><link href="Flu%20Shot%20Lineup%20_%20CodeChef_files/ui.css" rel="stylesheet"></head><body class="sidebar-right lightbox-processed"><div id="FB_HiddenContainer" style="position: absolute; top: -10000px; left: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_api_server" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/client_restserver.htm" class="FB_SERVER_IFRAME" scrolling="no" frameborder="0"></iframe></div><div><iframe name="loginStatus" src="Flu%20Shot%20Lineup%20_%20CodeChef_files/login_status.htm" class="FB_SERVER_IFRAME" scrolling="no" frameborder="0"></iframe></div><iframe src="Flu%20Shot%20Lineup%20_%20CodeChef_files/xd_receiver.htm" class="FB_RECEIVER_DOM"></iframe></div>
+	 
+    
+    
+
+
+
+    
+  	
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <center>
+
+    <div id="header" class="wrapper">
+      <div class="inner-wrapper">
+        <!-- Header -->
+        <div id="logo-floater" class="cols-2">
+        <a href="http://www.codechef.com/" title=""><img src="a_data_002/logo.png" alt="CodeChef is a non-commercial competitive programming community" id="logo"><span></span></a>        </div>
+		<div class="cols-2">
+			<div id="custom-login">
+				<!--Hello <strong>Admin</strong>, Check your <strong><a href="">Account</a></strong> or <a href="/logout">Log Out</a>-->
+				<div class="login-user login-name"><table id="logged-in-user-fb-pic" cellpadding="5" cellspacing="0">
+    				<tbody><tr>
+    					<td><div class="picture">
+                			<fb:profile-pic style="height: 35px;" class=" FB_profile_pic fb_profile_pic_rendered FB_ElementReady" uid="708965449" linked="true" size="square" height="35" facebook-logo="true"><a class="FB_Link" href="http://www.facebook.com/profile.php?id=708965449"><img src="Flu%20Shot%20Lineup%20_%20CodeChef_files/safe_image.jpg" alt="Pratyush Verma" title="Pratyush Verma" style="height: 35px;" class=" FB_profile_pic fb_profile_pic_rendered FB_ElementReady"></a></fb:profile-pic>
+			           </div></td>
+    					<td><span>Hello <strong>pratyush1299</strong>! <strong><a href="http://www.codechef.com/users/pratyush1299" title="Edit Your Account">Account</a></strong> or <a href="http://www.codechef.com/logout">Log Out</a></span></td>
+    				</tr>
+    			 </tbody></table></div>        	</div>
+        	
+        	<div id="block-nice_menus-1" class="block block-nice_menus block-header">
+  <div class="content">
+    <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li id="menu-302" class="menuparent menu-path-problems-easy"><a href="http://www.codechef.com/problems/easy" title="">PRACTICE</a><ul><li id="menu-303" class="menu-path-problems-easy"><a href="http://www.codechef.com/problems/easy" title="">Easy</a></li>
+<li id="menu-304" class="menu-path-problems-medium"><a href="http://www.codechef.com/problems/medium" title="">Medium</a></li>
+<li id="menu-305" class="menu-path-problems-hard"><a href="http://www.codechef.com/problems/hard" title="">Hard</a></li>
+<li id="menu-1819" class="menu-path-problems-challenge"><a href="http://www.codechef.com/problems/challenge" title="">Challenge</a></li>
+<li id="menu-1376" class="menu-path-problems-extcontest"><a href="http://www.codechef.com/problems/extcontest" title="">Peer</a></li>
+</ul>
+</li>
+<li id="menu-309" class="menuparent menu-path-contests"><a href="http://www.codechef.com/contests" title="">COMPETE</a><ul><li id="menu-1397" class="menu-path-www.codechef.com-COOK05"><a href="http://www.codechef.com/COOK05" title="">December 2010 CookOff</a></li>
+<li id="menu-1769" class="menu-path-www.codechef.com-DEC10"><a href="http://www.codechef.com/DEC10" title="">December Algorithm Challenge</a></li>
+<li id="menu-1817" class="menu-path-www.codechef.com-NOV10"><a href="http://www.codechef.com/NOV10" title="">November Algorithm Challenge</a></li>
+</ul>
+</li>
+<li id="menu-138" class="menuparent menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">DISCUSS</a><ul><li id="menu-920" class="menu-path-wiki-"><a href="http://www.codechef.com/wiki/" title="">Wiki</a></li>
+<li id="menu-139" class="menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">Forums</a></li>
+<li id="menu-140" class="menu-path-blog.codechef.com-"><a href="http://blog.codechef.com/" title="">Blog</a></li>
+<li id="menu-141" class="menu-path-www.twitter.com-codechef"><a href="http://www.twitter.com/codechef" title="">Twitter</a></li>
+</ul>
+</li>
+<li id="menu-143" class="menuparent menu-path-node-124098"><a href="http://www.codechef.com/community" title="">COMMUNITY</a><ul><li id="menu-650" class="menu-path-node-124111"><a href="http://www.codechef.com/meetups" title="CodeChef Meetups">CodeChef Meetups</a></li>
+<li id="menu-732" class="menu-path-node-157511"><a href="http://www.codechef.com/campus_chapter/about" title="CodeChef Campus Chapter">Campus Chapters</a></li>
+<li id="menu-733" class="menu-path-node-157517"><a href="http://www.codechef.com/hostyourcontest" title="Hosting Contest on CodeChef">Host your Contest</a></li>
+<li id="menu-146" class="menu-path-node-12"><a href="http://www.codechef.com/usergroups" title="">User Groups</a></li>
+<li id="menu-715" class="menu-path-node-157473"><a href="http://www.codechef.com/techtalks" title="CodeChef TechTalks">CodeChef TechTalks</a></li>
+<li id="menu-1371" class="menu-path-node-292416"><a href="http://www.codechef.com/educational-initiatives" title="Directi's Educational Initiatives">All Educational Initiatives</a></li>
+<li id="menu-1820" class="menu-path-node-503865"><a href="http://www.codechef.com/event-calendar" title="Event Calendar">Event Calendar</a></li>
+</ul>
+</li>
+<li id="menu-147" class="menuparent menu-path-node-3"><a href="http://www.codechef.com/help" title="">HELP</a><ul><li id="menu-643" class="menu-path-www.codechef.com-wiki-faq"><a href="http://www.codechef.com/wiki/faq" title="">Frequently Asked Questions</a></li>
+<li id="menu-710" class="menu-path-www.codechef.com-wiki-faq-problem-setters"><a href="http://www.codechef.com/wiki/faq-problem-setters" title="">FAQ for problem setters</a></li>
+<li id="menu-1389" class="menu-path-node-313543"><a href="http://www.codechef.com/problemsetting" title="Codechef Problem Creation">Problem Setting</a></li>
+<li id="menu-856" class="menu-path-ranklist-AX"><a href="http://www.codechef.com/ranklist/AX" title="The ranklist (Global)">Ranks</a></li>
+<li id="menu-850" class="menu-path-www.codechef.com-wiki-tutorials"><a href="http://www.codechef.com/wiki/tutorials" title="">Tutorials</a></li>
+</ul>
+</li>
+<li id="menu-150" class="menuparent menu-path-node-1"><a href="http://www.codechef.com/aboutus" title="">ABOUT</a><ul><li id="menu-151" class="menu-path-node-1"><a href="http://www.codechef.com/aboutus" title="">About CodeChef</a></li>
+<li id="menu-849" class="menu-path-node-178314"><a href="http://www.codechef.com/team" title="Team CodeChef">Team CodeChef</a></li>
+<li id="menu-708" class="menu-path-node-157468"><a href="http://www.codechef.com/press" title="Press Room">Press Room</a></li>
+<li id="menu-1312" class="menu-path-www.codechef.com-financials-"><a href="http://www.codechef.com/financials/" title="">CodeChef Financials</a></li>
+<li id="menu-1313" class="menu-path-www.codechef.com-sponsorships"><a href="http://www.codechef.com/sponsorships" title="">CodeChef Sponsorships</a></li>
+<li id="menu-709" class="menu-path-node-157470"><a href="http://www.codechef.com/ceoscorner" title="CEO's Corner">CEO's Corner</a></li>
+<li id="menu-152" class="menu-path-www.directi.com-"><a href="http://www.directi.com/" title="">About Directi</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+		</div>
+
+      </div>
+    </div>
+    <!-- /HEADER -->
+	<center>
+	<table id="maintable" class="maintable" cellpadding="10" cellspacing="0">
+		<tbody><tr>
+			<td class="content" width="99%">
+				<div class="wrapper" id="content-regions">
+					<div class="inner-wrapper rounded-cr-body">
+						<div class="rounded-cr-header">
+							<div class="rounded-cr-footer">
+								<div id="breadcrumb"><div class="breadcrumb"><a href="http://www.codechef.com/">Home</a>&nbsp;»&nbsp;<a href="http://www.codechef.com/contests/">Compete</a>&nbsp;»&nbsp;<a href="http://www.codechef.com/JAN11/">January 2011 Challenge</a>&nbsp;»&nbsp;Flu Shot Lineup</div></div>
+								<div id="primary-colum-pad">
+									<div id="primary-colum-wrapper">
+										<img class="content-wrapper-header" src="a_data_002/content-wrapper-top-big.gif">
+										<div id="problem-page">
+											<div class="prob">
+												<div class="primary-col-wrapper">
+																																																		        													<table class="pagetitle-prob" border="0" cellpadding="0" cellspacing="0" width="100%">
+														<tbody><tr>
+															<td width="55%">
+																<h1>Flu Shot Lineup</h1>
+																<p>Problem code: FLUSHOT</p>
+                                                                <iframe src="Flu%20Shot%20Lineup%20_%20CodeChef_files/like.htm" allowtransparency="true" style="border: medium none; overflow: hidden; width: 450px; height: 25px;" scrolling="no" frameborder="0"></iframe>
+															</td>
+															<td>
+																<ul class="button-list">
+																<li style=""><a href="http://www.codechef.com/JAN11/submit/FLUSHOT/">Submit</a></li>																	<li><a href="http://www.codechef.com/JAN11/status/FLUSHOT,pratyush1299">My Submissions</a></li>																	<li><a href="http://www.codechef.com/JAN11/status/FLUSHOT/">All Submissions</a></li>
+																</ul>
+															</td>
+														</tr>
+													</tbody></table>
+													<div class="primary-colum-width-left">
+														<div id="node-504493" class="node clear-block">
+
+  <div class="meta">
+  
+    </div>
+
+  <div class="content">
+    <p>
+A new strain of flu has broken out. Fortunately, a vaccine was developed
+ very quickly and is now being administered to the public. Your local 
+health clinic is administering this vaccine, but the waiting line is 
+very long.
+
+</p><p>
+For safety reasons, people are not allowed to stand very close to each 
+other as the flu is not under control yet. However, many people were not
+ aware of this precaution. A health and safety official recently 
+examined the line and has determined that people need to spread out more
+ in the line so that they are at least T units away from each other. 
+This needs to be done as quickly as possible so we need to calculate the
+ minimum distance D such that it is possible for every person to move at
+ most D units so the distance between any two people is at least T. 
+Specifically, D should be the minimum value such that there are 
+locations x'<sub>i</sub> so that |x<sub>i</sub> - x'<sub>i</sub>| ≤ D for each person i and |x'<sub>i</sub> - x'<sub>j</sub>| ≥ T for any two distinct people i,j. Furthermore, since nobody can move past the receptionist we must also have that x'<sub>i</sub> ≥ 0. 
+
+
+</p><p>
+The location of each person is given by the number of meters they are 
+standing from the receptionist. When spreading out, people may move 
+either forward or backward in line but nobody may move past the location
+ of the receptionist.
+
+</p><h3>Input</h3>
+<p>
+The first line of input contains a single integer K ≤ 30 indicating the 
+number of test cases to follow. Each test case begins with a line 
+containing an integer N (the number of people) and a floating point 
+value T (the minimum distance that should be between people). The 
+location of each person i is described by single floating point value x<sub>i</sub> which means person i is x<sub>i</sub> meters from the receptionist. These values appear in non-decreasing order on the following N lines, one value per line.
+
+</p><p>
+Bounds: 1 ≤ N ≤ 10,000 and T and every x<sub>i</sub> is between 0 and 1,000,000 and is given with at most 3 decimals of precision.
+
+</p><h3>Output</h3>
+<p>
+For each test case, you should output the minimum value of D with exactly 4 decimals of precision on a single line.
+
+</p><h3>Example</h3>
+
+<pre><b>Input:</b>
+3
+2 4
+1
+2
+2 2
+1
+2
+4 1
+0
+0.5
+0.6
+2.75
+
+<b>Output:</b>
+2.0000
+0.5000
+1.4000
+
+</pre>
+
+<h3>Explanation of Sample Data</h3>
+<p>
+
+In the first test case, the first person can move to location 0 and the 
+second to location 4 with the maximum distance moved being 2. In the 
+second case, person 1 can move to location 0.5 and person 2 can move to 
+location 2.5 for a maximum distance moved being 0.5. Finally, in the 
+last output the first person does not move, the second moves to location
+ 1, the third to location 2, and the fourth to location 3. The maximum 
+distance moved by any person was done by the third person who moved 1.4 
+meters to their destination.</p>  </div>
+  <hr>
+  <table align="left" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td>Date:</td>
+		<td>2010-11-07</td>
+	</tr>
+	<tr>
+		<td>Time limit:</td>
+		<td>3s</td>
+	</tr>
+	<tr>
+		<td>Source limit:</td>
+		<td>50000</td>
+	</tr>
+	<tr>
+		<td>Languages:</td>
+		<td>PERL6 CLOJ GO PYTH 3.1.2 F# C C99 strict C++ 4.0.0-8 C++ 4.3.2 PAS
+ gpc PAS fpc JAVA NICE JAR C# NEM ST ASM D FORT ADA BASH PERL PYTH RUBY 
+LUA ICON PIKE PHP SCM guile SCM qobi LISP sbcl LISP clisp SCALA HASK ERL
+ CAML CLPS PRLG WSPC BF ICK TEXT JS </td>
+	</tr>
+  </tbody></table>
+  <p style="clear: left;"><br></p>
+  <ul class="button-list button-list-left">
+	<li style="display: block;"><a href="http://www.codechef.com/JAN11/submit/FLUSHOT/">Submit</a></li>
+  </ul>
+  
+  	<p><b>Invite your friends to solve this problem using:</b><br></p>
+	<div style="width: 15%;">
+		<table cellspacing="2">
+			<tbody><tr>
+				<td><a href="javascript:void(0)" onclick="javascript:window.open('/invitebymail.php?f_name=Pratyush+Verma&amp;link=users/pratyush1299&amp;prob_t=Flu+Shot+Lineup&amp;prob_l=http%3A%2F%2Fwww.codechef.com%2FJAN11%2Fproblems%2FFLUSHOT&amp;user_email=pratyush1299%40gmail.com', 'mywindow','scrollbars=1,width=705px,height=571px');"><img src="a_data_002/mail.gif"></a></td>
+				<td><span id="facebook-button"><a href="javascript:void(0)" title="Facebook Connect" onclick="FB.Connect.requireSession(); return false;"><img src="a_data_002/facebook.gif"></a></span></td>
+			</tr>
+		</tbody></table>
+	</div>
+	<br>
+  
+  <hr>
+  <h4 style="text-decoration: none;">Comments</h4>
+  </div>
+<div id="comments">
+  <a id="comment-12647"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12647" class="active">can a person for example at</a></h3>
+
+  <div class="submitted">
+    <b>contest</b> - 1st Jan,2011 16:14:12.  </div>
+
+  <div class="content">
+    <p>can a person for example at location i get a location greater than the location of aperson behind it after spreading</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12654"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12654" class="active">It doesn't make sence, dude.</a></h3>
+
+  <div class="submitted">
+    <b>Igor Demidov</b> - 1st Jan,2011 20:15:40.  </div>
+
+  <div class="content">
+    <p>It doesn't make sence, dude. It will increase D.</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12681"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12681" class="active">can anyone provide some more</a></h3>
+
+  <div class="submitted">
+    <b>Manohar Singh</b> - 2nd Jan,2011 13:04:24.  </div>
+
+  <div class="content">
+    <p>can anyone provide some more test cases... i m getting WA.</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12685"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12685" class="active">No, that would be against the</a></h3>
+
+  <div class="submitted">
+    <b>Stephen Merriman</b> - 2nd Jan,2011 13:26:35.  </div>
+
+  <div class="content">
+    <p>No, that would be against the rules.</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12700"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12700" class="active">@stephen : bt u can atleast</a></h3>
+
+  <div class="submitted">
+    <b>Manohar Singh</b> - 2nd Jan,2011 17:51:07.  </div>
+
+  <div class="content">
+    <p>@stephen : bt u can atleast provide some results for some random inputs... .</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12702"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12702" class="active">@ Manohar : No, that would be</a></h3>
+
+  <div class="submitted">
+    <b>Ashar Fuadi</b> - 2nd Jan,2011 17:54:34.  </div>
+
+  <div class="content">
+    <p>@ Manohar : No, that would be against the rules, too. We won't 
+give more testcases just because there are contestants getting WAs.</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12712"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12712" class="active">Can somebody tell what will</a></h3>
+
+  <div class="submitted">
+    <b>Yogesh Agrawal</b> - 2nd Jan,2011 22:57:26.  </div>
+
+  <div class="content">
+    <p>Can somebody tell what will be the output if N = 1 and T any be any number</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12720"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12720" class="active">I have mailed the following</a></h3>
+
+  <div class="submitted">
+    <b>Madhu Babu</b> - 3rd Jan,2011 12:05:30.  </div>
+
+  <div class="content">
+    <p>I have mailed the following doubt on Jan 1st. No response till now. Can someone give a reply to this</p>
+<p>To: <a href="mailto:feedback@codechef.com">feedback@codechef.com</a></p>
+<p>Subject: doubt on FLUSHOT<br>Date: Sat, 1 Jan 2011 22:29:20 +0530<br><br></p>
+<p>
+
+</p>
+
+<p>Hi,<br>&nbsp;<br>In the problem FLUSHOT,<br>&nbsp;<br>can there be a case where location of ith indexed person &gt; T*i ?<br>e.g one of the below mentioned case<br>5 2<br>2<br>3<br>10<br>11<br>13<br>Here person ( index = 1, value = 3 ) can move to value=4 and person with value = 10 can move backward to 9.<br>So maximum shift = 1. However few ppl have shifted back &amp; few shifted forward.<br>Should this case be considered?</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12721"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12721" class="active">The problem says every xi is</a></h3>
+
+  <div class="submitted">
+    <b>Stephen Merriman</b> - 3rd Jan,2011 12:38:19.  </div>
+
+  <div class="content">
+    <p>The problem says every x<sub>i</sub> is between 0 and 1,000,000. If there were other restrictions on the locations it would say so.</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12722"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12722" class="active">@madhu - i think the answer</a></h3>
+
+  <div class="submitted">
+    <b>myriad</b> - 3rd Jan,2011 13:47:27.  </div>
+
+  <div class="content">
+    <p>@madhu - i think the answer to your query should be 0.75 as the 
+new positions of ppl could be 1.5, 3.5, 9.25, 11.25,13.25 respectively. 
+anybody, correct me if i am wrong here.</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12725"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12725" class="active">@Myriad,i think final</a></h3>
+
+  <div class="submitted">
+    <b>Amarjeet</b> - 3rd Jan,2011 15:39:41.  </div>
+
+  <div class="content">
+    <p>@Myriad,i think final position should be 1.5, 3.5, 9.5, 11.5 , 13.5 ... so the maximum shift should be 0.5</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12726"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12726" class="active">0.5 is the correct answer for</a></h3>
+
+  <div class="submitted">
+    <b>Madhu Babu</b> - 3rd Jan,2011 15:55:26.  </div>
+
+  <div class="content">
+    <p>0.5 is the correct answer for the above example. I miscalculated it.</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12728"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12728" class="active">@Amarjeet and Madhu - thanks</a></h3>
+
+  <div class="submitted">
+    <b>myriad</b> - 3rd Jan,2011 16:04:04.  </div>
+
+  <div class="content">
+    <p>@Amarjeet and Madhu - thanks for the correction :)</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12729"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12729" class="active">How is it possible for a</a></h3>
+
+  <div class="submitted">
+    <b>Sitesh Shrivastava</b> - 3rd Jan,2011 16:21:41.  </div>
+
+  <div class="content">
+    <p>How is it possible for a solution to take 0M of memory ?</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12745"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12745" class="active">It is given &nbsp;that</a></h3>
+
+  <div class="submitted">
+    <b>Manohar Singh</b> - 3rd Jan,2011 22:28:19.  </div>
+
+  <div class="content">
+    <p>It is given &nbsp;that 0&lt;=Xi&lt;=<span>1,000,000 then does it mean that X'i is also within this range after shifting or can people be moved back to any distance....</span></p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12746"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12746" class="active">Can a person stand at a</a></h3>
+
+  <div class="submitted">
+    <b>Sauradyuti Coondu</b> - 3rd Jan,2011 22:28:32.  </div>
+
+  <div class="content">
+    <p>Can a person stand at a position beyond 1,000,000 after spreading?</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12749"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12749" class="active">The problem statement says</a></h3>
+
+  <div class="submitted">
+    <b>Stephen Merriman</b> - 4th Jan,2011 01:40:18.  </div>
+
+  <div class="content">
+    <p>The problem statement says that x'_i &gt;= 0. It doesn't say anything else.</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12768"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12768" class="active">i m facing a very strange</a></h3>
+
+  <div class="submitted">
+    <b>Manohar Singh</b> - 4th Jan,2011 10:54:38.  </div>
+
+  <div class="content">
+    <p>i m facing a very strange problem.... the floating point values 
+are automatically changed. for example if input is 4.9 it becomes 
+4.900000000254 something like this ., where it must be 
+4.900000000000000000 ...</p>
+<p>&lt;iomanip&gt; is not working ,,,, is there any good site or page for its tutorial. ..any other suggestion is also expected.</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12788"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12788" class="active">@admin There is some bug in</a></h3>
+
+  <div class="submitted">
+    <b>Ashwini Kumar</b> - 4th Jan,2011 20:52:22.  </div>
+
+  <div class="content">
+    <p>@admin There is some <span>bug</span> in the judge a problem cannot take 0M space</p>
+<p color="green">@manohar Try using x/2.0000f etc. in case of computations float varoiables are double by default</p>
+<p color="green">
+</p><hr>
+  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12789"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12789" class="active">@admin: plz tell me why my</a></h3>
+
+  <div class="submitted">
+    <b>Manohar Singh</b> - 4th Jan,2011 21:45:09.  </div>
+
+  <div class="content">
+    <p>@admin: plz tell me why my code is not being accepted... it is an
+ easy prblm with simple trick..its giving me correct ans for any 
+input.... but on submission still it is giving me WA... plz check and 
+tell me one input set for which it fails...</p>  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12790"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12790" class="active">Thanks guddu :)</a></h3>
+
+  <div class="submitted">
+    <b>Manohar Singh</b> - 4th Jan,2011 21:57:36.  </div>
+
+  <div class="content">
+    Thanks guddu :)  </div>
+
+  <!---->
+  
+</div>
+<a id="comment-12797"></a>
+<div class="comment clear-block">
+  
+
+  <h3><a href="http://www.codechef.com/JAN11/problems/FLUSHOT#comment-12797" class="active">@manohar....did u get your</a></h3>
+
+  <div class="submitted">
+    <b>sumit dugar</b> - 5th Jan,2011 10:29:05.  </div>
+
+  <div class="content">
+    <p>@manohar....did u get your sol accepted???...i m having the same problem....plz help!!!</p>  </div>
+
+  <!---->
+  
+</div>
+<div class="box">
+  <h2 class="title">Post new comment.<br><font size="1" color="black">Have you browsed through the <a href="http://www.codechef.com/wiki/faq"><font size="1" color="blue">FAQ</font></a> ?</font></h2>  <div class="content"><form action="/comment/reply/504493" accept-charset="UTF-8" method="post" id="comment-form">
+<div><div class="form-item">
+ <label>Your name: </label>
+ pratyush1299
+</div>
+<div class="form-item" id="edit-fbconnect-feed-wrapper">
+ <label class="option" for="edit-fbconnect-feed"><input name="fbconnect_feed" id="edit-fbconnect-feed" value="1" checked="checked" class="form-checkbox" type="checkbox"> <img src="a_data_002/Connect_light_small_short.htm"> Publish To Facebook</label>
+</div>
+<div class="form-item" id="edit-comment-wrapper">
+ <label for="edit-comment">Comment: <span class="form-required" title="This field is required.">*</span></label>
+ <textarea style="display: none;" cols="60" rows="15" name="comment" id="edit-comment" class="form-textarea required">&lt;p&gt;&lt;br mce_bogus="1"&gt;&lt;/p&gt;</textarea><span class="mceEditor defaultSkin" id="edit-comment_parent"><table style="width: 496px; height: 310px;" class="mceLayout" id="edit-comment_tbl" cellpadding="0" cellspacing="0"><tbody><tr class="mceFirst"><td class="mceToolbar mceLeft mceFirst mceLast"><a href="#" accesskey="q" title="Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X"><!-- IE --></a><table id="edit-comment_toolbar1" class="mceToolbar mceToolbarRow1 Enabled" align="" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceToolbarStart mceToolbarStartButton mceFirst"><span><!-- IE --></span></td><td><a id="edit-comment_bold" href="javascript:;" class="mceButton mceButtonEnabled mce_bold" onmousedown="return false;" onclick="return false;" title="Bold (Ctrl+B)"><span class="mceIcon mce_bold"></span></a></td><td><a id="edit-comment_italic" href="javascript:;" class="mceButton mceButtonEnabled mce_italic" onmousedown="return false;" onclick="return false;" title="Italic (Ctrl+I)"><span class="mceIcon mce_italic"></span></a></td><td><a id="edit-comment_underline" href="javascript:;" class="mceButton mceButtonEnabled mce_underline" onmousedown="return false;" onclick="return false;" title="Underline (Ctrl+U)"><span class="mceIcon mce_underline"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="edit-comment_link" href="javascript:;" class="mceButton mce_link mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Insert/edit link"><span class="mceIcon mce_link"></span></a></td><td><a id="edit-comment_unlink" href="javascript:;" class="mceButton mce_unlink mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Unlink"><span class="mceIcon mce_unlink"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="edit-comment_image" href="javascript:;" class="mceButton mceButtonEnabled mce_image" onmousedown="return false;" onclick="return false;" title="Insert/edit image"><span class="mceIcon mce_image"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="edit-comment_code" href="javascript:;" class="mceButton mceButtonEnabled mce_code" onmousedown="return false;" onclick="return false;" title="Edit HTML Source"><span class="mceIcon mce_code"></span></a></td><td class="mceToolbarEnd mceToolbarEndButton mceLast"><span><!-- IE --></span></td></tr></tbody></table><table id="edit-comment_toolbar2" class="mceToolbar mceToolbarRow2 Enabled" align="" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceToolbarStart mceToolbarStartListBox mceFirst"><span><!-- IE --></span></td><td><table id="edit-comment_formatselect" class="mceListBox mceListBoxEnabled mce_formatselect" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceFirst"><a id="edit-comment_formatselect_text" href="javascript:;" class="mceText" onclick="return false;" onmousedown="return false;">Paragraph</a></td><td class="mceLast"><a id="edit-comment_formatselect_open" tabindex="-1" href="javascript:;" class="mceOpen" onclick="return false;" onmousedown="return false;"><span></span></a></td></tr></tbody></table></td><td><span class="mceSeparator"></span></td><td><a id="edit-comment_sup" href="javascript:;" class="mceButton mceButtonEnabled mce_sup" onmousedown="return false;" onclick="return false;" title="Superscript"><span class="mceIcon mce_sup"></span></a></td><td><a id="edit-comment_sub" href="javascript:;" class="mceButton mceButtonEnabled mce_sub" onmousedown="return false;" onclick="return false;" title="Subscript"><span class="mceIcon mce_sub"></span></a></td><td><a id="edit-comment_hr" href="javascript:;" class="mceButton mceButtonEnabled mce_hr" onmousedown="return false;" onclick="return false;" title="Insert horizontal ruler"><span class="mceIcon mce_hr"></span></a></td><td><a id="edit-comment_table" href="javascript:;" class="mceButton mceButtonEnabled mce_table" onmousedown="return false;" onclick="return false;" title="Inserts a new table"><span class="mceIcon mce_table"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="edit-comment_row_props" href="javascript:;" class="mceButton mce_row_props mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Table row properties"><span class="mceIcon mce_row_props"></span></a></td><td><a id="edit-comment_cell_props" href="javascript:;" class="mceButton mce_cell_props mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Table cell properties"><span class="mceIcon mce_cell_props"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="edit-comment_row_before" href="javascript:;" class="mceButton mce_row_before mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Insert row before"><span class="mceIcon mce_row_before"></span></a></td><td><a id="edit-comment_row_after" href="javascript:;" class="mceButton mce_row_after mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Insert row after"><span class="mceIcon mce_row_after"></span></a></td><td><a id="edit-comment_delete_row" href="javascript:;" class="mceButton mce_delete_row mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Delete row"><span class="mceIcon mce_delete_row"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="edit-comment_col_before" href="javascript:;" class="mceButton mce_col_before mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Insert column before"><span class="mceIcon mce_col_before"></span></a></td><td><a id="edit-comment_col_after" href="javascript:;" class="mceButton mce_col_after mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Insert column after"><span class="mceIcon mce_col_after"></span></a></td><td><a id="edit-comment_delete_col" href="javascript:;" class="mceButton mce_delete_col mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Remove column"><span class="mceIcon mce_delete_col"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="edit-comment_split_cells" href="javascript:;" class="mceButton mce_split_cells mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Split merged table cells"><span class="mceIcon mce_split_cells"></span></a></td><td><a id="edit-comment_merge_cells" href="javascript:;" class="mceButton mce_merge_cells mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Merge table cells"><span class="mceIcon mce_merge_cells"></span></a></td><td class="mceToolbarEnd mceToolbarEndButton mceLast"><span><!-- IE --></span></td></tr></tbody></table><a href="#" accesskey="z" title="Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X" onfocus="tinyMCE.getInstanceById('edit-comment').focus();"><!-- IE --></a></td></tr><tr><td class="mceIframeContainer mceFirst mceLast"><iframe style="width: 100%; height: 243px;" src='javascript:""' id="edit-comment_ifr" frameborder="0"></iframe></td></tr><tr class="mceLast"><td class="mceStatusbar mceFirst mceLast"><div id="edit-comment_path_row">Path: <a accesskey="x" href="#"></a><span id="edit-comment_path"><a class="mcePath_0" onmousedown="return false;" href="javascript:;">p</a></span></div><a class="mceResize" onclick="return false;" href="javascript:;" id="edit-comment_resize"></a></td></tr></tbody></table></span>
+</div>
+<input name="form_build_id" id="form-ee6efac45d40c32b247cdc111a060fe9" value="form-ee6efac45d40c32b247cdc111a060fe9" type="hidden">
+<input name="form_token" id="edit-form-token" value="78807d2f5e10006cd1b4ff969666cc35" type="hidden">
+<input name="form_id" id="edit-comment-form" value="comment_form" type="hidden">
+<input name="op" id="edit-submit" value="Save" class="form-submit" type="submit">
+
+</div></form>
+</div>
+</div>
+</div>
+													</div>
+													<div class="primary-colum-width-right">
+														<div class="content-spacer-b">
+															<div id="block-block-46" class="block block-block">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
+  <div class="content">
+        <div style="padding: 10px 0pt;"> <a href="http://www.codechef.com/goforgold" target="_blank"> <img style="width: 300px;" src="a_data_002/codechef-go-for-gold.gif" alt="Directi Go for Gold" border="0"> </a> </div>
+  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1 b"></div>
+</div>
+<div id="block-block-9" class="block block-block">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
+  <div class="content">
+    <h3>SUCCESSFUL SUBMISSIONS FOR THIS PROBLEM:</h3>    <div id="rankContentDiv" class="table-results maintable"><div class="table-questions" id="rankContentDiv">
+<table class="problems maintable" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr class="headerrow">
+	<th width="20%">User</th>
+	<th align="center" width="6%">Mem</th>
+	<th align="center" width="6%">Time</th>
+	<th class="headerrowright" align="center" width="5%">Lang</th>
+	<th class="headerrowright" align="center" width="5%"> </th>
+</tr><tr class="kol1" style="height: 40px;" bgcolor="#e0e0e0">
+				<td><a href="http://www.codechef.com/users/shadow" title="Gunjan Sharma">Gunjan Sharma</a></td>
+				<td class="statustext">2.8M</td>
+				<td class="statustext">0.29</td><td class="statustext" colspan="2">C++ 4.3.2</td></tr><tr class="kol1" style="height: 40px;" bgcolor="#ffffff">
+				<td><a href="http://www.codechef.com/users/uniquecode" title="uniquecode">uniquecode</a></td>
+				<td class="statustext">1.9M</td>
+				<td class="statustext">0.36</td><td class="statustext" colspan="2">C</td></tr><tr class="kol1" style="height: 40px;" bgcolor="#e0e0e0">
+				<td><a href="http://www.codechef.com/users/pieguy" title="pieguy">pieguy</a></td>
+				<td class="statustext">2.7M</td>
+				<td class="statustext">0.36</td><td class="statustext" colspan="2">C++ 4.3.2</td></tr><tr class="kol1" style="height: 40px;" bgcolor="#ffffff">
+				<td><a href="http://www.codechef.com/users/djstrong" title="djstrong">djstrong</a></td>
+				<td class="statustext">1.7M</td>
+				<td class="statustext">0.38</td><td class="statustext" colspan="2">C</td></tr><tr class="kol1" style="height: 40px;" bgcolor="#e0e0e0">
+				<td><a href="http://www.codechef.com/users/d3394k" title="Deepak Kumar">Deepak Kumar</a></td>
+				<td class="statustext">6.9M</td>
+				<td class="statustext">0.38</td><td class="statustext" colspan="2">C++ 4.3.2</td></tr><tr class="kol1" style="height: 40px;" bgcolor="#ffffff">
+				<td><a href="http://www.codechef.com/users/pragrame" title="Pradeep George Mathias">Pradeep George Mathias</a></td>
+				<td class="statustext">2.7M</td>
+				<td class="statustext">0.45</td><td class="statustext" colspan="2">C++ 4.3.2</td></tr><tr class="kol1" style="height: 40px;" bgcolor="#e0e0e0">
+				<td><a href="http://www.codechef.com/users/theluy" title="theluy">theluy</a></td>
+				<td class="statustext">2.7M</td>
+				<td class="statustext">0.45</td><td class="statustext" colspan="2">C++ 4.3.2</td></tr><tr class="kol1" style="height: 40px;" bgcolor="#ffffff">
+				<td><a href="http://www.codechef.com/users/udayrocks2k8" title="udayrocks2k8">udayrocks2k8</a></td>
+				<td class="statustext">2.7M</td>
+				<td class="statustext">0.45</td><td class="statustext" colspan="2">C++ 4.3.2</td></tr><tr class="kol1" style="height: 40px;" bgcolor="#e0e0e0">
+				<td><a href="http://www.codechef.com/users/emotionalBlind" title="emotionalBlind">emotionalBlind</a></td>
+				<td class="statustext">2.7M</td>
+				<td class="statustext">0.46</td><td class="statustext" colspan="2">C++ 4.3.2</td></tr><tr class="kol1" style="height: 40px;" bgcolor="#ffffff">
+				<td><a href="http://www.codechef.com/users/demo" title="demo">demo</a></td>
+				<td class="statustext">2.8M</td>
+				<td class="statustext">0.46</td><td class="statustext" colspan="2">C++ 4.3.2</td></tr><tr class="kol1" style="height: 40px;" bgcolor="#e0e0e0">
+				<td><a href="http://www.codechef.com/users/wywcgs" title="wywcgs">wywcgs</a></td>
+				<td class="statustext">2.7M</td>
+				<td class="statustext">0.46</td><td class="statustext" colspan="2">C++ 4.3.2</td></tr><tr class="kol1" style="height: 40px;" bgcolor="#ffffff">
+				<td><a href="http://www.codechef.com/users/s.max" title="s.max">s.max</a></td>
+				<td class="statustext">1.7M</td>
+				<td class="statustext">0.46</td><td class="statustext" colspan="2">C</td></tr></tbody></table>
+<table class="problems" border="0" width="99%">
+<tbody>
+<tr>
+	<td align="left" width="27%"><input src="a_data_003/page-prev-inactive.gif" id="ssubmissionsContestPreviousButtoninactive" class="JAN11 FLUSHOT" type="image"></td>
+	<td>
+		<div id="ssubmissionsAjaxProgressDiv" style="display: none;" align="center">
+		<img src="a_data_003/ajax_loader_d.gif" style="width: 120px; height: 15px;">
+		<input name="ssubmissionsStart" value="12" id="ssubmissionsContestStart" type="hidden">
+		<input name="ssubmissionsCount" value="12" id="ssubmissionsContestCount" type="hidden">
+		<input name="userid" id="userid" value="36228" type="hidden">
+		</div>
+	</td>
+	<td align="right" width="25%"><div class="p_link"><img src="a_data_003/page-next-active.gif" id="ssubmissionsContestNextButtonactive" class="JAN11 FLUSHOT"></div></td>
+</tr>
+</tbody>
+</table>
+
+</div></div>  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1 b"></div>
+</div>
+<div id="block-block-23" class="block block-block">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
+  <div class="content">
+        <div align="right"><a target="_blank" href="http://www.twitter.com/codechef"><img alt="" src="a_data_002/icon_twitter.png"></a><a target="_blank" href="http://www.facebook.com/home.php?#/pages/CodeChef/53227312798?ref=ts"><img alt="CodeChef is a global programming community" src="a_data_002/icon_facebook.png"></a><a target="_blank" href="http://www.flickr.com/photos/directi/sets/72157617120023194/"><img alt="CodeChef hosts online programming competitions" src="a_data_002/icon_flickr.png"></a></div>  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1 b"></div>
+</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<img class="content-wrapper-header" src="a_data_002/content-wrapper-bootm-big.gif">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</tbody></table>
+
+        <div id="footer" class="wrapper">
+      <!--<div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>-->
+      <div class="content clear-block">
+        <!-- Footer Contents -->
+        <div id="block-block-13" class="block block-block block-header">
+  <div class="content">
+        <script language="javascript" type="text/javascript">
+function formatTime(ts) {
+  now = new Date(ts);
+ 
+  localtime = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+  
+  if (min <= 9) {
+	 min = "0" + min;
+  }
+  if (sec <= 9) {
+	 sec = "0" + sec;
+  }
+  if (hour > 12) {
+	 hour = hour - 12;
+	 add = " PM";
+  } else {
+	 hour = hour;
+	 add = " AM";
+  }
+  if (hour == 12) {
+	 add = " PM";
+  }
+  if (hour == 00) {
+	 hour = "12";
+  }
+	
+  $('#server-time').html(((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+  
+  nextSec = (now.getTime() + 1000);
+  
+  setTimeout("formatTime("+nextSec+")", 1000);
+}
+</script>
+<div id="disclaimer">CodeChef is a non-commercial competitive programming community</div>
+<div class="inner-wrapper">
+<div class="cols-2">
+<div id="secondary-nav">
+<ul>
+    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+    <li><a target="_blank" href="http://www.directi.com/">About Directi</a></li>
+    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+    <li><a href="http://www.codechef.com/c-programming">C-Programming</a></li>
+    <li><a href="http://www.codechef.com/Programming-Languages">Programming Languages</a></li>
+    <li><a href="mailto:feedback@codechef.com">feedback@codechef.com</a></li>
+</ul>
+</div>
+<div id="copyright" class="cols-2">© 2009 <a style="color: rgb(0, 0, 0);" href="http://www.directi.com/">Directi Group</a>.  All Rights Reserved.  CodeChef uses SPOJ © by <a style="color: rgb(0, 0, 0);" href="http://www.sphere-research.com/">Sphere Research Labs</a></div>
+</div>
+<div class="cols-2-right" align="right">
+<div id="sponsor-strip"><a target="_blank" href="http://www.directi.com/"><img alt="CodeChef a product of Directi" src="a_data_002/footer-sponsor-strip.gif"></a><br>
+<span>The time now is: <span id="server-time">01:36:24 PM</span></span>
+				<script language="javascript">
+						formatTime('January 05, 2011 10:47:38');
+					</script></div>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="a_data_002/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-53602-42");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+<!-- Google Code for Visitors that do not sign-up Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1066618556;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "gbUUCPTlhAIQvJ3N_AM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="a_data_002/conversion.js">
+</script><img src="Flu%20Shot%20Lineup%20_%20CodeChef_files/a.gif" border="0" height="1" width="1">
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1066618556/?label=gbUUCPTlhAIQvJ3N_AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<div class="cc-footer-seo">
+<span><a href="http://www.codechef.com/">CodeChef</a> - A Platform for Aspiring Programmers</span>
+<p>CodeChef was created as a platform to help programmers make it big in the world of <strong>computer programming</strong>. At CodeChef we work hard to revive the geek in you by hosting <strong>programming contests</strong> on a monthly basis. We also aim to have training sessions and events related to <strong>online programming</strong> for programmers around the world. Apart from providing a platform for <strong>programming competitions</strong>, CodeChef also has various tutorials and forum discussions to help those who are new to the world of <strong>computer programming</strong>. </p>
+<p></p>
+<span><a href="http://www.codechef.com/problems/easy">Practice Section</a> - A Place to hone your 'Computer Programming Skills'</span>
+<p>
+Try your hand at one of our many practice problems and submit your 
+solution in a language of your choice. Our judge accepts solutions in 
+over 35+ programming languages. <strong>Online programming</strong> was 
+never this much fun! Receive points, and move up through the CodeChef 
+ranks. Use our practice section to better prepare yourself for the 
+multiple <strong>programming competitions</strong> that take place through-out the month on CodeChef.
+</p>
+<p></p>
+<span><a href="http://www.codechef.com/contests/">Compete</a> - Monthly Programming Contests and Cook-offs</span>
+<p>Here is where you can show off your <strong>computer programming</strong> skills. Take part in our 10 day long monthly <strong>programming contests</strong> and the shorter format Cook-off <strong>programming contests</strong>.
+ Put yourself up for recognition and win great prizes. Prizes worth up 
+to Rs.20,000 and $700 are up for grabs every month along with lots more 
+CodeChef goodies.</p>
+<p></p>
+<span><a href="http://discuss.codechef.com/">Discuss</a></span>
+<p>Are you new to <strong>computer programming</strong>? Do you need 
+help with algorithms? Then be part of CodeChefs Forums and interact with
+ all our programmers love helping out other programmers and share their 
+ideas.</p>
+<p></p>
+<span><a href="http://www.codechef.com/community">CodeChef Community</a></span>
+<p>As part of our Educational initiative, we give institutes the 
+opportunity to associate with CodeChef in the form of Campus Chapters. 
+Hosting <strong>online programming competitions</strong> is not the only
+ feature on CodeChef. Be a part of the CodeChef community through 
+CodeChef meetups and techtalks. You can also host a <strong>programming contest</strong> for your institute on CodeChef and be a guest author on our blog.</p>
+<p><a href="http://www.bigrock.com/">Domain Names</a>, <a href="http://www.bigrock.com/">Web hosting</a>, and <a href="http://www.bigrock.com/">Website Design</a> provided by <a href="http://www.bigrock.com/">BigRock.com</a></p>
+</div>
+  </div>
+</div>
+      </div>
+    </div>
+        <script type="text/javascript" src="a_data_002/en_US.js"></script><form action="/JAN11/problems/FLUSHOT/" accept-charset="UTF-8" method="post" id="fbconnect-autoconnect-form">
+<div><!--<input type="submit" name="op" id="edit-connect" value="Connect"  class="form-submit" />
+--><input name="form_build_id" id="form-2675f27f3c7caa0226da02fa52e0a971" value="form-2675f27f3c7caa0226da02fa52e0a971" type="hidden">
+<input name="form_token" id="edit-fbconnect-autoconnect-form-form-token" value="a3dd3ecb324c1d90f34ac59275beac44" type="hidden">
+<input name="form_id" id="edit-fbconnect-autoconnect-form" value="fbconnect_autoconnect_form" type="hidden">
+
+</div></form>
+<script type="text/javascript">FB.init("2568d33c49151c6f050973a15974fc00");</script>  </center>
+  <script type="text/javascript"> 
+	function update_user_box() {
+		$("#facebook-button").html("<a href=\"javascript:void(0)\" onclick=\"openInvitationWin()\" title=\"Invite Friends from Facebook\"><img src=\"/themes/abessive/images/facebook-friend.gif\" /></a>");
+		FB.XFBML.Host.parseDomTree(); 
+		//FB.XFBML.Host.refresh();
+	}
+	
+	function openInvitationWin() {
+		window.open("/facebook/invite.php?dest=http%3A%2F%2Fwww.codechef.com%2FJAN11%2Fproblems%2FFLUSHOT%2F&prob=Flu Shot Lineup&user=Pratyush Verma", "facebook_window", "scrollbars=1,width=800px,height=800px");
+		return false;
+	}
+  </script>
+  <script type="text/javascript">FB.init("2568d33c49151c6f050973a15974fc00", "http://www.codechef.com/facebook/xd_receiver.php",{"ifUserConnected" : update_user_box}); </script>
+
+    </center><div id="lightbox2-overlay" style="display: none;"></div>      <div id="lightbox" style="display: none;" class="lightbox2-orig-layout">        <div style="background-color: rgb(238, 237, 236); color: rgb(0, 0, 0);" id="outerImageContainer"><div id="modalContainer" style="display: none; padding: 10px;"></div><div id="frameContainer" style="display: none; padding: 10px;"></div><div id="imageContainer" style="display: none; padding: 10px;"><img id="lightboxImage" alt=""><div id="hoverNav"><a style="padding-top: 10px;" id="prevLink" title="Previous" href="#"></a><a style="padding-top: 10px;" id="nextLink" title="Next" href="#"></a></div></div><div id="loading"><a href="#" id="loadingLink"></a></div></div>        <div style="background-color: rgb(238, 237, 236); color: rgb(0, 0, 0);" id="imageDataContainer" class="clearfix">          <div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><div id="frameHoverNav"><a style="padding-top: 10px;" id="framePrevLink" title="Previous" href="#"></a><a style="padding-top: 10px;" id="frameNextLink" title="Next" href="#"></a></div><a style="background-color: rgb(238, 237, 236); color: rgb(0, 0, 0);" id="bottomNavClose" title="Close" href="#"></a><a id="bottomNavZoom" href="#"></a><a id="bottomNavZoomOut" href="#"></a><a id="lightshowPause" title="Pause Slideshow" href="#" style="display: none;"></a><a id="lightshowPlay" title="Play Slideshow" href="#" style="display: none;"></a></div></div>        </div>      </div></body></html>

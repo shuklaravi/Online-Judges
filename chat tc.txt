@@ -1,0 +1,189 @@
+http://vexorian.blogspot.com/2011/01/member-srm-494-commentary-and.html
+
+
+
+
+
+
+
+
+msg555> so anyone doing the hackercup?
+msg555> it seems it's still not accepting  my solutions
+msg555> I'm not sure if working on the other problems is worth my time
+ahm.kam_92> msg555: yes me
+msg555> ahm.kam_92: were you able to submit?
+ahm.kam_92> msg555: I haven't try yet..
+ahm.kam_92> msg555: I will tell u when I do.
+msg555> ahm.kam_92: it just told me I needed to submit my output and source
+msg555> ahm.kam_92: even though I was
+ahm.kam_92> msg555: tried*
+msg555> ahm.kam_92: ok, let me know how it goes
+juver> msg555: it's ok
+juver> msg555: sumbit routine works fine
+juver> msg555: try to resumbit, if the time has not expired
+msg555> juver: no it was a while ago
+msg555> juver: and I tried repeatedly
+msg555> juver: two browsers
+juver> msg555: hm, may be
+msg555> this whole contest has been a comedy of errors
+SHAHEEN_SETU> viharvera
+msg555> well it let me submit for the third problem
+msg555> seems whatever was the problem is resolved now
+msg555> still cant' get that first problem back though
+SHAHEEN_SETU> is 2days rating and color has been changed ?
+msg555> yes
+SHAHEEN_SETU> one of my frnd in my rm gt 200 pt while i got 600 pt
+SHAHEEN_SETU> he is green me grey..bro is there any reason?
+SHAHEEN_SETU> ?
+muntasir_120> SHAHEEN_SETU: log out and log in again to see colour change
+muntasir_120> SHAHEEN_SETU: if any
+ahm.kam_92> H.T.C: madakhaltesh leh?
+H.T.C> ahm.kam_92: ana fel share3 min 11 el sob7 !!
+H.T.C> ahm.kam_92: 4 dorooos !
+H.T.C> ahm.kam_92: kan sahl ?
+NobuMiu> Hi there, I will have a live about reviewing SRM494 and Facebook Hacker Cup after 10 minutes at http://www.ustream.tv/channel/topcoder-reviewing-phase
+NobuMiu> I have just started the live at http://www.ustream.tv/channel/topcoder-reviewing-phase
+an_ant> mom, I'm on TV!
+an_ant> Mom, turn Topcoder Arena on!
+vexorian> Faux-Editorial for div2 500/ div1 250: http://vexorian.blogspot.com/2011/01/member-srm-494-commentary-and.html
+an_ant> Mom is mad at me because I challanged her solution..
+blackmath> can anyone explain the 500 pointer? :)
+neal_wu> blackmath: :)
+neal_wu> blackmath: ok so
+neal_wu> blackmath: first let's think about the "cut trees to make maximal beauty" thing
+neal_wu> blackmath: consider any random sequence
+neal_wu> blackmath: and try to see how to do that
+neal_wu> blackmath: that's the first step
+neal_wu> blackmath: actually once you do that it probably becomes more or less a problem you've solved before :P
+blackmath> neal_wu: I even solved that one
+blackmath> neal_wu: but still don't understand it :)
+neal_wu> blackmath: do you know how to do the maximal beauty?
+neal_wu> blackmath: so any random sequence is like a series of mountains
+neal_wu> blackmath: goes up a lot
+neal_wu> blackmath: then down a lot
+neal_wu> blackmath: then up a lot
+neal_wu> blackmath: then down a lot
+neal_wu> blackmath: and so on
+blackmath> neal_wu: so? :)
+neal_wu> blackmath: so...
+neal_wu> blackmath: the maximal beauty
+neal_wu> blackmath: is
+neal_wu> blackmath: when you take all the peaks and troughs
+neal_wu> blackmath: right?
+neal_wu> blackmath: or "peaks and crests" if you prefer :)
+blackmath> neal_wu: hmm
+blackmath> neal_wu: could you may be explain the sample?
+blackmath> neal_wu: sample 1)
+neal_wu> blackmath: ah hold on
+neal_wu> blackmath: do you not understand the problem?
+neal_wu> blackmath: or do you not understand the solution?
+neal_wu> blackmath: :)
+blackmath> neal_wu: I understand the solution
+blackmath> neal_wu: in fact I even wrote one
+neal_wu> blackmath: but you don't know *why*
+blackmath> neal_wu: but only from the explanation give in sample 1)
+neal_wu> blackmath: ?
+blackmath> neal_wu: yes :)
+neal_wu> blackmath: hmm, ok
+neal_wu> blackmath: so the key is
+neal_wu> blackmath: cutting trees to get maximal beauty
+neal_wu> blackmath: occurs from cutting everything but peaks and crests
+neal_wu> blackmath: in the end sequence
+neal_wu> blackmath: so if you have 1 2 3 4 3 2 1 2 3 4 3 2 1
+neal_wu> blackmath: you throw away everything but the 1's and 4's
+travm12> exactly
+neal_wu> blackmath: to get |1 - 4| + |4 - 1| + |1 - 4| + |4 - 1|
+neal_wu> blackmath: but this is equal to |1 - 2| + |2 - 3| + |3 - 4| + |4 - 3| + |3 - 2| + |2 - 1| + ...
+neal_wu> blackmath: (and that's true in general)
+blackmath> neal_wu: oh...
+neal_wu> blackmath: so basically
+blackmath> neal_wu: :)
+neal_wu> blackmath: regardless of the end sequence
+blackmath> neal_wu: I didn't understand the real meaning of cutting
+travm12> i love you
+mrtempo> ahm.kam_92: hey
+neal_wu> blackmath: we can obtain |a0 - a1| + |a1 - a2| + ... beauty
+mrtempo> ahm.kam_92: shedd 7eelak ..
+mrtempo> ahm.kam_92: 2arrabt :D
+neal_wu> blackmath: and clearly this is maximum possible
+mrtempo> ahm.kam_92: zedt add eh ?!
+neal_wu> blackmath: since cutting can't increase beauty
+neal_wu> blackmath: *this is the maximum
+neal_wu> blackmath: haha yeah, I didn't either :D
+neal_wu> blackmath: eventually figured it out from reading the examples
+neal_wu> blackmath: at first I thought you can decrease tree heights to whatever amount you want
+blackmath> neal_wu: I thought that the tree is cut, but is still there
+neal_wu> blackmath: and I was like wow that sounds HARD :D
+blackmath> neal_wu: :)
+blackmath> neal_wu: may be it should have been about numbers and erasing them ;)
+neal_wu> blackmath: yeah, probably :P
+neal_wu> blackmath: anyway
+blackmath> neal_wu: thanks :)
+neal_wu> blackmath: so once you make the realization about the beauty function
+neal_wu> blackmath: you can either be stupid like me
+neal_wu> blackmath: and immediately start coding DP
+neal_wu> blackmath: or you can be smarter
+neal_wu> blackmath: and realize that you can just add things up
+neal_wu> blackmath: :D
+neal_wu> blackmath: similarly for the 1000
+neal_wu> blackmath: you can be stupid like me
+neal_wu> blackmath: and realize the two key components
+neal_wu> blackmath: a) gaussian elimination
+blackmath> neal_wu: well...
+neal_wu> blackmath: and b) reducing the board to 2^450 choices rather than 2^22500
+neal_wu> blackmath: but then not make the connection between the two to get a 450^3 solution :D
+blackmath> neal_wu: it wasn't a good SRM for me anyway
+neal_wu> blackmath: same, lots of opportunities missed
+neal_wu> blackmath: did DP on the 500 (:D)
+neal_wu> blackmath: missed out on the solution to the 1000
+MauricioC> Hey, at least you didn't have to resubmit the 500 because of an obvious overflow bug :P
+blackmath> neal_wu: I even failed the easy one :)
+neal_wu> blackmath: convinced myself that a wrong challenge case on the 250 was a correct algorithm
+neal_wu> blackmath: and missed a challenge case that I was specifically looking for on the 500
+neal_wu> blackmath: :D
+blackmath> neal_wu: and I submitted the 500 pointer after half an hour or so
+neal_wu> blackmath: I supposed at least I didn't fail system tests though
+neal_wu> blackmath: *suppose
+blackmath> neal_wu: but only because I was that happy to finally have the sample right
+neal_wu> MauricioC: hey that's the bug I was looking for on the 500 :D
+neal_wu> MauricioC: and somebody did it and I didn't notice :P
+neal_wu> blackmath: ah nice
+neal_wu> blackmath: guessing solutions is always fun :)
+MauricioC> neal_wu: Did you try problem B from Hacker Cup?
+blackmath> MauricioC: did you? :)
+MauricioC> blackmath: Yes, but treating subsequences with multiple maxima was too tricky for me
+MauricioC> blackmath: You?
+blackmath> MauricioC: I tried
+blackmath> MauricioC: but gave up ;)
+blackmath> MauricioC: as I didn't get one of the samples
+blackmath> MauricioC: but well
+blackmath> MauricioC: I was not really motivated
+neal_wu> MauricioC: no
+blackmath> MauricioC: they should have explantations to at least one of their samples
+neal_wu> MauricioC: well
+neal_wu> MauricioC: solved it after the contest was over :)
+neal_wu> MauricioC: so here's what I did
+neal_wu> MauricioC: did the SRM
+neal_wu> MauricioC: it ended
+neal_wu> MauricioC: I realized how to do the 1000
+neal_wu> MauricioC: then I went to lunch
+neal_wu> MauricioC: came back
+neal_wu> MauricioC: talked with my roommates
+neal_wu> MauricioC: and then did the first problem on hacker cup
+neal_wu> MauricioC: and placed 936th :)
+neal_wu> MauricioC: by submitting in the last 5 minutes
+blackmath> neal_wu: congrats :)
+neal_wu> MauricioC: :D
+neal_wu> blackmath: hahaha thanks
+neal_wu> blackmath: anyway I think I'll go... solve the 250 in n^2 log n
+neal_wu> blackmath: the 500 in O(N)
+neal_wu> blackmath: and the 1000 in n^3
+neal_wu> blackmath: :D
+blackmath> neal_wu: I'm wondering...
+blackmath> neal_wu: is there a n^2 solution to the 250pointer?
+MauricioC> neal_wu: Haha, awesome :D
+neal_wu> blackmath: hmm yeah not sure
+ahm.kam_92> mrtempo: haha :D
+neal_wu> blackmath: though n^2 log n is quite easy
+ahm.kam_92> mrtempo: there?
+mrtempo> ahm.kam_92: yes

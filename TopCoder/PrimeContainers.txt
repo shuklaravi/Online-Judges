@@ -1,0 +1,57 @@
+PROBLEM STATEMENT
+NOTE: This problem statement contains superscripts that may not display properly if viewed outside of the applet.
+Elly loves "div 2" problems! By this she means problems in which she has to divide by two! She notices that some numbers contain prime numbers in themselves! A number X contains another number Y if Y = X / 2k (here and everywhere later in the statement the results of all divisions are rounded down, i.e., integer divisions), for some non-negative integer k.
+She calls all positive integers "prime containers" and defines the size of a prime container as the number of prime numbers contained in that positive integer. For example the size of number 7 is 2, because 7/1 = 7 and 7/2 = 3 are prime; the size of 47 is 5, because 47, 23, 11, 5 and 2 are prime; the size of 959 is 6, since it contains the prime numbers 479, 239, 59, 29, 7 and 3.
+Given a positive int N help Elleonora by finding the number of prime numbers it contains.
+
+
+DEFINITION
+Class:PrimeContainers
+Method:containerSize
+Parameters:int
+Returns:int
+Method signature:int containerSize(int N)
+
+
+NOTES
+-A prime number is a natural number greater than one that has exactly two distinct natural number divisors: 1 and itself.
+
+
+CONSTRAINTS
+-N will be between 1 and 1,000,000, inclusive.
+
+
+EXAMPLES
+
+0)
+10
+
+Returns: 2
+
+The generated sequence is 10, 5, 2, 1. Ten is not a prime, however five and two are.
+
+1)
+42
+
+Returns: 2
+
+The Answer to Life, The Universe and Everything is quite poor prime container.
+
+2)
+47
+
+Returns: 5
+
+One of the examples in the problem statement.
+
+3)
+959
+
+Returns: 6
+
+Another example from the problem statement.
+
+4)
+421337
+
+Returns: 2

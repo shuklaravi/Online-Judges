@@ -1,0 +1,130 @@
+Bob
+Alice
+Alice
+Bob
+P N N N N P N N P N P N P N P 
+* P p p p N N P N P N P N P N 
+* * P p p N P N P N P N P N N 
+* * * P p N N P N P N P N N P 
+* * * * P N P N P N P N N P N 
+* * * * * P N P N P N N P N P 
+* * * * * * P N P N N P N P N 
+* * * * * * * P N N P N P N P 
+* * * * * * * * P p N P N P N 
+* * * * * * * * * P N N P N P 
+* * * * * * * * * * P p N P N 
+* * * * * * * * * * * P N N P 
+* * * * * * * * * * * * P p N 
+* * * * * * * * * * * * * P N 
+* * * * * * * * * * * * * * P 
+Loosing position Removing 9
+Removing 11
+Loosing position Removing 4
+Removing 15
+Loosing position Removing 7
+Removing 3
+Loosing position Removing 10
+Removing 14
+Loosing position Removing 13
+Removing 1
+Loosing position Removing 12
+Removing 5
+Loosing position Removing 8
+Removing 6
+Terminal Position : 8 8
+Bob
+Bob
+Alice
+Alice
+Alice
+Alice
+Bob
+Alice
+Bob
+Alice
+Alice
+Bob
+Alice
+Alice
+Bob
+Alice
+Bob
+Alice
+Bob
+Alice
+Alice
+Bob
+Alice
+Alice
+Bob
+Bob
+Bob
+Alice
+Alice
+Bob
+Bob
+Alice
+Bob
+Alice
+Bob
+Bob
+Alice
+Bob
+Alice
+Bob
+Bob
+Alice
+Bob
+Alice
+Bob
+Alice
+Bob
+Bob
+Alice
+Alice
+Bob
+Alice
+Alice
+Bob
+Alice
+Alice
+Alice
+Alice
+Bob
+Bob
+Alice
+Bob
+Alice
+Alice
+Bob
+Bob
+Alice
+Alice
+Bob
+Alice
+Alice
+Bob
+Bob
+Bob
+Alice
+Bob
+Alice
+Alice
+Alice
+Alice
+Alice
+Alice
+Alice
+Alice
+Alice
+Bob
+Alice
+Alice
+Alice
+Alice
+Alice
+Alice
+Bob
+Alice
+Alice
+Alice

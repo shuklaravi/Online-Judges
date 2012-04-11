@@ -1,0 +1,14 @@
+// BEGIN CUT HERE
+
+// END CUT HERE
+#line 5 "KiloManX.cpp"
+#include <string>
+#include <vector>
+#include <iostream>
+using namespace std;
+class KiloManX {
+	public:
+	int leastShots(vector <string> damageChart, vector <int> bossHealth) {
+		
+	}
+};

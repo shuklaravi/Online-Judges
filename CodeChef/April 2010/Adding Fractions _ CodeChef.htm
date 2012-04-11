@@ -1,0 +1,815 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html class="js" dir="ltr" xml:lang="en" 
+xmlns:fb="http://www.facebook.com/2008/fbml" 
+xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+   
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+  	<script src="Adding%20Fractions%20_%20CodeChef_files/FeatureLoader.js" type="text/javascript"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/fbconnect_002.js"></script><title>Adding
+ Fractions | CodeChef</title><meta http-equiv="Content-Type" 
+content="text/html; charset=UTF-8"><meta name="keywords" 
+content="programming,language,algorithm,contest,contester,Java,C#,Pascal,C,C++,python,ruby,caml,ocaml,perl,haskell,lisp,prolog,fortran,assembler,asembler,functional,online,judge,problem,problemset,ACM"><style type="text/css" media="all">.mceEditor img { display: inline; }</style><link
+ rel="shortcut icon" href="http://www.codechef.com/misc/favicon.ico" 
+type="image/x-icon"><link type="text/css" rel="stylesheet" media="all" 
+href="Adding%20Fractions%20_%20CodeChef_files/f3954f8d7bb8cd6a31ec8e75b29c84d1.css"><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/jquery_002.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/drupal.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/nice_menus.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/timer.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/fbconnect.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/fivestar.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/lightbox.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/jquery.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/jquery_003.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/tableofcontents.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/common.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/tiny_mce.js"></script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "fbconnect": { "api_key": "2568d33c49151c6f050973a15974fc00", "xd_path": "fbconnect/receiver", "user_pictures": "allow", "language_code": "en_US", "featureLoader_url": "http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US", "debug": 0, "loginout_mode": "manual", "invite_name": "CodeChef", "fbuid": null, "user": { "uid": "29074", "fbuid": null } }, "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)sites/default/files", "default_image": "/sites/all/modules/lightbox2/images/brokenimage.jpg", "border_size": "10", "font_color": "000", "box_color": "eeedec", "top_position": "", "overlay_opacity": "0.8", "overlay_color": "000", "disable_close_click": 1, "resize_sequence": "0", "resize_speed": 400, "fade_in_speed": 400, "slide_down_speed": 600, "use_alt_layout": 0, "disable_resize": 0, "disable_zoom": 0, "force_show_nav": 0, "loop_items": 0, "node_link_text": "View Image Details", "node_link_target": 0, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": 0, "custom_trigger_classes": "", "disable_for_gallery_lists": true, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": true, "slideshow_automatic_exit": true, "show_play_pause": true, "pause_on_next_click": false, "pause_on_previous_click": true, "loop_slides": false, "iframe_width": "500", "iframe_height": "70", "iframe_border": 1, "enable_video": 0 } });
+//--><!]]>
+</script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+  function mceToggle(id, linkid) {
+    element = document.getElementById(id);
+    link = document.getElementById(linkid);
+    img_assist = document.getElementById('img_assist-link-'+ id);
+
+    if (tinyMCE.getEditorId(element.id) == null) {
+      tinyMCE.addMCEControl(element, element.id);
+      element.togg = 'on';
+      link.innerHTML = 'disable rich-text';
+      link.href = "javascript:mceToggle('" +id+ "', '" +linkid+ "');";
+      if (img_assist)
+        img_assist.innerHTML = '';
+      link.blur();
+    }
+    else {
+      tinyMCE.removeMCEControl(tinyMCE.getEditorId(element.id));
+      element.togg = 'off';
+      link.innerHTML = 'enable rich-text';
+      link.href = "javascript:mceToggle('" +id+ "', '" +linkid+ "');";
+      if (img_assist)
+        img_assist.innerHTML = img_assist_default_link;
+      link.blur();
+    }
+  }
+
+//--><!]]>
+</script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+  tinyMCE.init({
+    mode : "exact",
+    theme : "advanced",
+    relative_urls : false,
+    document_base_url : "/",
+    language : "en",
+    safari_warning : false,
+    entity_encoding : "raw",
+    verify_html : false,
+    preformatted : false,
+    convert_fonts_to_spans : true,
+    remove_linebreaks : true,
+    apply_source_formatting : true,
+    theme_advanced_resize_horizontal : false,
+    theme_advanced_resizing_use_cookie : false,
+    plugins : "table",
+    theme_advanced_toolbar_location : "top",
+    theme_advanced_toolbar_align : "left",
+    theme_advanced_path_location : "bottom",
+    theme_advanced_resizing : true,
+    theme_advanced_blockformats : "p,address,pre,h1,h2,h3,h4,h5,h6",
+    theme_advanced_buttons1 : "bold,italic,underline,separator,link,unlink,separator,image,separator,code",
+    theme_advanced_buttons2 : "formatselect,separator,sup,sub,hr,tablecontrols",
+    theme_advanced_buttons3 : "",
+    elements : "edit-comment"
+  });
+
+//--><!]]>
+</script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/en_002.js" onload="tinymce.dom.ScriptLoader._onLoad(this,'http://www.codechef.com/sites/all/modules/tinymce/tinymce/jscripts/tiny_mce/langs/en.js',0);"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/editor_template.js" onload="tinymce.dom.ScriptLoader._onLoad(this,'http://www.codechef.com/sites/all/modules/tinymce/tinymce/jscripts/tiny_mce/themes/advanced/editor_template.js',1);"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/en.js"></script><script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/editor_plugin.js" onload="tinymce.dom.ScriptLoader._onLoad(this,'http://www.codechef.com/sites/all/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/table/editor_plugin.js',2);"></script><script src="Adding%20Fractions%20_%20CodeChef_files/XFBML.js" type="text/javascript"></script><link
+ href="Adding%20Fractions%20_%20CodeChef_files/connect-css.css" 
+type="text/css" rel="stylesheet"><link 
+href="Adding%20Fractions%20_%20CodeChef_files/ui.css" rel="stylesheet"></head><body
+ class="sidebar-right lightbox-processed"><div id="FB_HiddenContainer" 
+style="position: absolute; top: -10000px; left: -10000px; width: 0px; 
+height: 0px;"><div><iframe name="fb_api_server" 
+src="Adding%20Fractions%20_%20CodeChef_files/client_restserver.htm" 
+class="FB_SERVER_IFRAME" scrolling="no" frameborder="0"></iframe></div><div><iframe
+ name="loginStatus" 
+src="Adding%20Fractions%20_%20CodeChef_files/login_status.htm" 
+class="FB_SERVER_IFRAME" scrolling="no" frameborder="0"></iframe></div></div>
+	 
+    
+    
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <center>
+
+    <div id="header" class="wrapper">
+      <div class="inner-wrapper">
+        <!-- Header -->
+        <div id="logo-floater" class="cols-2">
+        <a href="http://www.codechef.com/" title=""><img 
+src="Adding%20Fractions%20_%20CodeChef_files/logo.png" alt="" id="logo"><span></span></a>
+        </div>
+		<div class="cols-2">
+			<div id="custom-login">
+				<!--Hello <strong>Admin</strong>, Check your <strong><a href="">Account</a></strong> or <a href="/logout">Log Out</a>-->
+				<div id="user-bar">
+	    			<div class="login-user"><table cellpadding="0" cellspacing="0">
+	  			<tbody><tr>
+	  				<td><span>Hello <strong>vishal gupta MSP</strong>! <br><strong><a
+ href="http://www.codechef.com/users/vishal%20gupta%20MSP" title="Edit 
+Your Account">Account</a></strong> or <a 
+href="http://www.codechef.com/logout">Log Out</a></span></td>
+	  			</tr>
+	  		    </tbody></table></div>
+	    		   </div><div id="facebook-login">
+		  			<table cellpadding="0" cellspacing="0">
+		  				<tbody><tr>
+			  				<td>Connect your Facebook<br>and CodeChef accounts</td>
+			  				<td><span class="facebook-button"><fb:login-button 
+class="FB_login_button fb_login_not_authorized FB_ElementReady" 
+size="medium" length="short" onlogin="facebook_onlogin_ready();" 
+background="dark" v="2"><a id="RES_ID_fb_login" 
+class="fbconnect_login_button FBConnectButton FBConnectButton_Medium"><span
+ id="RES_ID_fb_login_text" class="FBConnectButton_Text">Connect</span></a></fb:login-button></span></td>
+		  				</tr>
+		  			</tbody></table>
+		           </div><div class="question-note">
+				<a href="#">
+				<span class="icon-question">Note</span>
+				<div class="tooltip">
+					<ul>
+		    				<li>Publicize your achievements on your Facebook Wall.</li>
+					        <li>Challenge your friends or ask them for help.</li>
+					</ul>
+				</div>
+				</a>
+                           </div>        	</div>
+        	
+        	<div id="block-nice_menus-1" class="block block-nice_menus 
+block-header">
+  <div class="content">
+    <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>  
+  <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li 
+id="menu-302" class="menuparent menu-path-problems-easy"><a 
+href="http://www.codechef.com/problems/easy" title="">PRACTICE</a><ul><li
+ id="menu-303" class="menu-path-problems-easy"><a 
+href="http://www.codechef.com/problems/easy" title="">Easy</a></li>
+<li id="menu-304" class="menu-path-problems-medium"><a 
+href="http://www.codechef.com/problems/medium" title="">Medium</a></li>
+<li id="menu-305" class="menu-path-problems-hard"><a 
+href="http://www.codechef.com/problems/hard" title="">Hard</a></li>
+<li id="menu-1376" class="menu-path-problems-extcontest"><a 
+href="http://www.codechef.com/problems/extcontest" title="">Peer</a></li>
+</ul>
+</li>
+<li id="menu-309" class="menuparent menu-path-contests"><a 
+href="http://www.codechef.com/contests" title="">COMPETE</a><ul><li 
+id="menu-922" class="menu-path-www.codechef.com-APRIL10"><a 
+href="http://www.codechef.com/APRIL10" title="">April Algorithm 
+Challenge</a></li>
+<li id="menu-1370" class="menu-path-www.codechef.com-MARCH10-"><a 
+href="http://www.codechef.com/MARCH10/" title="">March Algorithm 
+Challenge</a></li>
+<li id="menu-1368" class="menu-path-www.codechef.com-FEB10-"><a 
+href="http://www.codechef.com/FEB10/" title="">February Algorithm 
+Challenge</a></li>
+<li id="menu-1311" class="menu-path-www.codechef.com-JAN10-"><a 
+href="http://www.codechef.com/JAN10/" title="">January Algorithm 
+Challenge</a></li>
+</ul>
+</li>
+<li id="menu-138" class="menuparent menu-path-discuss.codechef.com-"><a 
+href="http://discuss.codechef.com/" title="">DISCUSS</a><ul><li 
+id="menu-920" class="menu-path-wiki-"><a 
+href="http://www.codechef.com/wiki/" title="">Wiki</a></li>
+<li id="menu-139" class="menu-path-discuss.codechef.com-"><a 
+href="http://discuss.codechef.com/" title="">Forums</a></li>
+<li id="menu-140" class="menu-path-blog.codechef.com-"><a 
+href="http://blog.codechef.com/" title="">Blog</a></li>
+<li id="menu-141" class="menu-path-www.twitter.com-codechef"><a 
+href="http://www.twitter.com/codechef" title="">Twitter</a></li>
+</ul>
+</li>
+<li id="menu-143" class="menuparent menu-path-node-124098"><a 
+href="http://www.codechef.com/community" title="">COMMUNITY</a><ul><li 
+id="menu-650" class="menu-path-node-124111"><a 
+href="http://www.codechef.com/meetups" title="CodeChef Meetups">CodeChef
+ Meetups</a></li>
+<li id="menu-732" class="menu-path-node-157511"><a 
+href="http://www.codechef.com/campus_chapter/about" title="CodeChef 
+Campus Chapter">Campus Chapters</a></li>
+<li id="menu-733" class="menu-path-node-157517"><a 
+href="http://www.codechef.com/hostyourcontest" title="Hosting Contest on
+ CodeChef">Host your Contest</a></li>
+<li id="menu-146" class="menu-path-node-12"><a 
+href="http://www.codechef.com/usergroups" title="">User Groups</a></li>
+<li id="menu-715" class="menu-path-node-157473"><a 
+href="http://www.codechef.com/techtalks" title="CodeChef TechTalks">CodeChef
+ TechTalks</a></li>
+<li id="menu-1371" class="menu-path-node-292416"><a 
+href="http://www.codechef.com/educational-initiatives" title="Directi's 
+Educational Initiatives">All Educational Initiatives</a></li>
+</ul>
+</li>
+<li id="menu-147" class="menuparent menu-path-node-3"><a 
+href="http://www.codechef.com/help" title="">HELP</a><ul><li 
+id="menu-643" class="menu-path-www.codechef.com-wiki-faq"><a 
+href="http://www.codechef.com/wiki/faq" title="">Frequently Asked 
+Questions</a></li>
+<li id="menu-1389" class="menu-path-node-313543"><a 
+href="http://www.codechef.com/problemsetting" title="Codechef Problem 
+Creation">Problem Setting</a></li>
+<li id="menu-710" 
+class="menu-path-www.codechef.com-wiki-faq-problem-setters"><a 
+href="http://www.codechef.com/wiki/faq-problem-setters" title="">FAQ for
+ problem setters</a></li>
+<li id="menu-856" class="menu-path-ranklist-AX"><a 
+href="http://www.codechef.com/ranklist/AX" title="The ranklist (Global)">Ranks</a></li>
+<li id="menu-850" class="menu-path-www.codechef.com-wiki-tutorials"><a 
+href="http://www.codechef.com/wiki/tutorials" title="">Tutorials</a></li>
+</ul>
+</li>
+<li id="menu-150" class="menuparent menu-path-node-1"><a 
+href="http://www.codechef.com/aboutus" title="">ABOUT</a><ul><li 
+id="menu-151" class="menu-path-node-1"><a 
+href="http://www.codechef.com/aboutus" title="">About CodeChef</a></li>
+<li id="menu-849" class="menu-path-node-178314"><a 
+href="http://www.codechef.com/team" title="Team CodeChef">Team CodeChef</a></li>
+<li id="menu-708" class="menu-path-node-157468"><a 
+href="http://www.codechef.com/press" title="Press Room">Press Room</a></li>
+<li id="menu-1312" class="menu-path-www.codechef.com-financials-"><a 
+href="http://www.codechef.com/financials/" title="">CodeChef Financials</a></li>
+<li id="menu-1313" class="menu-path-www.codechef.com-sponsorships"><a 
+href="http://www.codechef.com/sponsorships" title="">CodeChef 
+Sponsorships</a></li>
+<li id="menu-709" class="menu-path-node-157470"><a 
+href="http://www.codechef.com/ceoscorner" title="CEO's Corner">CEO's 
+Corner</a></li>
+<li id="menu-152" class="menu-path-www.directi.com-"><a 
+href="http://www.directi.com/" title="">About Directi</a></li>
+<li id="menu-154" class="menu-path-careers.directi.com-"><a 
+href="http://careers.directi.com/" title="">Careers</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+		</div>
+
+      </div>
+    </div>
+    <!-- /HEADER -->
+	<center>
+	<table id="maintable" class="maintable" cellpadding="10" 
+cellspacing="0">
+		<tbody><tr>
+			<td class="content" width="99%">
+				<div class="wrapper" id="content-regions">
+					<div class="inner-wrapper rounded-cr-body">
+						<div class="rounded-cr-header">
+							<div class="rounded-cr-footer">
+								<div id="breadcrumb"><div class="breadcrumb"><a 
+href="http://www.codechef.com/">Home</a>&nbsp;»&nbsp;<a 
+href="http://www.codechef.com/contests/">Compete</a>&nbsp;»&nbsp;<a 
+href="http://www.codechef.com/APRIL10/">April 2010 Contest</a>&nbsp;»&nbsp;Adding
+ Fractions</div></div>
+								<div id="primary-colum-pad">
+									<div id="primary-colum-wrapper">
+										<img class="content-wrapper-header" 
+src="Adding%20Fractions%20_%20CodeChef_files/content-wrapper-top-big.gif">
+										<div id="problem-page">
+											<div class="prob">
+												<div class="primary-col-wrapper">
+																																																		        													<table
+ class="pagetitle-prob" border="0" cellpadding="0" cellspacing="0" 
+width="100%">
+														<tbody><tr>
+															<td width="55%">
+																<h1>Adding Fractions</h1>
+																<p>Problem code: ADDFRAC</p>
+															</td>
+															<td>
+																<ul class="button-list">
+																<li style=""><a 
+href="http://www.codechef.com/APRIL10/submit/ADDFRAC/">Submit</a></li>		
+															<li><a 
+href="http://www.codechef.com/APRIL10/status/ADDFRAC,vishal%20gupta%20MSP">My
+ Submissions</a></li>																	<li><a 
+href="http://www.codechef.com/APRIL10/status/ADDFRAC/">All Submissions</a></li>
+																</ul>
+															</td>
+														</tr>
+													</tbody></table>
+													<div class="primary-colum-width-left">
+														<div id="node-315730" class="node clear-block">
+
+  <div class="meta">
+  
+    </div>
+
+  <div class="content">
+    <p>
+You have discovered a new way to add fractions ! Now, the result of 
+adding fractions a/b and c/d is (a + c)/(b + d). Similarly the result of
+ adding 3 fractions a/b, c/d, e/f is (a + c + e)/(b + d + f), and so on.
+ You are given a list of N fractions a_1/b_1, a_2/b_2,...,a_N/b_N. You 
+wonder what for each fraction i is the maximum fraction that you can 
+obtain by adding together some continuous fractions in the list 
+(possibly 1) starting at i ?
+
+</p><p>
+For example, let N = 4 and the fractions be 1/1, 4/3, 10/1 and 5/4. The 
+maximum fraction you can obtain by starting at index 1 is 3/1 (1/1 + 4/3
+ + 10/1). Similarly, the maximum fraction you can obtain by starting at 
+index 2 is 7/2 (4/3 + 10/1). By starting at index 3, the maximum sum you
+ can obtain is 10/1 itself, and by starting at index 4, you can obtain 
+sum 5/4.
+
+</p><h3>
+Input :
+</h3>
+The first line contains T the number of test cases. T test cases follow.
+ The first line of each test case contains N. Each of the next N lines 
+contains a fraction given in the form "a_i/b_i". A blank line seperates 
+two test cases.
+
+<h3>
+Output :
+</h3>
+For each test case, output N lines. The ith line contains the maximum 
+fraction you can obtain by adding continuous fractions in the list 
+starting at index i. The numerator and denominator of any fraction you 
+output should have gcd 1. Output a blank line after each test case.
+<h3>
+Sample Input :</h3>
+<pre>2
+4
+1/1
+4/3
+10/1
+5/4
+
+5
+1/3
+3/1
+2/5
+5/6
+6/5
+</pre>
+
+
+
+
+<h3>Sample Output :</h3>
+<pre>3/1
+7/2
+10/1
+5/4
+
+1/1
+3/1
+13/16
+1/1
+6/5
+</pre>
+
+
+
+<h3>
+Constraints :
+</h3>
+<pre>1 &lt;= T &lt;= 5
+1 &lt;= n &lt;= 100000
+1 &lt;= a_k,b_k &lt;= 100000
+</pre>  </div>
+  <hr>
+  <table align="left" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td>Date:</td>
+		<td>2010-03-20</td>
+	</tr>
+	<tr>
+		<td>Time limit:</td>
+		<td>2s</td>
+	</tr>
+	<tr>
+		<td>Source limit:</td>
+		<td>50000</td>
+	</tr>
+	<tr>
+		<td>Languages:</td>
+		<td>C C99 strict C++ 4.0.0-8 C++ 4.3.2 PAS gpc PAS fpc JAVA NICE JAR 
+C# C#2 NEM ST ASM D FORT ADA BASH PERL PYTH RUBY LUA ICON PIKE PHP SCM 
+guile SCM qobi LISP sbcl LISP clisp SCALA HASK ERL CAML CLPS PRLG WSPC 
+BF ICK JS </td>
+	</tr>
+  </tbody></table>
+  <p style="clear: left;"><br></p>
+  <ul class="button-list button-list-left">
+	<li style="display: block;"><a 
+href="http://www.codechef.com/APRIL10/submit/ADDFRAC/">Submit</a></li>
+  </ul>
+  
+  	<p><b>Invite your friends to solve this problem using:</b><br></p>
+	<div style="width: 15%;">
+		<table cellspacing="2">
+			<tbody><tr>
+				<td><a href="javascript:void(0)" 
+onclick="javascript:window.open('/invitebymail.php?f_name=Vishal+Gupta+MSP&amp;link=users/vishal+gupta+MSP&amp;prob_t=Adding+Fractions&amp;prob_l=http%3A%2F%2Fwww.codechef.com%2FAPRIL10%2Fproblems%2FADDFRAC&amp;user_email=vishalguptamsp%40gmail.com',
+ 'mywindow','scrollbars=1,width=705px,height=571px');"><img 
+src="Adding%20Fractions%20_%20CodeChef_files/mail.gif"></a></td>
+				<td><span id="facebook-button"><a href="javascript:void(0)" 
+title="Facebook Connect" onclick="FB.Connect.requireSession(); return 
+false;"><img src="Adding%20Fractions%20_%20CodeChef_files/facebook.gif"></a></span></td>
+			</tr>
+		</tbody></table>
+	</div>
+	<br>
+  
+  <hr>
+  <h4 style="text-decoration: none;">Comments</h4>
+  </div>
+<div id="comments">
+  <a id="new"></a>
+<a id="comment-7470"></a>
+<div class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a 
+href="http://www.codechef.com/APRIL10/problems/ADDFRAC#comment-7470" 
+class="active">Sites like codechef are not</a></h3>
+
+  <div class="submitted">
+    <b>utkarsh lath</b> - 2nd Apr,2010 14:37:53.  </div>
+
+  <div class="content">
+    <p>Sites like codechef are not expected to make april Fool of 
+programmers. This is ridiculous.</p>  </div>
+
+  <!---->
+  
+</div>
+<div class="box">
+  <h2 class="title">Post new comment</h2>  <div class="content"><form 
+action="/comment/reply/315730" accept-charset="UTF-8" method="post" 
+id="comment-form">
+<div><div class="form-item">
+ <label>Your name: </label>
+ vishal gupta MSP
+</div>
+<div class="form-item" id="edit-comment-wrapper">
+ <label for="edit-comment">Comment: <span class="form-required" 
+title="This field is required.">*</span></label>
+ <textarea style="display: none;" cols="60" rows="15" name="comment" 
+id="edit-comment" class="form-textarea required"></textarea><span 
+class="mceEditor defaultSkin" id="edit-comment_parent"><table 
+style="width: 478px; height: 304px;" class="mceLayout" 
+id="edit-comment_tbl" cellpadding="0" cellspacing="0"><tbody><tr 
+class="mceFirst"><td class="mceToolbar mceLeft mceFirst mceLast"><a 
+href="#" accesskey="q" title="Jump to tool buttons - Alt+Q, Jump to 
+editor - Alt-Z, Jump to element path - Alt-X"><!-- IE --></a><table 
+id="edit-comment_toolbar1" class="mceToolbar mceToolbarRow1 Enabled" 
+align="" cellpadding="0" cellspacing="0"><tbody><tr><td 
+class="mceToolbarStart mceToolbarStartButton mceFirst"><span><!-- IE --></span></td><td><a
+ id="edit-comment_bold" href="javascript:;" class="mceButton 
+mceButtonEnabled mce_bold" onmousedown="return false;" onclick="return 
+false;" title="Bold (Ctrl+B)"><span class="mceIcon mce_bold"></span></a></td><td><a
+ id="edit-comment_italic" href="javascript:;" class="mceButton 
+mceButtonEnabled mce_italic" onmousedown="return false;" onclick="return
+ false;" title="Italic (Ctrl+I)"><span class="mceIcon mce_italic"></span></a></td><td><a
+ id="edit-comment_underline" href="javascript:;" class="mceButton 
+mceButtonEnabled mce_underline" onmousedown="return false;" 
+onclick="return false;" title="Underline (Ctrl+U)"><span class="mceIcon 
+mce_underline"></span></a></td><td><span class="mceSeparator"></span></td><td><a
+ id="edit-comment_link" href="javascript:;" class="mceButton mce_link 
+mceButtonDisabled" onmousedown="return false;" onclick="return false;" 
+title="Insert/edit link"><span class="mceIcon mce_link"></span></a></td><td><a
+ id="edit-comment_unlink" href="javascript:;" class="mceButton 
+mce_unlink mceButtonDisabled" onmousedown="return false;" 
+onclick="return false;" title="Unlink"><span class="mceIcon mce_unlink"></span></a></td><td><span
+ class="mceSeparator"></span></td><td><a id="edit-comment_image" 
+href="javascript:;" class="mceButton mceButtonEnabled mce_image" 
+onmousedown="return false;" onclick="return false;" title="Insert/edit 
+image"><span class="mceIcon mce_image"></span></a></td><td><span 
+class="mceSeparator"></span></td><td><a id="edit-comment_code" 
+href="javascript:;" class="mceButton mceButtonEnabled mce_code" 
+onmousedown="return false;" onclick="return false;" title="Edit HTML 
+Source"><span class="mceIcon mce_code"></span></a></td><td 
+class="mceToolbarEnd mceToolbarEndButton mceLast"><span><!-- IE --></span></td></tr></tbody></table><table
+ id="edit-comment_toolbar2" class="mceToolbar mceToolbarRow2 Enabled" 
+align="" cellpadding="0" cellspacing="0"><tbody><tr><td 
+class="mceToolbarStart mceToolbarStartListBox mceFirst"><span><!-- IE --></span></td><td><table
+ id="edit-comment_formatselect" class="mceListBox mceListBoxEnabled 
+mce_formatselect" cellpadding="0" cellspacing="0"><tbody><tr><td 
+class="mceFirst"><a id="edit-comment_formatselect_text" 
+href="javascript:;" class="mceText" onclick="return false;" 
+onmousedown="return false;">Paragraph</a></td><td class="mceLast"><a 
+id="edit-comment_formatselect_open" tabindex="-1" href="javascript:;" 
+class="mceOpen" onclick="return false;" onmousedown="return false;"><span></span></a></td></tr></tbody></table></td><td><span
+ class="mceSeparator"></span></td><td><a id="edit-comment_sup" 
+href="javascript:;" class="mceButton mceButtonEnabled mce_sup" 
+onmousedown="return false;" onclick="return false;" title="Superscript"><span
+ class="mceIcon mce_sup"></span></a></td><td><a id="edit-comment_sub" 
+href="javascript:;" class="mceButton mceButtonEnabled mce_sub" 
+onmousedown="return false;" onclick="return false;" title="Subscript"><span
+ class="mceIcon mce_sub"></span></a></td><td><a id="edit-comment_hr" 
+href="javascript:;" class="mceButton mceButtonEnabled mce_hr" 
+onmousedown="return false;" onclick="return false;" title="Insert 
+horizontal ruler"><span class="mceIcon mce_hr"></span></a></td><td><a 
+id="edit-comment_table" href="javascript:;" class="mceButton 
+mceButtonEnabled mce_table" onmousedown="return false;" onclick="return 
+false;" title="Inserts a new table"><span class="mceIcon mce_table"></span></a></td><td><span
+ class="mceSeparator"></span></td><td><a id="edit-comment_row_props" 
+href="javascript:;" class="mceButton mce_row_props mceButtonDisabled" 
+onmousedown="return false;" onclick="return false;" title="Table row 
+properties"><span class="mceIcon mce_row_props"></span></a></td><td><a 
+id="edit-comment_cell_props" href="javascript:;" class="mceButton 
+mce_cell_props mceButtonDisabled" onmousedown="return false;" 
+onclick="return false;" title="Table cell properties"><span 
+class="mceIcon mce_cell_props"></span></a></td><td><span 
+class="mceSeparator"></span></td><td><a id="edit-comment_row_before" 
+href="javascript:;" class="mceButton mce_row_before mceButtonDisabled" 
+onmousedown="return false;" onclick="return false;" title="Insert row 
+before"><span class="mceIcon mce_row_before"></span></a></td><td><a 
+id="edit-comment_row_after" href="javascript:;" class="mceButton 
+mce_row_after mceButtonDisabled" onmousedown="return false;" 
+onclick="return false;" title="Insert row after"><span class="mceIcon 
+mce_row_after"></span></a></td><td><a id="edit-comment_delete_row" 
+href="javascript:;" class="mceButton mce_delete_row mceButtonDisabled" 
+onmousedown="return false;" onclick="return false;" title="Delete row"><span
+ class="mceIcon mce_delete_row"></span></a></td><td><span 
+class="mceSeparator"></span></td><td><a id="edit-comment_col_before" 
+href="javascript:;" class="mceButton mce_col_before mceButtonDisabled" 
+onmousedown="return false;" onclick="return false;" title="Insert column
+ before"><span class="mceIcon mce_col_before"></span></a></td><td><a 
+id="edit-comment_col_after" href="javascript:;" class="mceButton 
+mce_col_after mceButtonDisabled" onmousedown="return false;" 
+onclick="return false;" title="Insert column after"><span class="mceIcon
+ mce_col_after"></span></a></td><td><a id="edit-comment_delete_col" 
+href="javascript:;" class="mceButton mce_delete_col mceButtonDisabled" 
+onmousedown="return false;" onclick="return false;" title="Remove 
+column"><span class="mceIcon mce_delete_col"></span></a></td><td><span 
+class="mceSeparator"></span></td><td><a id="edit-comment_split_cells" 
+href="javascript:;" class="mceButton mce_split_cells mceButtonDisabled" 
+onmousedown="return false;" onclick="return false;" title="Split merged 
+table cells"><span class="mceIcon mce_split_cells"></span></a></td><td><a
+ id="edit-comment_merge_cells" href="javascript:;" class="mceButton 
+mce_merge_cells mceButtonDisabled" onmousedown="return false;" 
+onclick="return false;" title="Merge table cells"><span class="mceIcon 
+mce_merge_cells"></span></a></td><td class="mceToolbarEnd 
+mceToolbarEndButton mceLast"><span><!-- IE --></span></td></tr></tbody></table><a
+ href="#" accesskey="z" title="Jump to tool buttons - Alt+Q, Jump to 
+editor - Alt-Z, Jump to element path - Alt-X" 
+onfocus="tinyMCE.getInstanceById('edit-comment').focus();"><!-- IE --></a></td></tr><tr><td
+ class="mceIframeContainer mceFirst mceLast"><iframe style="width: 100%;
+ height: 237px;" src='javascript:""' id="edit-comment_ifr" 
+frameborder="0"></iframe></td></tr><tr class="mceLast"><td 
+class="mceStatusbar mceFirst mceLast"><div id="edit-comment_path_row">Path:
+ <a accesskey="x" href="#"></a><span id="edit-comment_path"><a 
+class="mcePath_0" onmousedown="return false;" href="javascript:;">p</a></span></div><a
+ class="mceResize" onclick="return false;" href="javascript:;" 
+id="edit-comment_resize"></a></td></tr></tbody></table></span>
+</div>
+<input name="form_build_id" id="form-6cafe631937c2ed60229aa7a6d95ad4c" 
+value="form-6cafe631937c2ed60229aa7a6d95ad4c" type="hidden">
+<input name="form_token" id="edit-form-token" 
+value="b622f2ee2d01fa83ffe20eb596847755" type="hidden">
+<input name="form_id" id="edit-comment-form" value="comment_form" 
+type="hidden">
+<input name="op" id="edit-submit" value="Save" class="form-submit" 
+type="submit">
+
+</div></form>
+</div>
+</div>
+</div>
+													</div>
+													<div class="primary-colum-width-right">
+														<div class="content-spacer-b">
+															<div id="block-block-9" class="block block-block">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div
+ class="r4"></div><div class="r5"></div>
+  <div class="content">
+    <h3>SUCCESSFUL SUBMISSIONS FOR THIS PROBLEM:</h3>    <div 
+id="rankContentDiv" class="table-results maintable"><div 
+class="table-questions" id="rankContentDiv">
+<table class="problems maintable" cellpadding="0" cellspacing="0" 
+width="100%">
+<tbody>
+<tr class="headerrow">
+	<th width="20%">User</th>
+	<th align="center" width="6%">Mem</th>
+	<th align="center" width="6%">Time</th>
+	<th class="headerrowright" align="center" width="5%">Lang</th>
+	<th class="headerrowright" align="center" width="5%"> </th>
+</tr><tr><td colspan="5" align="center">
+			No Recent Activity
+		</td></tr></tbody></table>
+<table class="problems" border="0" width="99%">
+<tbody>
+<tr>
+	<td align="left" width="27%"><input 
+src="Adding%20Fractions%20_%20CodeChef_files/page-prev-inactive.gif" 
+id="ssubmissionsContestPreviousButtoninactive" class="APRIL10 ADDFRAC" 
+type="image"></td>
+	<td>
+		<div id="ssubmissionsAjaxProgressDiv" style="display: none;" 
+align="center">
+		<img src="Adding%20Fractions%20_%20CodeChef_files/ajax_loader_d.gif" 
+style="width: 120px; height: 15px;">
+		<input name="ssubmissionsStart" value="12" 
+id="ssubmissionsContestStart" type="hidden">
+		<input name="ssubmissionsCount" value="12" 
+id="ssubmissionsContestCount" type="hidden">
+		<input name="userid" id="userid" value="29074" type="hidden">
+		</div>
+	</td>
+	<td align="right" width="25%"><div class="p_link"><img 
+src="Adding%20Fractions%20_%20CodeChef_files/page-next-inactive.gif" 
+id="ssubmissionsContestNextButtoninactive" class="APRIL10 ADDFRAC"></div></td>
+</tr>
+</tbody>
+</table>
+
+</div></div>  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div
+ class="r2"></div><div class="r1 b"></div>
+</div>
+<div id="block-block-23" class="block block-block">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div
+ class="r4"></div><div class="r5"></div>
+  <div class="content">
+        <div align="right"><a target="_blank" 
+href="http://www.twitter.com/codechef"><img alt="" 
+src="Adding%20Fractions%20_%20CodeChef_files/icon_twitter.png"></a><a 
+target="_blank" 
+href="http://www.facebook.com/home.php?#/pages/CodeChef/53227312798?ref=ts"><img
+ alt="" src="Adding%20Fractions%20_%20CodeChef_files/icon_facebook.png"></a><a
+ target="_blank" 
+href="http://www.flickr.com/photos/directi/sets/72157617120023194/"><img
+ alt="" src="Adding%20Fractions%20_%20CodeChef_files/icon_flickr.png"></a></div>
+  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div
+ class="r2"></div><div class="r1 b"></div>
+</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<img class="content-wrapper-header" 
+src="Adding%20Fractions%20_%20CodeChef_files/content-wrapper-bootm-big.gif">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</tbody></table>
+
+        <div id="footer" class="wrapper">
+      <!--<div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>-->
+      <div class="content clear-block">
+        <!-- Footer Contents -->
+        <div id="block-block-13" class="block block-block block-header">
+  <div class="content">
+        <script language="javascript" type="text/javascript">
+function formatTime(ts) {
+  now = new Date(ts);
+ 
+  localtime = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+  
+  if (min <= 9) {
+	 min = "0" + min;
+  }
+  if (sec <= 9) {
+	 sec = "0" + sec;
+  }
+  if (hour > 12) {
+	 hour = hour - 12;
+	 add = " PM";
+  } else {
+	 hour = hour;
+	 add = " AM";
+  }
+  if (hour == 12) {
+	 add = " PM";
+  }
+  if (hour == 00) {
+	 hour = "12";
+  }
+	
+  $('#server-time').html(((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+  
+  nextSec = (now.getTime() + 1000);
+  
+  setTimeout("formatTime("+nextSec+")", 1000);
+}
+</script>
+<div class="inner-wrapper">
+<div class="cols-2">
+<div id="secondary-nav">
+<ul>
+    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+    <li><a target="_blank" href="http://www.directi.com/">About Directi</a></li>
+    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+    <li><a target="_blank" href="http://careers.directi.com/">Careers</a></li>
+    <li><a href="mailto:feedback@codechef.com">feedback@codechef.com</a></li>
+</ul>
+</div>
+<div id="copyright" class="cols-2">© 2009 <a style="color: rgb(0, 0, 
+0);" href="http://www.directi.com/">Directi Group</a>.  All Rights 
+Reserved.  CodeChef uses SPOJ © by <a style="color: rgb(0, 0, 0);" 
+href="http://www.sphere-research.com/">Sphere Research Labs</a></div>
+</div>
+<div class="cols-2-right" align="right">
+<div id="sponsor-strip"><a target="_blank" 
+href="http://www.directi.com/"><img alt="Sponsors" 
+src="Adding%20Fractions%20_%20CodeChef_files/footer-sponsor-strip.gif"></a><br>
+<span>The time now is: <span id="server-time">03:56:52 PM</span></span>
+				<script language="javascript">
+						formatTime('April 02, 2010 15:25:34');
+					</script></div>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="Adding%20Fractions%20_%20CodeChef_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-53602-42");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>  </div>
+</div>
+      </div>
+    </div>
+        <script type="text/javascript" src="Adding%20Fractions%20_%20CodeChef_files/en_US.js"></script><form
+ action="/APRIL10/problems/ADDFRAC/" accept-charset="UTF-8" 
+method="post" id="fbconnect-autoconnect-form">
+<div><!--<input type="submit" name="op" id="edit-connect" value="Connect"  class="form-submit" />
+--><input name="form_build_id" 
+id="form-f3da4dd1da59c2be0ad34827fa1125fc" 
+value="form-f3da4dd1da59c2be0ad34827fa1125fc" type="hidden">
+<input name="form_token" id="edit-fbconnect-autoconnect-form-form-token"
+ value="9a00a129cf84710fb21b5604deb2ce00" type="hidden">
+<input name="form_id" id="edit-fbconnect-autoconnect-form" 
+value="fbconnect_autoconnect_form" type="hidden">
+
+</div></form>
+<script type="text/javascript">FB.init("2568d33c49151c6f050973a15974fc00");</script>
+  </center>
+  <script type="text/javascript"> 
+	function update_user_box() {
+		$("#facebook-button").html("<a href=\"javascript:void(0)\" onclick=\"openInvitationWin()\" title=\"Invite Friends from Facebook\"><img src=\"/themes/abessive/images/facebook-friend.gif\" /></a>");
+		FB.XFBML.Host.parseDomTree(); 
+		//FB.XFBML.Host.refresh();
+	}
+	
+	function openInvitationWin() {
+		window.open("/facebook/invite.php?dest=http%3A%2F%2Fwww.codechef.com%2FAPRIL10%2Fproblems%2FADDFRAC%2F&prob=Adding Fractions&user=Vishal Gupta MSP", "facebook_window", "scrollbars=1,width=800px,height=800px");
+		return false;
+	}
+  </script>
+  <script type="text/javascript">FB.init("2568d33c49151c6f050973a15974fc00", "http://www.codechef.com/facebook/xd_receiver.php",{"ifUserConnected" : update_user_box}); </script>
+
+    </center><div id="overlay" style="display: none;"></div>      <div 
+id="lightbox" style="display: none;">        <div 
+style="background-color: rgb(238, 237, 236); color: rgb(0, 0, 0);" 
+id="outerImageContainer"><div id="modalContainer" style="display: none; 
+padding: 10px;"></div><div id="frameContainer" style="display: none; 
+padding: 10px;"></div><div id="imageContainer" style="display: none; 
+padding: 10px;"><img id="lightboxImage"><div id="hoverNav"><a 
+style="padding-top: 10px;" id="prevLink" href="#"></a><a 
+style="padding-top: 10px;" id="nextLink" href="#"></a></div></div><div 
+id="loading"><a href="#" id="loadingLink"></a></div></div>        <div 
+style="background-color: rgb(238, 237, 236); color: rgb(0, 0, 0);" 
+id="imageDataContainer" class="clearfix">          <div id="imageData"><div
+ id="frameHoverNav"><a style="padding-top: 10px;" id="framePrevLink" 
+href="#"></a><a style="padding-top: 10px;" id="frameNextLink" href="#"></a></div><div
+ id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div
+ id="bottomNav"><a style="background-color: rgb(238, 237, 236); color: 
+rgb(0, 0, 0);" id="bottomNavClose" href="#"></a><a id="bottomNavZoom" 
+href="#"></a><a id="bottomNavZoomOut" href="#"></a><a 
+id="lightshowPause" href="#" style="display: none;"></a><a 
+id="lightshowPlay" href="#" style="display: none;"></a></div></div>     
+   </div>      </div></body></html>
